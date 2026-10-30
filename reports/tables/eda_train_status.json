@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-10-19T11:39:25+02:00",
+  "script": "analysis/02_split_and_train_eda.py",
+  "subset": "train",
+  "train_images": 1114,
+  "train_cases": 639,
+  "contact_sheet": {
+    "path": "data/processed/eda_train_contact_sheet.png",
+    "local_only": true,
+    "sha256": "326e66e238688b87b907ebdfd28f5e58826cd236f9a0274ffbe121367d4b3c88",
+    "seed": 42,
+    "selection_rule": "train images sorted by ID; one image per (device, class) in the order device alphabetically, benign before malignant; one random draw per combination with numpy default_rng(seed); at most 8 images, each from a different case",
+    "selected_ids": [
+      "bus_0404-l",
+      "bus_0663-r",
+      "bus_0317-l",
+      "bus_0250-l",
+      "bus_1010-r",
+      "bus_1057-r",
+      "bus_0851-s",
+      "bus_0858-l"
+    ],
+    "missing_combinations": [],
+    "visual_inspection": {
+      "performed_by_this_script": false,
+      "status": "documented_manually_for_current_sample",
+      "record": {
+        "document": "docs/train_eda.md",
+        "section": "Lokale Sichtprüfung",
+        "date": "2026-10-19",
+        "inspected_ids": [
+          "bus_0404-l",
+          "bus_0663-r",
+          "bus_0317-l",
+          "bus_0250-l",
+          "bus_1010-r",
+          "bus_1057-r",
+          "bus_0851-s",
+          "bus_0858-l"
+        ],
+        "inspected_medium": "preview of the contact sheet (not a hash comparison with the local PNG)"
+      },
+      "current_sample_equals_inspected_ids": true,
+      "record_file_names_all_inspected_ids": true,
+      "note": "Manual inspection by the project owner; the findings are in the record document. If the sample differs from the inspected IDs, a new inspection is required."
+    }
+  },
+  "overview_figure": {
+    "generated": true,
+    "matplotlib_version": "3.11.2",
+    "blocker": null
+  },
+  "outputs": [
+    "reports/figures/eda_train_overview.png",
+    "reports/tables/eda_train_class_counts.csv",
+    "reports/tables/eda_train_device_class.csv",
+    "reports/tables/eda_train_image_size_summary.csv",
+    "reports/tables/eda_train_images_per_case.csv",
+    "reports/tables/eda_train_sample.csv"
+  ],
+  "warnings": []
+}

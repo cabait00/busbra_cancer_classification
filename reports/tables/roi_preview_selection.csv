@@ -1,0 +1,13 @@
+ID,reason,Case,class,Device,positive_pixels,positive_fraction,n_components,touch_sides,margin_deficit_pixels,crop_area_fraction,scale_to_160
+bus_0496-l,median positive fraction of GE Logiq 5 @10-12MHz / benign,496,benign,GE Logiq 5 @10-12MHz,6346,0.04368116740088106,1,0,0,0.10985682819383259,1.0526315789473684
+bus_0428-r,median positive fraction of GE Logiq 5 @10-12MHz / malignant,428,malignant,GE Logiq 5 @10-12MHz,14203,0.10062273735219729,1,0,6,0.32879682042635194,0.6274509803921569
+bus_0311-r,median positive fraction of GE Logiq 7 @10-14MHz / benign,311,benign,GE Logiq 7 @10-14MHz,4572,0.05596357226792009,1,0,0,0.1570945945945946,0.8602150537634409
+bus_0250-r,median positive fraction of GE Logiq 7 @10-14MHz / malignant,250,malignant,GE Logiq 7 @10-14MHz,11807,0.11129124996465299,1,0,0,0.2821068705168205,0.9248554913294798
+bus_1051-r,median positive fraction of Toshiba Aplio 300 @12-14 MHz / benign,1051,benign,Toshiba Aplio 300 @12-14 MHz,2527,0.029251747927952956,1,0,0,0.09760614900217623,1.1764705882352942
+bus_1062-r,median positive fraction of Toshiba Aplio 300 @12-14 MHz / malignant,1062,malignant,Toshiba Aplio 300 @12-14 MHz,6559,0.07763508315085518,1,0,0,0.29993489968633485,0.8839779005524862
+bus_0851-s,median positive fraction of U-Systems @10-14MHz / benign,851,benign,U-Systems @10-14MHz,12638,0.08083250185483665,1,0,0,0.20845805510783635,0.8247422680412371
+bus_0854-s,median positive fraction of U-Systems @10-14MHz / malignant,854,malignant,U-Systems @10-14MHz,22564,0.08239035736324567,1,0,0,0.25860728017614387,0.5128205128205128
+bus_1008-r,smallest number of positive pixels,1008,benign,Toshiba Aplio 300 @12-14 MHz,511,0.0060902936689549965,1,0,0,0.01612557208237986,3.902439024390244
+bus_0666-l,largest positive-pixel fraction,666,malignant,GE Logiq 5 @10-12MHz,84190,0.5753866551849042,1,0,175,1.0,0.35320088300220753
+bus_0164-l,touches the most image borders,164,benign,GE Logiq 7 @10-14MHz,33646,0.34857290857290857,1,1,79,0.698005698005698,0.5818181818181818
+bus_0666-r,largest crop shortening by the image border,666,malignant,GE Logiq 5 @10-12MHz,81553,0.5539344540669044,1,0,197,1.0,0.35320088300220753

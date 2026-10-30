@@ -1,0 +1,3 @@
+model,seed,subset,positive_class,threshold,decision_rule,n_images,n_cases,n_malignant_cases,n_benign_cases,n_malignant_images,n_benign_images,n_predicted_malignant,tn,fp,fn,tp,sensitivity,specificity,precision,f1,accuracy,roc_auc,average_precision,best_epoch
+small_cnn_160,123,train,malignant (label 1),0.5,score >= threshold,1114,639,205,434,360,754,0,754,0,360,0,0.0,1.0,,0.0,0.6768402154398564,0.5301097848511641,0.35266484041860147,1
+small_cnn_160,123,validation,malignant (label 1),0.5,score >= threshold,385,213,69,144,125,260,0,260,0,125,0,0.0,1.0,,0.0,0.6753246753246753,0.587476923076923,0.4485404957756827,1

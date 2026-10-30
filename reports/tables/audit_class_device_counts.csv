@@ -1,0 +1,16 @@
+Device,Pathology,images,cases,malignant_image_share_of_device
+GE Logiq 5 @10-12MHz,benign,566,350,
+GE Logiq 5 @10-12MHz,malignant,243,140,
+GE Logiq 7 @10-14MHz,benign,617,327,
+GE Logiq 7 @10-14MHz,malignant,285,161,
+Toshiba Aplio 300 @12-14 MHz,benign,71,37,
+Toshiba Aplio 300 @12-14 MHz,malignant,68,35,
+U-Systems @10-14MHz,benign,14,8,
+U-Systems @10-14MHz,malignant,11,6,
+GE Logiq 5 @10-12MHz,all,809,490,0.3004
+GE Logiq 7 @10-14MHz,all,902,488,0.316
+Toshiba Aplio 300 @12-14 MHz,all,139,72,0.4892
+U-Systems @10-14MHz,all,25,14,0.44
+all,benign,1268,722,
+all,malignant,607,342,
+all,all,1875,1064,

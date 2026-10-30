@@ -1,0 +1,5 @@
+rule,subset,outer_kfolds,images,cases,benign_images,malignant_images,benign_cases,malignant_cases,malignant_image_share,matches_reference_counts
+"fixed holdout from the OUTER kFold column of the original 5-fold-cv.csv: folds 3,4,5 = train, fold 2 = validation, fold 1 = test",train,3|4|5,1114,639,754,360,434,205,0.3232,True
+"fixed holdout from the OUTER kFold column of the original 5-fold-cv.csv: folds 3,4,5 = train, fold 2 = validation, fold 1 = test",validation,2,385,213,260,125,144,69,0.3247,True
+"fixed holdout from the OUTER kFold column of the original 5-fold-cv.csv: folds 3,4,5 = train, fold 2 = validation, fold 1 = test",test,1,376,212,254,122,144,68,0.3245,True
+"fixed holdout from the OUTER kFold column of the original 5-fold-cv.csv: folds 3,4,5 = train, fold 2 = validation, fold 1 = test",all,1|2|3|4|5,1875,1064,1268,607,722,342,0.3237,True

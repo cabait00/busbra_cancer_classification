@@ -1,0 +1,4 @@
+status,subset,outer_kfolds,images,cases,benign_images,malignant_images,benign_cases,malignant_cases,malignant_image_share
+proposal_not_frozen,train,3|4|5,1114,639,754,360,434,205,0.3232
+proposal_not_frozen,validation,2,385,213,260,125,144,69,0.3247
+proposal_not_frozen,test,1,376,212,254,122,144,68,0.3245

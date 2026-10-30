@@ -1,0 +1,40 @@
+Device,crop_category_5c,point,n_images,n_malignant,n_benign,n_fallback,mean_dice_raw_prediction,mean_tp_over_seeds,mean_fp_over_seeds,mean_fn_over_seeds,mean_tn_over_seeds,n_seeds
+GE Logiq 5 @10-12MHz,covers_90_to_below_100_percent,0.5,14,12,2,0,0.7913132614558384,10.6,0.0,1.4,2.0,5
+GE Logiq 5 @10-12MHz,covers_90_to_below_100_percent,target_0.90,14,12,2,0,0.7913132614558384,11.8,1.0,0.2,1.0,5
+GE Logiq 5 @10-12MHz,covers_90_to_below_100_percent,target_0.95,14,12,2,0,0.7913132614558384,12.0,2.0,0.0,0.0,5
+GE Logiq 5 @10-12MHz,covers_all_expert_pixels,0.5,127,37,90,0,0.9186761595965729,23.2,3.8,13.8,86.2,5
+GE Logiq 5 @10-12MHz,covers_all_expert_pixels,target_0.90,127,37,90,0,0.9186761595965729,34.2,31.0,2.8,59.0,5
+GE Logiq 5 @10-12MHz,covers_all_expert_pixels,target_0.95,127,37,90,0,0.9186761595965729,35.6,41.4,1.4,48.6,5
+GE Logiq 5 @10-12MHz,covers_more_than_0_to_below_90_percent,0.5,4,4,0,0,0.46274623114447266,3.0,0.0,1.0,0.0,5
+GE Logiq 5 @10-12MHz,covers_more_than_0_to_below_90_percent,target_0.90,4,4,0,0,0.46274623114447266,4.0,0.0,0.0,0.0,5
+GE Logiq 5 @10-12MHz,covers_more_than_0_to_below_90_percent,target_0.95,4,4,0,0,0.46274623114447266,4.0,0.0,0.0,0.0,5
+GE Logiq 7 @10-14MHz,covers_90_to_below_100_percent,0.5,9,3,6,0,0.7518962637172232,1.6,0.0,1.4,6.0,5
+GE Logiq 7 @10-14MHz,covers_90_to_below_100_percent,target_0.90,9,3,6,0,0.7518962637172232,3.0,0.6,0.0,5.4,5
+GE Logiq 7 @10-14MHz,covers_90_to_below_100_percent,target_0.95,9,3,6,0,0.7518962637172232,3.0,1.6,0.0,4.4,5
+GE Logiq 7 @10-14MHz,covers_all_expert_pixels,0.5,173,50,123,0,0.9048785424421781,33.2,10.0,16.8,113.0,5
+GE Logiq 7 @10-14MHz,covers_all_expert_pixels,target_0.90,173,50,123,0,0.9048785424421781,47.4,47.2,2.6,75.8,5
+GE Logiq 7 @10-14MHz,covers_all_expert_pixels,target_0.95,173,50,123,0,0.9048785424421781,49.4,63.6,0.6,59.4,5
+GE Logiq 7 @10-14MHz,covers_more_than_0_to_below_90_percent,0.5,8,2,6,0,0.5448180699081113,1.2,1.0,0.8,5.0,5
+GE Logiq 7 @10-14MHz,covers_more_than_0_to_below_90_percent,target_0.90,8,2,6,0,0.5448180699081113,2.0,2.0,0.0,4.0,5
+GE Logiq 7 @10-14MHz,covers_more_than_0_to_below_90_percent,target_0.95,8,2,6,0,0.5448180699081113,2.0,3.2,0.0,2.8,5
+GE Logiq 7 @10-14MHz,covers_no_expert_pixel,0.5,1,0,1,0,0.4242740134028295,0.0,0.0,0.0,1.0,5
+GE Logiq 7 @10-14MHz,covers_no_expert_pixel,target_0.90,1,0,1,0,0.4242740134028295,0.0,1.0,0.0,0.0,5
+GE Logiq 7 @10-14MHz,covers_no_expert_pixel,target_0.95,1,0,1,0,0.4242740134028295,0.0,1.0,0.0,0.0,5
+GE Logiq 7 @10-14MHz,fallback_full_image,0.5,1,0,1,1,0.0,0.0,0.8,0.0,0.2,5
+GE Logiq 7 @10-14MHz,fallback_full_image,target_0.90,1,0,1,1,0.0,0.0,1.0,0.0,0.0,5
+GE Logiq 7 @10-14MHz,fallback_full_image,target_0.95,1,0,1,1,0.0,0.0,1.0,0.0,0.0,5
+Toshiba Aplio 300 @12-14 MHz,covers_90_to_below_100_percent,0.5,7,4,3,0,0.7827110922114986,3.4,0.0,0.6,3.0,5
+Toshiba Aplio 300 @12-14 MHz,covers_90_to_below_100_percent,target_0.90,7,4,3,0,0.7827110922114986,4.0,0.8,0.0,2.2,5
+Toshiba Aplio 300 @12-14 MHz,covers_90_to_below_100_percent,target_0.95,7,4,3,0,0.7827110922114986,4.0,1.4,0.0,1.6,5
+Toshiba Aplio 300 @12-14 MHz,covers_all_expert_pixels,0.5,21,6,15,0,0.8582319959006052,2.4,1.4,3.6,13.6,5
+Toshiba Aplio 300 @12-14 MHz,covers_all_expert_pixels,target_0.90,21,6,15,0,0.8582319959006052,5.4,7.4,0.6,7.6,5
+Toshiba Aplio 300 @12-14 MHz,covers_all_expert_pixels,target_0.95,21,6,15,0,0.8582319959006052,5.8,10.2,0.2,4.8,5
+Toshiba Aplio 300 @12-14 MHz,covers_more_than_0_to_below_90_percent,0.5,3,1,2,0,0.247583588016301,0.0,0.6,1.0,1.4,5
+Toshiba Aplio 300 @12-14 MHz,covers_more_than_0_to_below_90_percent,target_0.90,3,1,2,0,0.247583588016301,0.0,1.6,1.0,0.4,5
+Toshiba Aplio 300 @12-14 MHz,covers_more_than_0_to_below_90_percent,target_0.95,3,1,2,0,0.247583588016301,0.6,1.8,0.4,0.2,5
+Toshiba Aplio 300 @12-14 MHz,fallback_full_image,0.5,2,1,1,2,0.0,0.6,1.0,0.4,0.0,5
+Toshiba Aplio 300 @12-14 MHz,fallback_full_image,target_0.90,2,1,1,2,0.0,1.0,1.0,0.0,0.0,5
+Toshiba Aplio 300 @12-14 MHz,fallback_full_image,target_0.95,2,1,1,2,0.0,1.0,1.0,0.0,0.0,5
+U-Systems @10-14MHz,covers_all_expert_pixels,0.5,6,2,4,0,0.8926090702466324,2.0,0.6,0.0,3.4,5
+U-Systems @10-14MHz,covers_all_expert_pixels,target_0.90,6,2,4,0,0.8926090702466324,2.0,2.8,0.0,1.2,5
+U-Systems @10-14MHz,covers_all_expert_pixels,target_0.95,6,2,4,0,0.8926090702466324,2.0,3.6,0.0,0.4,5

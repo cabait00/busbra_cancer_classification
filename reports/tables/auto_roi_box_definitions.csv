@@ -1,0 +1,5 @@
+definition,description,n_images_without_fallback,n_below_100_percent,n_below_90_percent,n_zero,mean_coverage,median_coverage
+all_predicted_pixels_box,"box around ALL predicted pixels, no expansion (the 4F-A measure)",379,341,40,1,0.9494706212652605,0.9822137188208617
+all_predicted_pixels_box_plus_20_percent,box around ALL predicted pixels expanded by 20 % (not used for any crop),379,27,10,1,0.9864748772466572,1.0
+largest_component_tight_box,"tight box of the kept (largest) component, no expansion",379,344,48,6,0.9359963431600361,0.982030111704711
+largest_component_plus_20_percent_actual_crop,the ACTUAL crop of this step: largest component plus 20 % (fallback images excluded),379,33,14,4,0.9739230242450733,1.0

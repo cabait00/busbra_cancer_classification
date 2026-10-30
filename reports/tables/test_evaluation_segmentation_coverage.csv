@@ -1,0 +1,15 @@
+group_type,group,basis,n_images,n_cases,n_defined,mean,sd_ddof1,min,p05,q1,median,q3,p95,max,n_below_100_percent,n_below_90_percent,n_zero
+all,all,without_fallback_images,373,212,373,0.9796018929547334,0.10481264782016923,0.0,0.9219242521711162,1.0,1.0,1.0,1.0,1.0,46,16,1
+all,all,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,376,212,376,0.979764643808818,0.10440836995961444,0.0,0.9258428152138951,1.0,1.0,1.0,1.0,1.0,46,16,1
+class,benign,without_fallback_images,252,144,252,0.983495933263813,0.098583738565039,0.0,0.9611770547020746,1.0,1.0,1.0,1.0,1.0,20,9,1
+class,benign,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,254,144,254,0.9836258865452003,0.09820418371333174,0.0,0.9621175324247339,1.0,1.0,1.0,1.0,1.0,20,9,1
+class,malignant,without_fallback_images,121,68,121,0.9714919908234274,0.11674368390285768,0.1180722891566265,0.877851711026616,1.0,1.0,1.0,1.0,1.0,26,7,0
+class,malignant,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,122,68,122,0.9717256630297928,0.11628891680605696,0.1180722891566265,0.87910576317648,1.0,1.0,1.0,1.0,1.0,26,7,0
+device,GE Logiq 5 @10-12MHz,without_fallback_images,145,90,145,0.9872872641430175,0.073774129704938,0.2294365218812569,0.9443165463449408,1.0,1.0,1.0,1.0,1.0,18,4,0
+device,GE Logiq 5 @10-12MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,145,90,145,0.9872872641430175,0.073774129704938,0.2294365218812569,0.9443165463449408,1.0,1.0,1.0,1.0,1.0,18,4,0
+device,GE Logiq 7 @10-14MHz,without_fallback_images,191,102,191,0.9816919177705808,0.09017083083983565,0.0,0.9047705696202532,1.0,1.0,1.0,1.0,1.0,18,9,1
+device,GE Logiq 7 @10-14MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,192,102,192,0.9817872723655258,0.08994417697628962,0.0,0.9049185126582279,1.0,1.0,1.0,1.0,1.0,18,9,1
+device,Toshiba Aplio 300 @12-14 MHz,without_fallback_images,31,17,31,0.9268289186192628,0.23522058562571432,0.003792298716452742,0.4472487637708472,0.9863441573442002,1.0,1.0,1.0,1.0,10,3,0
+device,Toshiba Aplio 300 @12-14 MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,33,17,33,0.9312635296120347,0.2284404162467949,0.003792298716452742,0.5130840586936913,0.9981832157081965,1.0,1.0,1.0,1.0,10,3,0
+device,U-Systems @10-14MHz,without_fallback_images,6,3,6,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,0,0
+device,U-Systems @10-14MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,6,3,6,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,0,0

@@ -1,0 +1,48 @@
+{
+  "plan_sha256": "a42efa5aab198112609e8478a329d2b540eac6ca3eb214b16905dea8d5f4b229",
+  "study_id": "roi4e-a42efa5a",
+  "fingerprints": {
+    "train": {
+      "n": 1114,
+      "shape": [
+        1114,
+        160,
+        160,
+        1
+      ],
+      "dtype": "float32",
+      "array_sha256": "a513f99a95dfe7ce1ede1851dbc8c9a163d591e11114a0aa1968e137a17f164e",
+      "ids_sha256": "d14a08160a077c74989e6b9c75eb8910c0e6420c408d4f268e166394750dfae7",
+      "labels_sha256": "c5bcc1948b2f6d7cad3213113e82268d4aa2606faf2457b5388d6883c7ced129"
+    },
+    "validation": {
+      "n": 385,
+      "shape": [
+        385,
+        160,
+        160,
+        1
+      ],
+      "dtype": "float32",
+      "array_sha256": "3074797663c8ed3a20c630c64865015cbb1066ac6f7fab8e47ea2e423adcbcfc",
+      "ids_sha256": "6e40aefef7e7f90e14543994dc77569e60b2e7cfef278c3828faaab4f865c608",
+      "labels_sha256": "e99c061588db11cdc97be1fe2e758257334072085af2090cb13750d4f44f1d7e"
+    }
+  },
+  "roi_contract_content_sha256": "a0c72744776e92a4ea63265c21a0939626691ab98f4d911b37040625067e0aad",
+  "split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "geometry_table": {
+    "file": "reports/tables/expert_roi_geometry_train_validation.csv",
+    "sha256": "17cfc222a35b0916d56afd16904e4e83d03a419e3697736ab78909941cc3e605",
+    "rows": 1499,
+    "local_only": true
+  },
+  "frequencies_table": {
+    "file": "reports/tables/expert_roi_geometry_frequencies.csv",
+    "sha256": "6f2829ce901f3b4ec63ab0918331395181670fddac2297fe3e3ce4ee5c378f74"
+  },
+  "png_files_opened": 2998,
+  "train_geometry_equals_4D_table": true,
+  "registered_at": "2026-10-20T19:14:20+02:00",
+  "note": "Frozen once after the plan was registered; every run recomputes its inputs and must reproduce the fingerprints; never rewritten."
+}

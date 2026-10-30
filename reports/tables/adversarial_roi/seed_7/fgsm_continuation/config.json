@@ -1,0 +1,106 @@
+{
+  "run_id": "adv5br-20261021T033624-4cc3e3d4",
+  "seed": 7,
+  "arm": "fgsm_continuation",
+  "plan_sha256": "dd935b4265cd72506d1f98ebca54e572824e123be32a3b9bb6395fc1b5b4dbf5",
+  "settings": {
+    "seeds": [
+      7,
+      21,
+      42,
+      123,
+      2026
+    ],
+    "arms": [
+      "clean_continuation",
+      "fgsm_continuation"
+    ],
+    "epochs": 5,
+    "optimiser": "fresh Adam, learning rate 1e-4, zero iterations at the start of every continuation",
+    "learning_rate": 0.0001,
+    "original_images_per_logical_batch": 8,
+    "examples_per_optimiser_step": 16,
+    "steps_per_epoch": 140,
+    "total_steps_per_run": 700,
+    "last_partial_batch": "kept as it is in both arms (2 originals -> 4 examples): no padding, no dropping",
+    "shuffle": "numpy permutation seeded with (seed, 3, epoch): depends only on seed and epoch, identical for both arms",
+    "training_epsilon": "2/255 on the external float32 input in [0, 1]: a fixed experimental choice, not an optimised strength; the course value 0.1 is not used",
+    "arms_definition": {
+      "clean_continuation": "batch [x, x] with duplicated true labels, no attack",
+      "fgsm_continuation": "batch [x, x_adv] with duplicated true labels; x_adv = clip(x + 2/255 * sign(grad_x BCE), 0, 1) from the CURRENT model in inference mode, one step from the unchanged input, valid image area only, cut off by stop_gradient"
+    },
+    "optimiser_steps": "one Adam step per logical batch on the mean BCE of the mixed batch; the attack generation adds no optimiser step",
+    "augmentation": "the existing geometric augmentation only (flip, rotation +-10 degrees, zoom +-0.10) active in training; the attack is generated BEFORE it and the two halves are augmented separately; no new augmentation, no second chain",
+    "released": "the ten convolutions of 4E (blocks 14-16 and Conv_1) plus the head: 12 trainable tensors, 1,512,001 trainable parameters; all 52 BatchNorm layers and the rest of the backbone fixed; the backbone is called with training=False",
+    "start": "per seed a fresh graph (documented generator states of the seed) with the network weights of the ORIGINAL 4E checkpoint; bit-identical start weights in both arms; the original checkpoint is never saved again",
+    "no_selection": "no early stopping, no best-epoch choice, no validation-based checkpoint: the state after epoch 5 is saved and evaluated; no validation image triggers an update",
+    "evaluation": {
+      "states": [
+        "original",
+        "clean_continuation",
+        "fgsm_continuation"
+      ],
+      "conditions": [
+        "expert",
+        "auto"
+      ],
+      "epsilons_255": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "attack": "generated anew against the evaluated model at the clean input, one step per epsilon, true labels, valid image area only",
+      "inference": "batch 16, training=False, jit_compile=False, TF32 as in the accepted runs, no mixed precision; scores and losses from the inference path (the gradient graph supplies only the sign)",
+      "score_tolerance_absolute": 1e-05,
+      "metrics": "ROC-AUC, AP, BCE, TN/FP/FN/TP, sensitivity, specificity, precision, F1, accuracy at the reference threshold 0.5, image and case level (case score = maximum of the image scores)",
+      "no_threshold_search": "no new 90 / 95 % thresholds; the 5A thresholds belong to the historical models and are not used for the new states"
+    },
+    "paired_statistics": "within the same seed: fgsm_continuation minus clean_continuation, clean_continuation minus original, fgsm_continuation minus original; single values, mean, sample SD (ddof = 1), numbers of positive / negative / equal differences; no pooled AUC, no ensemble, no five-fold cohort",
+    "primary_descriptive_comparison": "fgsm_continuation minus clean_continuation in image ROC-AUC under epsilon 2/255 on expert ROIs, shown next to the change of the image ROC-AUC on unchanged images; no winner rule",
+    "numerics": {
+      "tf32_note": "the forward pass inside the input-gradient graph deviates from the inference path under TF32 (observed in 5B); a concrete cause is not established; scores and losses come from the inference path and the gradient is used for the perturbation direction only; no guarantee that gradient signs are unchanged is claimed; the numerical mode is not changed",
+      "attack_checks": "epsilon 0 identical input; finite gradients; value range; max change <= epsilon + 1e-7; unchanged padding; finite zero gradients and non-increased loss are reported findings"
+    }
+  },
+  "start_model": {
+    "model_file": "models/expert_roi/seed_7/mobilenetv2_higher_lr_160_roi/mobilenetv2_higher_lr_160_roi_seed7_best.keras",
+    "model_sha256": "eada8248abd3f5fa5e1b89006737e86766cda5e4ad7c90b3fcefdbfc773ebefd"
+  },
+  "start_generator_contract": {
+    "augment_flip": {
+      "class": "RandomFlip",
+      "seed_argument": 8,
+      "generator_state": [
+        8,
+        0
+      ]
+    },
+    "augment_rotation": {
+      "class": "RandomRotation",
+      "seed_argument": 11,
+      "generator_state": [
+        11,
+        0
+      ]
+    },
+    "augment_zoom": {
+      "class": "RandomZoom",
+      "seed_argument": 12,
+      "generator_state": [
+        12,
+        0
+      ]
+    },
+    "dropout": {
+      "class": "Dropout",
+      "seed_argument": 9,
+      "generator_state": [
+        9,
+        0
+      ]
+    }
+  },
+  "optimizer": "fresh Adam",
+  "learning_rate": 0.0001
+}

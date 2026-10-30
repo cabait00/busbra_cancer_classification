@@ -1,0 +1,294 @@
+{
+  "status": "frozen",
+  "split_frozen": true,
+  "script": "analysis/02_split_and_train_eda.py",
+  "first_frozen_at": "2026-10-19T10:48:12+02:00",
+  "last_verified_at": "2026-10-19T11:39:24+02:00",
+  "freeze_action_this_run": "validated_existing",
+  "method": "fixed holdout from official outer folds (not a cross-validation)",
+  "rule": "fixed holdout from the OUTER kFold column of the original 5-fold-cv.csv: folds 3,4,5 = train, fold 2 = validation, fold 1 = test",
+  "rule_mapping": {
+    "1": "test",
+    "2": "validation",
+    "3": "train",
+    "4": "train",
+    "5": "train"
+  },
+  "random_seed": null,
+  "random_seed_note": "The assignment is deterministic; no random draw is involved.",
+  "inner_valid_columns_used": false,
+  "methodological_lock": "Test data are held out from model development and reserved for the final evaluation. Technical integrity checks and inventory counts are not model-related use.",
+  "image_level_counts": [
+    {
+      "subset": "train",
+      "outer_kfolds": "3|4|5",
+      "images": 1114,
+      "cases": 639,
+      "benign_images": 754,
+      "malignant_images": 360,
+      "benign_cases": 434,
+      "malignant_cases": 205,
+      "malignant_image_share": 0.3232,
+      "matches_reference_counts": true
+    },
+    {
+      "subset": "validation",
+      "outer_kfolds": "2",
+      "images": 385,
+      "cases": 213,
+      "benign_images": 260,
+      "malignant_images": 125,
+      "benign_cases": 144,
+      "malignant_cases": 69,
+      "malignant_image_share": 0.3247,
+      "matches_reference_counts": true
+    },
+    {
+      "subset": "test",
+      "outer_kfolds": "1",
+      "images": 376,
+      "cases": 212,
+      "benign_images": 254,
+      "malignant_images": 122,
+      "benign_cases": 144,
+      "malignant_cases": 68,
+      "malignant_image_share": 0.3245,
+      "matches_reference_counts": true
+    },
+    {
+      "subset": "all",
+      "outer_kfolds": "1|2|3|4|5",
+      "images": 1875,
+      "cases": 1064,
+      "benign_images": 1268,
+      "malignant_images": 607,
+      "benign_cases": 722,
+      "malignant_cases": 342,
+      "malignant_image_share": 0.3237,
+      "matches_reference_counts": true
+    }
+  ],
+  "case_overlap_pairwise": {
+    "train__validation": 0,
+    "train__test": 0,
+    "validation__test": 0
+  },
+  "sources": {
+    "manifest_audit": {
+      "path": "data/processed/manifest_audit.csv",
+      "sha256": "e671e9d5b7082516857f4087314dca1aefd749e5f6421bd3d17bd31bfc3b9c6f"
+    },
+    "fold_file_5fold": {
+      "path": "data/raw/BUSBRA/5-fold-cv.csv",
+      "sha256": "8bed2d2efdf6ea370ab82a3cbda4c213f498274a68b434828ceeb636ce43a68d"
+    },
+    "metadata_bus_data": {
+      "path": "data/raw/BUSBRA/bus_data.csv",
+      "sha256": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3"
+    },
+    "audit_status": {
+      "path": "reports/tables/audit_status.json",
+      "sha256": "3a19f892db7f720d8acc3ed21499ff1b70151bc5f8a5a35a3592f0f8fb2c9e62"
+    }
+  },
+  "outputs": {
+    "manifest_split": "data/processed/manifest_split.csv",
+    "manifest_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+    "split_summary": "reports/tables/split_summary.csv"
+  },
+  "python": "3.13.14",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "checks": [
+    {
+      "name": "source_files_present",
+      "passed": true,
+      "severity": "error",
+      "detail": "missing: none"
+    },
+    {
+      "name": "audit_status_passed",
+      "passed": true,
+      "severity": "error",
+      "detail": "audit status 'passed', generated 2026-10-17T23:18:35+02:00, 92 checks"
+    },
+    {
+      "name": "audit_observed_image_count",
+      "passed": true,
+      "severity": "error",
+      "detail": "audit observed 1875 images (expected 1875)"
+    },
+    {
+      "name": "audit_lists_source_manifest",
+      "passed": true,
+      "severity": "error",
+      "detail": "data/processed/manifest_audit.csv listed among the audit outputs"
+    },
+    {
+      "name": "source_hash_matches_audit_5-fold-cv.csv",
+      "passed": true,
+      "severity": "error",
+      "detail": "current 8bed2d2efdf6ea37... vs audit 8bed2d2efdf6ea37..."
+    },
+    {
+      "name": "source_hash_matches_audit_bus_data.csv",
+      "passed": true,
+      "severity": "error",
+      "detail": "current f218d0f10b0aeeb1... vs audit f218d0f10b0aeeb1..."
+    },
+    {
+      "name": "manifest_columns",
+      "passed": true,
+      "severity": "error",
+      "detail": "34 columns, order as expected: True"
+    },
+    {
+      "name": "fold_file_columns_present",
+      "passed": true,
+      "severity": "error",
+      "detail": "fold file columns: ['ID', 'Pathology', 'kFold', 'valid_1', 'valid_2', 'valid_3', 'valid_4', 'valid_5']"
+    },
+    {
+      "name": "manifest_rows_and_unique_ids",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875 rows, 1875 unique IDs (expected 1875)"
+    },
+    {
+      "name": "manifest_matches_bus_data_csv",
+      "passed": true,
+      "severity": "error",
+      "detail": "rows only on one side: 0; differing values per column: none"
+    },
+    {
+      "name": "manifest_label_encoding",
+      "passed": true,
+      "severity": "error",
+      "detail": "label == 0 for benign and 1 for malignant in every row"
+    },
+    {
+      "name": "fold_ids_unique",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875 fold rows, 1875 unique IDs"
+    },
+    {
+      "name": "id_sets_identical",
+      "passed": true,
+      "severity": "error",
+      "detail": "IDs only in manifest: none; only in fold file: none"
+    },
+    {
+      "name": "join_one_to_one",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875 rows after join (manifest 1875)"
+    },
+    {
+      "name": "outer_fold_values_valid",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed ['1', '2', '3', '4', '5']; invalid: none"
+    },
+    {
+      "name": "split_assigned_for_every_image",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 images without split assignment"
+    },
+    {
+      "name": "fold_pathology_matches_manifest",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 label mismatches between manifest and fold file"
+    },
+    {
+      "name": "pathology_values_valid",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed ['benign', 'malignant']"
+    },
+    {
+      "name": "each_case_has_one_label",
+      "passed": true,
+      "severity": "error",
+      "detail": "cases with more than one label: 0"
+    },
+    {
+      "name": "each_case_in_one_outer_fold",
+      "passed": true,
+      "severity": "error",
+      "detail": "cases in more than one outer fold: 0"
+    },
+    {
+      "name": "each_case_in_one_subset",
+      "passed": true,
+      "severity": "error",
+      "detail": "cases in more than one subset: 0"
+    },
+    {
+      "name": "subsets_case_disjoint",
+      "passed": true,
+      "severity": "error",
+      "detail": "pairwise case overlaps: {'train__validation': 0, 'train__test': 0, 'validation__test': 0}"
+    },
+    {
+      "name": "counts_match_reference_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 1114, 'cases': 639, 'benign_images': 754, 'malignant_images': 360, 'benign_cases': 434, 'malignant_cases': 205} vs reference {'images': 1114, 'cases': 639, 'benign_images': 754, 'malignant_images': 360, 'benign_cases': 434, 'malignant_cases': 205}"
+    },
+    {
+      "name": "counts_match_reference_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 385, 'cases': 213, 'benign_images': 260, 'malignant_images': 125, 'benign_cases': 144, 'malignant_cases': 69} vs reference {'images': 385, 'cases': 213, 'benign_images': 260, 'malignant_images': 125, 'benign_cases': 144, 'malignant_cases': 69}"
+    },
+    {
+      "name": "counts_match_reference_test",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 376, 'cases': 212, 'benign_images': 254, 'malignant_images': 122, 'benign_cases': 144, 'malignant_cases': 68} vs reference {'images': 376, 'cases': 212, 'benign_images': 254, 'malignant_images': 122, 'benign_cases': 144, 'malignant_cases': 68}"
+    },
+    {
+      "name": "image_paths_in_expected_folder",
+      "passed": true,
+      "severity": "error",
+      "detail": "unexpected paths: none"
+    },
+    {
+      "name": "image_files_exist",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875/1875 image files exist; missing: none"
+    },
+    {
+      "name": "mask_files_exist",
+      "passed": true,
+      "severity": "warning",
+      "detail": "missing mask files: none (path reference only; masks are never model inputs)"
+    },
+    {
+      "name": "original_manifest_values_unchanged",
+      "passed": true,
+      "severity": "error",
+      "detail": "all 34 original manifest columns are identical to manifest_audit.csv"
+    },
+    {
+      "name": "split_manifest_sorted_by_id",
+      "passed": true,
+      "severity": "error",
+      "detail": "stable ascending ID order"
+    },
+    {
+      "name": "no_conflict_with_existing_split",
+      "passed": true,
+      "severity": "error",
+      "detail": "existing manifest_split.csv is byte-identical to the split computed now"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

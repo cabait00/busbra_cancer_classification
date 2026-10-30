@@ -1,0 +1,47 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Dataset files, derived arrays and local previews: not versioned.
+# Only the fixed split manifest is kept (it contains metadata and relative paths, no images).
+data/raw/
+data/processed/*
+!data/processed/manifest_split.csv
+
+# Model weights and large binary artefacts
+models/
+artifacts/
+*.keras
+*.h5
+*.hdf5
+*.ckpt*
+*.weights.*
+*.npy
+*.npz
+*.tfrecord
+logs/
+*.zip
+
+# Slides contain ultrasound images and stay local; editable Word copy and dated PDF submission copy of the
+# written documentation (the maintained version is docs/BUSBRA_Projektdokumentation.md)
+docs/*.pptx
+docs/*.docx
+docs/20261022_Projekt_DL_Carlo_Babo.pdf
+
+# Office temporary and lock files
+.~lock.*
+~$*
+
+# Local secrets and editor-local settings
+.env
+.env.*
+*.key
+*.pem
+secrets/
+.vscode/
+.idea/

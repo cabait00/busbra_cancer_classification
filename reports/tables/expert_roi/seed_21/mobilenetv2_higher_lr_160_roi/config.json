@@ -1,0 +1,253 @@
+{
+  "run_id": "roi-20261020T191749-c6e2ec8e",
+  "study_id": "roi4e-a42efa5a",
+  "plan_sha256": "a42efa5aab198112609e8478a329d2b540eac6ca3eb214b16905dea8d5f4b229",
+  "seed": 21,
+  "pipeline": "mobilenetv2_higher_lr_160_roi",
+  "model_name": "mobilenetv2_higher_lr_160_roi",
+  "display": "Extended fine-tuning 1e-4, 160 px, expert-mask ROI crop (+ flip, rotation, zoom)",
+  "input_size": 160,
+  "stage": "final",
+  "input": "expert-mask ROI crop (frozen contract roi-expert-mask-v1) of the UNMASKED original, 160 x 160 x 1",
+  "roi_data_fingerprints": {
+    "train": {
+      "n": 1114,
+      "shape": [
+        1114,
+        160,
+        160,
+        1
+      ],
+      "dtype": "float32",
+      "array_sha256": "a513f99a95dfe7ce1ede1851dbc8c9a163d591e11114a0aa1968e137a17f164e",
+      "ids_sha256": "d14a08160a077c74989e6b9c75eb8910c0e6420c408d4f268e166394750dfae7",
+      "labels_sha256": "c5bcc1948b2f6d7cad3213113e82268d4aa2606faf2457b5388d6883c7ced129"
+    },
+    "validation": {
+      "n": 385,
+      "shape": [
+        385,
+        160,
+        160,
+        1
+      ],
+      "dtype": "float32",
+      "array_sha256": "3074797663c8ed3a20c630c64865015cbb1066ac6f7fab8e47ea2e423adcbcfc",
+      "ids_sha256": "6e40aefef7e7f90e14543994dc77569e60b2e7cfef278c3828faaab4f865c608",
+      "labels_sha256": "e99c061588db11cdc97be1fe2e758257334072085af2090cb13750d4f44f1d7e"
+    }
+  },
+  "registered_before_training_at": "2026-10-20T19:18:08+02:00",
+  "random_sources": {
+    "study_seed": 21,
+    "PYTHONHASHSEED": "21",
+    "python_numpy_tensorflow_keras": 21,
+    "weight_initialisation": "fresh construction after keras.utils.set_random_seed(21)",
+    "RandomFlip": 22,
+    "Dropout": 23,
+    "train_shuffle": 24,
+    "train_shuffle_reshuffle_each_iteration": true,
+    "RandomRotation": 25,
+    "RandomZoom": 26
+  },
+  "generator_contract_read_from_the_built_layers": {
+    "augment_flip": {
+      "class": "RandomFlip",
+      "seed_argument": 22,
+      "generator_state": [
+        22,
+        0
+      ]
+    },
+    "augment_rotation": {
+      "class": "RandomRotation",
+      "seed_argument": 25,
+      "generator_state": [
+        25,
+        0
+      ]
+    },
+    "augment_zoom": {
+      "class": "RandomZoom",
+      "seed_argument": 26,
+      "generator_state": [
+        26,
+        0
+      ]
+    },
+    "dropout": {
+      "class": "Dropout",
+      "seed_argument": 23,
+      "generator_state": [
+        23,
+        0
+      ]
+    }
+  },
+  "shuffle_contract": {
+    "seed": 24,
+    "reshuffle_each_iteration": true,
+    "first_epoch_order_sha256_of_an_index_dataset_with_this_seed": "a21310f3971624e21551e0a1e245149062cc557710b0e36e9053aa6bcba1736f",
+    "note": "documents the seed mapping of the shuffle; the training dataset uses the same shuffle seed"
+  },
+  "start": {
+    "kind": "frozen_best_checkpoint_of_the_same_seed",
+    "seed": 21,
+    "study_id": "roi4e-a42efa5a",
+    "run_id": "roi-20261020T191623-dd99e2e2",
+    "checkpoint": "models/expert_roi/seed_21/mobilenetv2_frozen_160_roi/mobilenetv2_frozen_160_roi_seed21_best.keras",
+    "checkpoint_sha256": "b3ca970a6b0fe4750780247c39831c9bd6e344ba402a4a45f634e74bbfad142a",
+    "config_sha256": "7914919487a52723acfd6d265452edc83df80f54be0e1b3f96e1cd0e8c4a5bf0",
+    "status_sha256": "a2729cb390570b7e1546a4e2e087a963694b3e6a928bf8d53d0fbe06c10cf057",
+    "network_weights_sha256": "a7e6b3b669188563027b0611120470bb236cc35e1e5943d691ae90706fb71213"
+  },
+  "released_layers": [
+    "block_14_expand",
+    "block_14_depthwise",
+    "block_14_project",
+    "block_15_expand",
+    "block_15_depthwise",
+    "block_15_project",
+    "block_16_expand",
+    "block_16_depthwise",
+    "block_16_project",
+    "Conv_1"
+  ],
+  "batchnorm": "all 52 layers fully fixed",
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0001,
+    "state": "new, nothing inherited"
+  },
+  "loss": "BinaryCrossentropy(from_logits=False)",
+  "batch_size": 16,
+  "max_epochs": 20,
+  "callbacks": {
+    "early_stopping": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "patience": 5,
+      "min_delta": 0,
+      "restore_best_weights": true
+    },
+    "model_checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "save_best_only": true,
+      "save_weights_only": false
+    },
+    "terminate_on_nan": true
+  },
+  "numerics": {
+    "dtype": "float32",
+    "jit_compile": false,
+    "mixed_precision": false
+  },
+  "class_weights": null,
+  "architecture": "expert-mask ROI crop, then MobileNetV2 alpha1.0 no_top 160x160 with flip + rotation + zoom (training only), GAP, Dropout0.3, Dense1 sigmoid, ten convolutions released",
+  "augmentation": {
+    "layers_in_order": [
+      "augment_flip",
+      "augment_rotation",
+      "augment_zoom"
+    ],
+    "active": "training only; identity at inference",
+    "augment_flip": {
+      "class": "RandomFlip",
+      "mode": "horizontal",
+      "seed": "s+1 (as in 3F)"
+    },
+    "augment_rotation": {
+      "class": "RandomRotation",
+      "factor": 0.027777777777777776,
+      "factor_meaning": "fraction of a full turn: 10/360 = at most +-10 degrees",
+      "fill_mode": "constant",
+      "fill_value": 0.0,
+      "interpolation": "bilinear",
+      "seed": "s+4"
+    },
+    "augment_zoom": {
+      "class": "RandomZoom",
+      "height_factor": [
+        -0.1,
+        0.1
+      ],
+      "width_factor": null,
+      "meaning": "isotropic zoom in or out by at most 10 %",
+      "fill_mode": "constant",
+      "fill_value": 0.0,
+      "interpolation": "bilinear",
+      "seed": "s+5"
+    },
+    "not_used": [
+      "brightness",
+      "contrast",
+      "colour",
+      "vertical flip",
+      "mask as a feature",
+      "any other augmentation"
+    ]
+  },
+  "planned_parameters": {
+    "trainable": 1512001,
+    "tensors": 12,
+    "total": 2259265
+  },
+  "note": "historical descriptions with RandomFlip seed=42 are not the contract of this study; the seed mapping above is",
+  "batch_size_used": 16,
+  "checkpoint": "models/expert_roi/seed_21/mobilenetv2_higher_lr_160_roi/mobilenetv2_higher_lr_160_roi_seed21_best.keras",
+  "checkpoint_sha256": "6a5a6697c05943a26b797655454314b47024f3b351793819e1a171de3e3ac8fc",
+  "best_epoch": 11,
+  "parameters": {
+    "total": 2259265,
+    "trainable_total": 1512001,
+    "non_trainable_total": 747264,
+    "backbone_total": 2257984,
+    "backbone_trainable": 1510720,
+    "backbone_non_trainable": 747264,
+    "head_total": 1281,
+    "trainable_weight_names": [
+      "block_14_expand/kernel",
+      "block_14_depthwise/kernel",
+      "block_14_project/kernel",
+      "block_15_expand/kernel",
+      "block_15_depthwise/kernel",
+      "block_15_project/kernel",
+      "block_16_expand/kernel",
+      "block_16_depthwise/kernel",
+      "block_16_project/kernel",
+      "Conv_1/kernel",
+      "output/kernel",
+      "output/bias"
+    ],
+    "n_trainable_weights": 12,
+    "n_backbone_batchnorm_layers": 52,
+    "all_batchnorm_layers_fixed": true,
+    "any_batchnorm_weight_trainable": false,
+    "backbone_flag_trainable": true,
+    "released_layer_flags": {
+      "block_14_expand": true,
+      "block_14_depthwise": true,
+      "block_14_project": true,
+      "block_15_expand": true,
+      "block_15_depthwise": true,
+      "block_15_project": true,
+      "block_16_expand": true,
+      "block_16_depthwise": true,
+      "block_16_project": true,
+      "Conv_1": true
+    },
+    "trainable_names_as_expected": true
+  },
+  "source_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "class_contract": {
+    "labels": {
+      "0": "benign",
+      "1": "malignant"
+    },
+    "score": "sigmoid output = score for class 1 (malignant); not shown to be a calibrated probability",
+    "threshold": 0.5,
+    "decision_rule": "score >= threshold"
+  },
+  "trained_on": "train; best checkpoint chosen by validation loss"
+}

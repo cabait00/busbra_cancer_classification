@@ -1,0 +1,2 @@
+Case,images,image_ids,n_Pathology,n_Histology,n_Device,n_BIRADS,Pathology_values,Histology_values,Device_values,BIRADS_values
+856,2,bus_0856-l|bus_0856-r,1,1,1,2,malignant,invasive ductal carcinoma,U-Systems @10-14MHz,4|5

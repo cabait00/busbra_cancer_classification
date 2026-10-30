@@ -1,0 +1,19 @@
+phase,category,ID,Case,status,n_candidates_of_category,detail
+core,TP,bus_0009-l,9,selected,120,1. image of category TP in ascending ID order
+core,TP,bus_0009-r,9,skipped_case_already_used,120,case 9 is already used by bus_0009-l; at most one image per case over the whole selection
+core,TP,bus_0012-r,12,selected,120,2. image of category TP in ascending ID order
+core,TN,bus_0007-l,7,selected,135,1. image of category TN in ascending ID order
+core,TN,bus_0033-l,33,selected,135,2. image of category TN in ascending ID order
+core,FP,bus_0007-r,7,skipped_case_already_used,119,case 7 is already used by bus_0007-l; at most one image per case over the whole selection
+core,FP,bus_0020-l,20,selected,119,1. image of category FP in ascending ID order
+core,FP,bus_0020-r,20,skipped_case_already_used,119,case 20 is already used by bus_0020-l; at most one image per case over the whole selection
+core,FP,bus_0024-l,24,selected,119,2. image of category FP in ascending ID order
+core,FN,bus_0012-l,12,skipped_case_already_used,2,case 12 is already used by bus_0012-r; at most one image per case over the whole selection
+core,FN,bus_0810-s,810,selected,2,1. image of category FN in ascending ID order
+core,FN,,,no_further_example,2,only 1 of 2 images could be selected (2 image(s) of this category exist; the others were skipped as listed); no replacement by a hand-picked image
+special,fallback_full_image,bus_0870-r,870,selected,3,first usable image in ascending ID order
+special,crop_without_expert_pixel,bus_0874-l,874,selected,1,first usable image in ascending ID order
+special,chosen_component_misses_but_other_overlaps,bus_0874-l,874,skipped_already_selected,2,the image is already part of the selection
+special,chosen_component_misses_but_other_overlaps,bus_1047-r,1047,selected,2,first usable image in ascending ID order
+special,crop_covers_below_90_percent,bus_0024-l,24,skipped_already_selected,15,the image is already part of the selection
+special,crop_covers_below_90_percent,bus_0060-r,60,selected,15,first usable image in ascending ID order

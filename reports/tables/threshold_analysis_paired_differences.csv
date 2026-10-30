@@ -1,0 +1,341 @@
+comparison,comparison_kind,level,seed,metric,value_3F,value_4B,difference_4B_minus_3F
+reference_0.5,same numeric threshold 0.5,image,7,threshold,0.5,0.5,0.0
+reference_0.5,same numeric threshold 0.5,image,7,n_predicted_positive,98.0,121.0,23.0
+reference_0.5,same numeric threshold 0.5,image,7,tp,76.0,89.0,13.0
+reference_0.5,same numeric threshold 0.5,image,7,fn,49.0,36.0,-13.0
+reference_0.5,same numeric threshold 0.5,image,7,fp,22.0,32.0,10.0
+reference_0.5,same numeric threshold 0.5,image,7,tn,238.0,228.0,-10.0
+reference_0.5,same numeric threshold 0.5,image,7,sensitivity,0.608,0.712,0.10399999999999998
+reference_0.5,same numeric threshold 0.5,image,7,specificity,0.9153846153846154,0.8769230769230769,-0.038461538461538436
+reference_0.5,same numeric threshold 0.5,image,7,precision,0.7755102040816326,0.7355371900826446,-0.039973013998988005
+reference_0.5,same numeric threshold 0.5,case,7,n_predicted_positive,69.0,89.0,20.0
+reference_0.5,same numeric threshold 0.5,case,7,tp,51.0,61.0,10.0
+reference_0.5,same numeric threshold 0.5,case,7,fn,18.0,8.0,-10.0
+reference_0.5,same numeric threshold 0.5,case,7,fp,18.0,28.0,10.0
+reference_0.5,same numeric threshold 0.5,case,7,tn,126.0,116.0,-10.0
+reference_0.5,same numeric threshold 0.5,case,7,sensitivity,0.7391304347826086,0.8840579710144928,0.14492753623188415
+reference_0.5,same numeric threshold 0.5,case,7,specificity,0.875,0.8055555555555556,-0.06944444444444442
+reference_0.5,same numeric threshold 0.5,case,7,precision,0.7391304347826086,0.6853932584269663,-0.053737176355642347
+reference_0.5,same numeric threshold 0.5,image,21,threshold,0.5,0.5,0.0
+reference_0.5,same numeric threshold 0.5,image,21,n_predicted_positive,106.0,116.0,10.0
+reference_0.5,same numeric threshold 0.5,image,21,tp,82.0,94.0,12.0
+reference_0.5,same numeric threshold 0.5,image,21,fn,43.0,31.0,-12.0
+reference_0.5,same numeric threshold 0.5,image,21,fp,24.0,22.0,-2.0
+reference_0.5,same numeric threshold 0.5,image,21,tn,236.0,238.0,2.0
+reference_0.5,same numeric threshold 0.5,image,21,sensitivity,0.656,0.752,0.09599999999999997
+reference_0.5,same numeric threshold 0.5,image,21,specificity,0.9076923076923077,0.9153846153846154,0.007692307692307665
+reference_0.5,same numeric threshold 0.5,image,21,precision,0.7735849056603774,0.8103448275862069,0.03675992192582944
+reference_0.5,same numeric threshold 0.5,case,21,n_predicted_positive,72.0,77.0,5.0
+reference_0.5,same numeric threshold 0.5,case,21,tp,53.0,59.0,6.0
+reference_0.5,same numeric threshold 0.5,case,21,fn,16.0,10.0,-6.0
+reference_0.5,same numeric threshold 0.5,case,21,fp,19.0,18.0,-1.0
+reference_0.5,same numeric threshold 0.5,case,21,tn,125.0,126.0,1.0
+reference_0.5,same numeric threshold 0.5,case,21,sensitivity,0.7681159420289855,0.855072463768116,0.08695652173913049
+reference_0.5,same numeric threshold 0.5,case,21,specificity,0.8680555555555556,0.875,0.00694444444444442
+reference_0.5,same numeric threshold 0.5,case,21,precision,0.7361111111111112,0.7662337662337663,0.030122655122655106
+reference_0.5,same numeric threshold 0.5,image,42,threshold,0.5,0.5,0.0
+reference_0.5,same numeric threshold 0.5,image,42,n_predicted_positive,150.0,95.0,-55.0
+reference_0.5,same numeric threshold 0.5,image,42,tp,93.0,75.0,-18.0
+reference_0.5,same numeric threshold 0.5,image,42,fn,32.0,50.0,18.0
+reference_0.5,same numeric threshold 0.5,image,42,fp,57.0,20.0,-37.0
+reference_0.5,same numeric threshold 0.5,image,42,tn,203.0,240.0,37.0
+reference_0.5,same numeric threshold 0.5,image,42,sensitivity,0.744,0.6,-0.14400000000000002
+reference_0.5,same numeric threshold 0.5,image,42,specificity,0.7807692307692308,0.9230769230769231,0.14230769230769236
+reference_0.5,same numeric threshold 0.5,image,42,precision,0.62,0.7894736842105263,0.16947368421052633
+reference_0.5,same numeric threshold 0.5,case,42,n_predicted_positive,107.0,68.0,-39.0
+reference_0.5,same numeric threshold 0.5,case,42,tp,62.0,52.0,-10.0
+reference_0.5,same numeric threshold 0.5,case,42,fn,7.0,17.0,10.0
+reference_0.5,same numeric threshold 0.5,case,42,fp,45.0,16.0,-29.0
+reference_0.5,same numeric threshold 0.5,case,42,tn,99.0,128.0,29.0
+reference_0.5,same numeric threshold 0.5,case,42,sensitivity,0.8985507246376812,0.7536231884057971,-0.14492753623188404
+reference_0.5,same numeric threshold 0.5,case,42,specificity,0.6875,0.8888888888888888,0.20138888888888884
+reference_0.5,same numeric threshold 0.5,case,42,precision,0.5794392523364486,0.7647058823529411,0.18526663001649257
+reference_0.5,same numeric threshold 0.5,image,123,threshold,0.5,0.5,0.0
+reference_0.5,same numeric threshold 0.5,image,123,n_predicted_positive,102.0,98.0,-4.0
+reference_0.5,same numeric threshold 0.5,image,123,tp,77.0,77.0,0.0
+reference_0.5,same numeric threshold 0.5,image,123,fn,48.0,48.0,0.0
+reference_0.5,same numeric threshold 0.5,image,123,fp,25.0,21.0,-4.0
+reference_0.5,same numeric threshold 0.5,image,123,tn,235.0,239.0,4.0
+reference_0.5,same numeric threshold 0.5,image,123,sensitivity,0.616,0.616,0.0
+reference_0.5,same numeric threshold 0.5,image,123,specificity,0.9038461538461539,0.9192307692307692,0.01538461538461533
+reference_0.5,same numeric threshold 0.5,image,123,precision,0.7549019607843137,0.7857142857142857,0.03081232492997199
+reference_0.5,same numeric threshold 0.5,case,123,n_predicted_positive,73.0,69.0,-4.0
+reference_0.5,same numeric threshold 0.5,case,123,tp,53.0,52.0,-1.0
+reference_0.5,same numeric threshold 0.5,case,123,fn,16.0,17.0,1.0
+reference_0.5,same numeric threshold 0.5,case,123,fp,20.0,17.0,-3.0
+reference_0.5,same numeric threshold 0.5,case,123,tn,124.0,127.0,3.0
+reference_0.5,same numeric threshold 0.5,case,123,sensitivity,0.7681159420289855,0.7536231884057971,-0.01449275362318836
+reference_0.5,same numeric threshold 0.5,case,123,specificity,0.8611111111111112,0.8819444444444444,0.02083333333333326
+reference_0.5,same numeric threshold 0.5,case,123,precision,0.726027397260274,0.7536231884057971,0.02759579114552313
+reference_0.5,same numeric threshold 0.5,image,2026,threshold,0.5,0.5,0.0
+reference_0.5,same numeric threshold 0.5,image,2026,n_predicted_positive,144.0,131.0,-13.0
+reference_0.5,same numeric threshold 0.5,image,2026,tp,96.0,91.0,-5.0
+reference_0.5,same numeric threshold 0.5,image,2026,fn,29.0,34.0,5.0
+reference_0.5,same numeric threshold 0.5,image,2026,fp,48.0,40.0,-8.0
+reference_0.5,same numeric threshold 0.5,image,2026,tn,212.0,220.0,8.0
+reference_0.5,same numeric threshold 0.5,image,2026,sensitivity,0.768,0.728,-0.040000000000000036
+reference_0.5,same numeric threshold 0.5,image,2026,specificity,0.8153846153846154,0.8461538461538461,0.03076923076923077
+reference_0.5,same numeric threshold 0.5,image,2026,precision,0.6666666666666666,0.6946564885496184,0.027989821882951738
+reference_0.5,same numeric threshold 0.5,case,2026,n_predicted_positive,100.0,92.0,-8.0
+reference_0.5,same numeric threshold 0.5,case,2026,tp,60.0,59.0,-1.0
+reference_0.5,same numeric threshold 0.5,case,2026,fn,9.0,10.0,1.0
+reference_0.5,same numeric threshold 0.5,case,2026,fp,40.0,33.0,-7.0
+reference_0.5,same numeric threshold 0.5,case,2026,tn,104.0,111.0,7.0
+reference_0.5,same numeric threshold 0.5,case,2026,sensitivity,0.8695652173913043,0.855072463768116,-0.01449275362318836
+reference_0.5,same numeric threshold 0.5,case,2026,specificity,0.7222222222222222,0.7708333333333334,0.04861111111111116
+reference_0.5,same numeric threshold 0.5,case,2026,precision,0.6,0.6413043478260869,0.04130434782608694
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,threshold,0.267392098903656,0.43006250262260437,0.16267040371894836
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,n_predicted_positive,157.0,148.0,-9.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,tp,100.0,100.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,fn,25.0,25.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,fp,57.0,48.0,-9.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,tn,203.0,212.0,9.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,sensitivity,0.8,0.8,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,specificity,0.7807692307692308,0.8153846153846154,0.0346153846153846
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,7,precision,0.6369426751592356,0.6756756756756757,0.03873300051644002
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,n_predicted_positive,109.0,101.0,-8.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,tp,63.0,62.0,-1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,fn,6.0,7.0,1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,fp,46.0,39.0,-7.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,tn,98.0,105.0,7.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,sensitivity,0.9130434782608695,0.8985507246376812,-0.01449275362318836
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,specificity,0.6805555555555556,0.7291666666666666,0.04861111111111105
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,7,precision,0.5779816513761468,0.6138613861386139,0.035879734762467086
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,threshold,0.3497388958930969,0.45687559247016907,0.10713669657707214
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,n_predicted_positive,143.0,130.0,-13.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,tp,100.0,100.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,fn,25.0,25.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,fp,43.0,30.0,-13.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,tn,217.0,230.0,13.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,sensitivity,0.8,0.8,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,specificity,0.8346153846153846,0.8846153846153846,0.04999999999999993
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,21,precision,0.6993006993006993,0.7692307692307693,0.06993006993007
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,n_predicted_positive,98.0,89.0,-9.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,tp,64.0,63.0,-1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,fn,5.0,6.0,1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,fp,34.0,26.0,-8.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,tn,110.0,118.0,8.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,sensitivity,0.927536231884058,0.9130434782608695,-0.01449275362318847
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,specificity,0.7638888888888888,0.8194444444444444,0.05555555555555558
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,21,precision,0.6530612244897959,0.7078651685393258,0.05480394404952993
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,threshold,0.45066094398498535,0.2990773320198059,-0.15158361196517944
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,n_predicted_positive,167.0,142.0,-25.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,tp,100.0,100.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,fn,25.0,25.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,fp,67.0,42.0,-25.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,tn,193.0,218.0,25.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,sensitivity,0.8,0.8,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,specificity,0.7423076923076923,0.8384615384615385,0.09615384615384615
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,42,precision,0.5988023952095808,0.704225352112676,0.10542295690309522
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,n_predicted_positive,117.0,99.0,-18.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,tp,64.0,64.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,fn,5.0,5.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,fp,53.0,35.0,-18.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,tn,91.0,109.0,18.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,sensitivity,0.927536231884058,0.927536231884058,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,specificity,0.6319444444444444,0.7569444444444444,0.125
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,42,precision,0.5470085470085471,0.6464646464646465,0.09945609945609946
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,threshold,0.32470738887786865,0.39287614822387695,0.0681687593460083
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,n_predicted_positive,151.0,136.0,-15.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,tp,100.0,100.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,fn,25.0,25.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,fp,51.0,36.0,-15.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,tn,209.0,224.0,15.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,sensitivity,0.8,0.8,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,specificity,0.8038461538461539,0.8615384615384616,0.05769230769230771
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,123,precision,0.6622516556291391,0.7352941176470589,0.07304246201791975
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,n_predicted_positive,104.0,90.0,-14.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,tp,62.0,60.0,-2.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,fn,7.0,9.0,2.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,fp,42.0,30.0,-12.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,tn,102.0,114.0,12.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,sensitivity,0.8985507246376812,0.8695652173913043,-0.02898550724637683
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,specificity,0.7083333333333334,0.7916666666666666,0.08333333333333326
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,123,precision,0.5961538461538461,0.6666666666666666,0.07051282051282048
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,threshold,0.468398779630661,0.4043881297111511,-0.06401064991950989
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,n_predicted_positive,156.0,157.0,1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,tp,100.0,100.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,fn,25.0,25.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,fp,56.0,57.0,1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,tn,204.0,203.0,-1.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,sensitivity,0.8,0.8,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,specificity,0.7846153846153846,0.7807692307692308,-0.0038461538461538325
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,image,2026,precision,0.6410256410256411,0.6369426751592356,-0.004082965866405441
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,n_predicted_positive,109.0,111.0,2.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,tp,63.0,63.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,fn,6.0,6.0,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,fp,46.0,48.0,2.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,tn,98.0,96.0,-2.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,sensitivity,0.9130434782608695,0.9130434782608695,0.0
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,specificity,0.6805555555555556,0.6666666666666666,-0.01388888888888895
+target_0.80,sensitivity target 0.80: pipeline-specific thresholds,case,2026,precision,0.5779816513761468,0.5675675675675675,-0.010414083808579222
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,threshold,0.1257658153772354,0.3202354907989502,0.19446967542171478
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,n_predicted_positive,219.0,192.0,-27.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,tp,113.0,113.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,fn,12.0,12.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,fp,106.0,79.0,-27.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,tn,154.0,181.0,27.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,sensitivity,0.904,0.904,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,specificity,0.5923076923076923,0.6961538461538461,0.10384615384615381
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,7,precision,0.5159817351598174,0.5885416666666666,0.07255993150684925
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,n_predicted_positive,149.0,127.0,-22.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,tp,68.0,66.0,-2.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,fn,1.0,3.0,2.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,fp,81.0,61.0,-20.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,tn,63.0,83.0,20.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,sensitivity,0.9855072463768116,0.9565217391304348,-0.02898550724637683
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,specificity,0.4375,0.5763888888888888,0.13888888888888884
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,7,precision,0.4563758389261745,0.5196850393700787,0.0633092004439042
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,threshold,0.12428600341081619,0.1660255789756775,0.0417395755648613
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,n_predicted_positive,213.0,220.0,7.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,tp,113.0,113.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,fn,12.0,12.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,fp,100.0,107.0,7.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,tn,160.0,153.0,-7.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,sensitivity,0.904,0.904,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,specificity,0.6153846153846154,0.5884615384615385,-0.02692307692307694
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,21,precision,0.5305164319248826,0.5136363636363637,-0.016880068288518957
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,n_predicted_positive,145.0,147.0,2.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,tp,67.0,65.0,-2.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,fn,2.0,4.0,2.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,fp,78.0,82.0,4.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,tn,66.0,62.0,-4.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,sensitivity,0.9710144927536232,0.9420289855072463,-0.02898550724637683
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,specificity,0.4583333333333333,0.4305555555555556,-0.027777777777777735
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,21,precision,0.46206896551724136,0.4421768707482993,-0.019892094768942048
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,threshold,0.2989649772644043,0.15511181950569153,-0.14385315775871277
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,n_predicted_positive,209.0,193.0,-16.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,tp,113.0,113.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,fn,12.0,12.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,fp,96.0,80.0,-16.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,tn,164.0,180.0,16.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,sensitivity,0.904,0.904,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,specificity,0.6307692307692307,0.6923076923076923,0.06153846153846154
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,42,precision,0.5406698564593302,0.5854922279792746,0.04482237151994439
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,n_predicted_positive,138.0,127.0,-11.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,tp,67.0,66.0,-1.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,fn,2.0,3.0,1.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,fp,71.0,61.0,-10.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,tn,73.0,83.0,10.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,sensitivity,0.9710144927536232,0.9565217391304348,-0.01449275362318836
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,specificity,0.5069444444444444,0.5763888888888888,0.06944444444444442
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,42,precision,0.4855072463768116,0.5196850393700787,0.03417779299326712
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,threshold,0.07674217969179153,0.3007567524909973,0.22401457279920578
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,n_predicted_positive,250.0,187.0,-63.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,tp,113.0,113.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,fn,12.0,12.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,fp,137.0,74.0,-63.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,tn,123.0,186.0,63.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,sensitivity,0.904,0.904,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,specificity,0.47307692307692306,0.7153846153846154,0.24230769230769234
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,123,precision,0.452,0.6042780748663101,0.15227807486631012
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,n_predicted_positive,164.0,124.0,-40.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,tp,66.0,66.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,fn,3.0,3.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,fp,98.0,58.0,-40.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,tn,46.0,86.0,40.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,sensitivity,0.9565217391304348,0.9565217391304348,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,specificity,0.3194444444444444,0.5972222222222222,0.2777777777777778
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,123,precision,0.4024390243902439,0.532258064516129,0.12981904012588508
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,threshold,0.3354198634624481,0.23280854523181915,-0.10261131823062897
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,n_predicted_positive,201.0,223.0,22.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,tp,113.0,113.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,fn,12.0,12.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,fp,88.0,110.0,22.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,tn,172.0,150.0,-22.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,sensitivity,0.904,0.904,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,specificity,0.6615384615384615,0.5769230769230769,-0.08461538461538465
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,image,2026,precision,0.5621890547263682,0.5067264573991032,-0.055462597327264995
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,n_predicted_positive,136.0,154.0,18.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,tp,67.0,67.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,fn,2.0,2.0,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,fp,69.0,87.0,18.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,tn,75.0,57.0,-18.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,sensitivity,0.9710144927536232,0.9710144927536232,0.0
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,specificity,0.5208333333333334,0.3958333333333333,-0.12500000000000006
+target_0.90,sensitivity target 0.90: pipeline-specific thresholds,case,2026,precision,0.49264705882352944,0.43506493506493504,-0.057582123758594395
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,threshold,0.06403712183237076,0.1281585544347763,0.06412143260240555
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,n_predicted_positive,260.0,272.0,12.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,tp,119.0,119.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,fn,6.0,6.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,fp,141.0,153.0,12.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,tn,119.0,107.0,-12.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,sensitivity,0.952,0.952,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,specificity,0.4576923076923077,0.4115384615384615,-0.046153846153846156
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,7,precision,0.4576923076923077,0.4375,-0.020192307692307676
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,n_predicted_positive,167.0,176.0,9.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,tp,68.0,68.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,fn,1.0,1.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,fp,99.0,108.0,9.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,tn,45.0,36.0,-9.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,sensitivity,0.9855072463768116,0.9855072463768116,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,specificity,0.3125,0.25,-0.0625
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,7,precision,0.40718562874251496,0.38636363636363635,-0.020821992378878607
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,threshold,0.06451667100191116,0.03962867334485054,-0.024887997657060623
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,n_predicted_positive,241.0,299.0,58.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,tp,119.0,119.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,fn,6.0,6.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,fp,122.0,180.0,58.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,tn,138.0,80.0,-58.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,sensitivity,0.952,0.952,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,specificity,0.5307692307692308,0.3076923076923077,-0.22307692307692306
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,21,precision,0.49377593360995853,0.3979933110367893,-0.09578262257316922
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,n_predicted_positive,158.0,189.0,31.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,tp,68.0,69.0,1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,fn,1.0,0.0,-1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,fp,90.0,120.0,30.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,tn,54.0,24.0,-30.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,sensitivity,0.9855072463768116,1.0,0.01449275362318836
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,specificity,0.375,0.16666666666666666,-0.20833333333333334
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,21,precision,0.43037974683544306,0.36507936507936506,-0.065300381756078
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,threshold,0.22230203449726105,0.05026831477880478,-0.17203371971845627
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,n_predicted_positive,237.0,269.0,32.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,tp,119.0,119.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,fn,6.0,6.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,fp,118.0,150.0,32.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,tn,142.0,110.0,-32.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,sensitivity,0.952,0.952,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,specificity,0.5461538461538461,0.4230769230769231,-0.12307692307692303
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,42,precision,0.5021097046413502,0.4423791821561338,-0.059730522485216375
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,n_predicted_positive,157.0,170.0,13.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,tp,68.0,67.0,-1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,fn,1.0,2.0,1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,fp,89.0,103.0,14.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,tn,55.0,41.0,-14.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,sensitivity,0.9855072463768116,0.9710144927536232,-0.01449275362318847
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,specificity,0.3819444444444444,0.2847222222222222,-0.09722222222222221
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,42,precision,0.43312101910828027,0.3941176470588235,-0.03900337204945675
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,threshold,0.018552793189883232,0.1867576241493225,0.16820483095943928
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,n_predicted_positive,307.0,241.0,-66.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,tp,119.0,119.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,fn,6.0,6.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,fp,188.0,122.0,-66.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,tn,72.0,138.0,66.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,sensitivity,0.952,0.952,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,specificity,0.27692307692307694,0.5307692307692308,0.25384615384615383
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,123,precision,0.38762214983713356,0.49377593360995853,0.10615378377282497
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,n_predicted_positive,195.0,156.0,-39.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,tp,68.0,68.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,fn,1.0,1.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,fp,127.0,88.0,-39.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,tn,17.0,56.0,39.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,sensitivity,0.9855072463768116,0.9855072463768116,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,specificity,0.11805555555555555,0.3888888888888889,0.27083333333333337
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,123,precision,0.3487179487179487,0.4358974358974359,0.0871794871794872
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,threshold,0.19564861059188843,0.1833222508430481,-0.012326359748840332
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,n_predicted_positive,249.0,248.0,-1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,tp,119.0,119.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,fn,6.0,6.0,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,fp,130.0,129.0,-1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,tn,130.0,131.0,1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,sensitivity,0.952,0.952,0.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,specificity,0.5,0.5038461538461538,0.0038461538461538325
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,image,2026,precision,0.4779116465863454,0.4798387096774194,0.0019270630910739883
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,n_predicted_positive,161.0,164.0,3.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,tp,67.0,68.0,1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,fn,2.0,1.0,-1.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,fp,94.0,96.0,2.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,tn,50.0,48.0,-2.0
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,sensitivity,0.9710144927536232,0.9855072463768116,0.01449275362318847
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,specificity,0.3472222222222222,0.3333333333333333,-0.013888888888888895
+target_0.95,sensitivity target 0.95: pipeline-specific thresholds,case,2026,precision,0.4161490683229814,0.4146341463414634,-0.0015149219815179804

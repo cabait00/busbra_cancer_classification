@@ -1,0 +1,56 @@
+{
+  "status": "frozen",
+  "plan_sha256": "8e64dc984e7dedbd96ad8e7bbbf6b36b856d2217be989a0fd94bdfd0a7253551",
+  "study_id": "auto4fb-8e64dc98",
+  "frozen_at": "2026-10-20T21:49:44+02:00",
+  "run_id": "auto-20261020T214933-58d55f6f",
+  "n_images": 385,
+  "image_ids_sha256": "6e40aefef7e7f90e14543994dc77569e60b2e7cfef278c3828faaab4f865c608",
+  "inputs_fingerprint": {
+    "n": 385,
+    "shape": [
+      385,
+      160,
+      160,
+      1
+    ],
+    "dtype": "float32",
+    "array_sha256": "573864fa15c7906dfb02b8f2d4779ac045599ac872c0c661ea14c105901ad894",
+    "ids_sha256": "6e40aefef7e7f90e14543994dc77569e60b2e7cfef278c3828faaab4f865c608",
+    "labels_sha256": "e99c061588db11cdc97be1fe2e758257334072085af2090cb13750d4f44f1d7e"
+  },
+  "geometry_table": {
+    "file": "reports/tables/auto_roi_geometry_validation.csv",
+    "sha256": "cb2543fbda3309f6abd1b8e37dadd982d12d524d2ec6d209a5463885c9bdb278",
+    "rows": 385,
+    "local_only": true
+  },
+  "predicted_masks": {
+    "file": "reports/tables/auto_roi/predicted_masks_validation.npz",
+    "sha256": "98349505fdbafd23c79f216f29276936ccfadac68e0bc8d70c94bceb4158e028",
+    "content_sha256": "0af5ce523f322941664d70a4b57d28b80e072c5fcd01a68dbb362c39607f9d92",
+    "local_only": true,
+    "note": "all predicted pixels (probability >= 0.5, decoded grid), packed bits"
+  },
+  "unet_checkpoint": {
+    "file": "models/segmentation/unet_seed7/unet_256_seed7_best.keras",
+    "sha256": "b2b16c3de9034318cdcd52fb103a30dacf607bf4e2fb722ad6f0fb963e171947"
+  },
+  "unet_batch_size": 8,
+  "counts": {
+    "n_fallback_full_image": 6,
+    "fallback_ids": [
+      "bus_0522-l",
+      "bus_0522-r",
+      "bus_0971-l",
+      "bus_1013-l",
+      "bus_1014-l",
+      "bus_1041-r"
+    ],
+    "n_multiple_components": 70,
+    "n_ties_for_the_largest": 0,
+    "n_crops_from_a_component": 379
+  },
+  "no_mask_opened": true,
+  "note": "Frozen before any validation expert mask is read; later phases use these boxes and fingerprints only; never rewritten."
+}

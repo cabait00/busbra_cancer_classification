@@ -1,0 +1,146 @@
+{
+  "plan_sha256": "d5456becca3ce3c8d23c931b554f0eaa244e4b4c7ebc1ae9119b64adec7429e4",
+  "study_id": "seg4fa-d5456bec",
+  "fingerprints": {
+    "train": {
+      "n": 1114,
+      "image_shape": [
+        1114,
+        256,
+        256,
+        1
+      ],
+      "image_dtype": "float32",
+      "mask_shape": [
+        1114,
+        256,
+        256,
+        1
+      ],
+      "mask_dtype": "uint8",
+      "images_sha256": "157b8a5de2413f4754259eb287eafac483dded4047d9e36106855a9e0c0bee06",
+      "masks_sha256": "b2d56286de621acec8bc3eeed65642905162466a9e5033af5cd5dd2384f56f99",
+      "ids_sha256": "d14a08160a077c74989e6b9c75eb8910c0e6420c408d4f268e166394750dfae7"
+    },
+    "validation": {
+      "n": 385,
+      "image_shape": [
+        385,
+        256,
+        256,
+        1
+      ],
+      "image_dtype": "float32",
+      "mask_shape": [
+        385,
+        256,
+        256,
+        1
+      ],
+      "mask_dtype": "uint8",
+      "images_sha256": "4ee02fcf75807078a8082115e138c9da463a797decf2571aee379357adf9c06c",
+      "masks_sha256": "d9ccabb4bdebb0507cb0825febe05876129630b3fc33047a43461753f234d10a",
+      "ids_sha256": "6e40aefef7e7f90e14543994dc77569e60b2e7cfef278c3828faaab4f865c608"
+    }
+  },
+  "split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "geometry_table": {
+    "file": "reports/tables/segmentation_geometry_train_validation.csv",
+    "sha256": "c3d6ffed876aaa2dca6141a144ebaf05ea67421f43209f5cc63e080908a1ac32",
+    "rows": 1499,
+    "local_only": true
+  },
+  "png_files_opened": 2998,
+  "csv_size_discrepancies": [
+    {
+      "ID": "bus_0856-l",
+      "decoded_size": [
+        387,
+        353
+      ],
+      "csv_size": [
+        387,
+        405
+      ],
+      "geometry_used": {
+        "fitted_width": 256,
+        "fitted_height": 234,
+        "pad_x": 0,
+        "pad_y": 11
+      },
+      "equals_geometry_of_the_decoded_size": true,
+      "differs_from_geometry_of_the_csv_size": true
+    },
+    {
+      "ID": "bus_0912-l",
+      "decoded_size": [
+        360,
+        352
+      ],
+      "csv_size": [
+        360,
+        354
+      ],
+      "geometry_used": {
+        "fitted_width": 256,
+        "fitted_height": 250,
+        "pad_x": 0,
+        "pad_y": 3
+      },
+      "equals_geometry_of_the_decoded_size": true,
+      "differs_from_geometry_of_the_csv_size": true
+    },
+    {
+      "ID": "bus_0990-l",
+      "decoded_size": [
+        540,
+        352
+      ],
+      "csv_size": [
+        540,
+        354
+      ],
+      "geometry_used": {
+        "fitted_width": 256,
+        "fitted_height": 167,
+        "pad_x": 0,
+        "pad_y": 44
+      },
+      "equals_geometry_of_the_decoded_size": true,
+      "differs_from_geometry_of_the_csv_size": true
+    },
+    {
+      "ID": "bus_0857-r",
+      "decoded_size": [
+        384,
+        393
+      ],
+      "csv_size": [
+        384,
+        409
+      ],
+      "geometry_used": {
+        "fitted_width": 250,
+        "fitted_height": 256,
+        "pad_x": 3,
+        "pad_y": 0
+      },
+      "equals_geometry_of_the_decoded_size": true,
+      "differs_from_geometry_of_the_csv_size": true
+    }
+  ],
+  "roundtrip_dice_of_the_expert_mask_resolution_ceiling": {
+    "train": {
+      "min": 0.9698759598346132,
+      "median": 0.992471982711919,
+      "mean": 0.9917429930935511
+    },
+    "validation": {
+      "min": 0.9644970414201184,
+      "median": 0.9923381770145311,
+      "mean": 0.9916942775602965
+    }
+  },
+  "registered_at": "2026-10-20T20:30:46+02:00",
+  "note": "Frozen once after the plan was registered; the worker recomputes its inputs and must reproduce the fingerprints; never rewritten."
+}

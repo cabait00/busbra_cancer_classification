@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "complete": true,
+  "generated_at": "2026-10-21T17:50:59+02:00",
+  "script": "analysis/plot_gradcam_fn_readable.py",
+  "script_sha256": "9056fdf3457695354a67ed53846465b29f6177144dd07812924d12027b600e8c",
+  "base_plot_script": "analysis/plot_gradcam_test_interpretation.py",
+  "base_plot_script_sha256": "f4e4d5ea789f996b9de95935b5f09f24797f79b084f669da5210d0e600c72499",
+  "group": "core_FN",
+  "ids": [
+    "bus_0810-s"
+  ],
+  "output": {
+    "data/processed/gradcam_test_preview_core_FN_readable.png": {
+      "sha256": "4800721ddd20c37c3f8cb7c4a9ea259f68797dc923a3a9d05f1960c0935160e0",
+      "rows": 1,
+      "size_bytes": 777821
+    }
+  },
+  "sources": {
+    "study_status_sha256": "c09377b9945460db9dabe709ee1707e4d229f566202f97d8f2deb518dd8edf0f",
+    "plan_sha256": "838322578282820bbdaa43eee3bedb9bc316ac8158fbe3e577f2137f25a59d12",
+    "maps_sha256": "51f35e3c0a2347742927999e16c80b2273144d7573890a29b5d6728e00f0fb33",
+    "figures_status_sha256": "a83ca4945669064dcb67a248f6a0ec2b2fd4ba8fff34cd85b5d01d9a6fde22b1",
+    "tables_sha256": {
+      "reports/tables/gradcam_test_selection.csv": "e9103ae2cfbfab3aa052b4eeb8450e821f834639204d6ff34d692ef4822ef3eb",
+      "reports/tables/gradcam_test_geometry.csv": "bc8ce0bcaf2a15c0fa09b3f82a50dd45b737acb04c6ecc5833425c221004cab6",
+      "reports/tables/gradcam_test_cam.csv": "e8e78f4cdc8387b347d64afa22166e5006b4c11349ac24cdd53b0dcd87ec42e4"
+    },
+    "frozen_pixel_predictions_sha256": "3697276f61cec5b0c63e1406f87ec2b1e17cf6e8d56581631dba799649470570",
+    "reference_files_sha256": {
+      "data/raw/BUSBRA/Images/bus_0810-s.png": "8cb675461b35ee7c4546eae2fb781b3f8b48c96a9f91ef659f9ac89a8b8fb695",
+      "data/raw/BUSBRA/Masks/mask_0810-s.png": "a8a4c07165fb9bd99d95644e1830e200c8d127b47125e21449319349951da441"
+    }
+  },
+  "original_preview": {
+    "file": "data/processed/gradcam_test_preview_core_FN.png",
+    "sha256_before": "99874d11948f0b7208d55070693a595871750e9fd7ff02edccd05f859cf8cac8",
+    "sha256_after": "99874d11948f0b7208d55070693a595871750e9fd7ff02edccd05f859cf8cac8",
+    "recorded_in_figure_status": "99874d11948f0b7208d55070693a595871750e9fd7ff02edccd05f859cf8cac8",
+    "unchanged": true
+  },
+  "access": {
+    "png_read": 2,
+    "expected": 2,
+    "unexpected_png": [],
+    "tensorflow_imported": [],
+    "ok": true
+  },
+  "visual_inspection": "layout correction of an already inspected figure group; the executing process does not view the file",
+  "errors": []
+}

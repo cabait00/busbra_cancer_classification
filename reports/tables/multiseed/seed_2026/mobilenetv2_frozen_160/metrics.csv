@@ -1,0 +1,3 @@
+model,seed,subset,positive_class,threshold,decision_rule,n_images,n_cases,n_malignant_cases,n_benign_cases,n_malignant_images,n_benign_images,n_predicted_malignant,tn,fp,fn,tp,sensitivity,specificity,precision,f1,accuracy,roc_auc,average_precision,best_epoch
+mobilenetv2_frozen_160,2026,train,malignant (label 1),0.5,score >= threshold,1114,639,205,434,360,754,281,690,64,143,217,0.6027777777777777,0.9151193633952255,0.7722419928825622,0.6770670826833073,0.8141831238779175,0.8847111700559976,0.7924611939533381,14
+mobilenetv2_frozen_160,2026,validation,malignant (label 1),0.5,score >= threshold,385,213,69,144,125,260,71,244,16,70,55,0.44,0.9384615384615385,0.7746478873239436,0.5612244897959183,0.7766233766233767,0.8077846153846153,0.7011355710611802,14

@@ -1,0 +1,49 @@
+subset,group,flag,description,n_flagged_images,n_flagged_cases,denominator_images,denominator_cases,share_of_images
+train,all,multiple_components,more than one connected component (8-connected),0,0,1114,639,0.0
+train,all,mask_covers_more_than_half_of_the_image,mask covers more than half of the image,2,1,1114,639,0.0017953321364452424
+train,all,crop_is_at_least_90_percent_of_the_image,ROI crop covers at least 90 % of the original image area (practically a full image),6,4,1114,639,0.005385996409335727
+train,all,tight_box_touches_an_image_border,the tight box touches an image border,8,8,1114,639,0.00718132854578097
+train,all,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,248,182,1114,639,0.22262118491921004
+train,all,crop_enlarged_to_160,crop smaller than 160 pixels is enlarged (scale factor above 1),407,250,1114,639,0.3653500897666068
+train,all,crop_enlarged_by_a_factor_of_2_or_more,enlargement factor at least 2,29,22,1114,639,0.026032315978456014
+train,all,crop_enlarged_by_a_factor_of_3_or_more,"enlargement factor at least 3 (strongly enlarged, visibly blurred crops)",1,1,1114,639,0.0008976660682226212
+train,benign,multiple_components,more than one connected component (8-connected),0,0,754,434,0.0
+train,benign,mask_covers_more_than_half_of_the_image,mask covers more than half of the image,0,0,754,434,0.0
+train,benign,crop_is_at_least_90_percent_of_the_image,ROI crop covers at least 90 % of the original image area (practically a full image),0,0,754,434,0.0
+train,benign,tight_box_touches_an_image_border,the tight box touches an image border,4,4,754,434,0.005305039787798408
+train,benign,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,132,96,754,434,0.17506631299734748
+train,benign,crop_enlarged_to_160,crop smaller than 160 pixels is enlarged (scale factor above 1),334,205,754,434,0.44297082228116713
+train,benign,crop_enlarged_by_a_factor_of_2_or_more,enlargement factor at least 2,26,20,754,434,0.034482758620689655
+train,benign,crop_enlarged_by_a_factor_of_3_or_more,"enlargement factor at least 3 (strongly enlarged, visibly blurred crops)",1,1,754,434,0.001326259946949602
+train,malignant,multiple_components,more than one connected component (8-connected),0,0,360,205,0.0
+train,malignant,mask_covers_more_than_half_of_the_image,mask covers more than half of the image,2,1,360,205,0.005555555555555556
+train,malignant,crop_is_at_least_90_percent_of_the_image,ROI crop covers at least 90 % of the original image area (practically a full image),6,4,360,205,0.016666666666666666
+train,malignant,tight_box_touches_an_image_border,the tight box touches an image border,4,4,360,205,0.011111111111111112
+train,malignant,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,116,86,360,205,0.32222222222222224
+train,malignant,crop_enlarged_to_160,crop smaller than 160 pixels is enlarged (scale factor above 1),73,45,360,205,0.20277777777777778
+train,malignant,crop_enlarged_by_a_factor_of_2_or_more,enlargement factor at least 2,3,2,360,205,0.008333333333333333
+train,malignant,crop_enlarged_by_a_factor_of_3_or_more,"enlargement factor at least 3 (strongly enlarged, visibly blurred crops)",0,0,360,205,0.0
+validation,all,multiple_components,more than one connected component (8-connected),0,0,385,213,0.0
+validation,all,mask_covers_more_than_half_of_the_image,mask covers more than half of the image,1,1,385,213,0.0025974025974025974
+validation,all,crop_is_at_least_90_percent_of_the_image,ROI crop covers at least 90 % of the original image area (practically a full image),0,0,385,213,0.0
+validation,all,tight_box_touches_an_image_border,the tight box touches an image border,3,3,385,213,0.007792207792207792
+validation,all,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,73,53,385,213,0.18961038961038962
+validation,all,crop_enlarged_to_160,crop smaller than 160 pixels is enlarged (scale factor above 1),146,91,385,213,0.37922077922077924
+validation,all,crop_enlarged_by_a_factor_of_2_or_more,enlargement factor at least 2,22,14,385,213,0.05714285714285714
+validation,all,crop_enlarged_by_a_factor_of_3_or_more,"enlargement factor at least 3 (strongly enlarged, visibly blurred crops)",1,1,385,213,0.0025974025974025974
+validation,benign,multiple_components,more than one connected component (8-connected),0,0,260,144,0.0
+validation,benign,mask_covers_more_than_half_of_the_image,mask covers more than half of the image,1,1,260,144,0.0038461538461538464
+validation,benign,crop_is_at_least_90_percent_of_the_image,ROI crop covers at least 90 % of the original image area (practically a full image),0,0,260,144,0.0
+validation,benign,tight_box_touches_an_image_border,the tight box touches an image border,1,1,260,144,0.0038461538461538464
+validation,benign,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,38,29,260,144,0.14615384615384616
+validation,benign,crop_enlarged_to_160,crop smaller than 160 pixels is enlarged (scale factor above 1),112,69,260,144,0.4307692307692308
+validation,benign,crop_enlarged_by_a_factor_of_2_or_more,enlargement factor at least 2,17,11,260,144,0.06538461538461539
+validation,benign,crop_enlarged_by_a_factor_of_3_or_more,"enlargement factor at least 3 (strongly enlarged, visibly blurred crops)",1,1,260,144,0.0038461538461538464
+validation,malignant,multiple_components,more than one connected component (8-connected),0,0,125,69,0.0
+validation,malignant,mask_covers_more_than_half_of_the_image,mask covers more than half of the image,0,0,125,69,0.0
+validation,malignant,crop_is_at_least_90_percent_of_the_image,ROI crop covers at least 90 % of the original image area (practically a full image),0,0,125,69,0.0
+validation,malignant,tight_box_touches_an_image_border,the tight box touches an image border,2,2,125,69,0.016
+validation,malignant,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,35,24,125,69,0.28
+validation,malignant,crop_enlarged_to_160,crop smaller than 160 pixels is enlarged (scale factor above 1),34,22,125,69,0.272
+validation,malignant,crop_enlarged_by_a_factor_of_2_or_more,enlargement factor at least 2,5,3,125,69,0.04
+validation,malignant,crop_enlarged_by_a_factor_of_3_or_more,"enlargement factor at least 3 (strongly enlarged, visibly blurred crops)",0,0,125,69,0.0

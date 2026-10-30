@@ -1,0 +1,517 @@
+{
+  "status": "passed",
+  "complete": true,
+  "run_id": "cnn-20261019T192513-3cfd6ee8",
+  "started_at": "2026-10-19T19:25:13+02:00",
+  "generated_at": "2026-10-19T19:27:04+02:00",
+  "script": "analysis/04_train_small_cnn.py",
+  "split": {
+    "file": "data/processed/manifest_split.csv",
+    "sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+    "expected_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+    "first_frozen_at": "2026-10-19T10:48:12+02:00",
+    "subsets_used": [
+      "train",
+      "validation"
+    ],
+    "images": {
+      "train": 1114,
+      "validation": 385
+    },
+    "cases": {
+      "train": 639,
+      "validation": 213
+    }
+  },
+  "configuration": {
+    "seed": 42,
+    "input": "160x160x1 float32 in [0, 1]",
+    "preprocessing": {
+      "source": "original PNG at image_relpath (pixels only; no mask, bbox or metadata)",
+      "color": "single grayscale channel, 8 bit (mode 'L'); other modes are rejected",
+      "target_size_width_height": [
+        160,
+        160
+      ],
+      "geometry": "whole image scaled down proportionally to fit (PIL.ImageOps.contain), centred on a black canvas; no crop, no stretch",
+      "interpolation": "bilinear (PIL.Image.Resampling.BILINEAR)",
+      "side_rounding": "Pillow rounds the scaled side with Python round() (half to even)",
+      "centering": "offset = (target - scaled) // 2; an odd remainder lies right/bottom",
+      "pad_value_uint8": 0,
+      "scaling": "float32(uint8) / 255 -> [0, 1]; fixed, nothing estimated from data",
+      "learned_normalization": null,
+      "pillow_version": "13.0.0",
+      "output_layout": "NHWC: (N, 160, 160, 1)",
+      "output_channels": 1,
+      "output_dtype": "float32",
+      "output_value_range": [
+        0.0,
+        1.0
+      ],
+      "flatten": "none - the CNN receives the image array, no flattening transformation",
+      "pixels_per_image": 25600,
+      "rescaling_in_model": "none; the division by 255 happens exactly once in this preparation"
+    },
+    "augmentation": "RandomFlip('horizontal', seed=42), training only",
+    "architecture": [
+      "input 160x160x1 float32 in [0, 1] (division by 255 happens once in the data preparation)",
+      "RandomFlip('horizontal', seed=42) - active only while training",
+      "Conv2D 32, 3x3, same, ReLU (conv1) + MaxPooling2D 2x2 (pool1)",
+      "Conv2D 64, 3x3, same, ReLU (conv2) + MaxPooling2D 2x2 (pool2)",
+      "Conv2D 128, 3x3, same, ReLU (conv3) + MaxPooling2D 2x2 (pool3)",
+      "GlobalAveragePooling2D (gap)",
+      "Dense 64, ReLU (dense_64)",
+      "Dropout 0.3 (dropout)",
+      "Dense 1, sigmoid (output) - the output IS the malignant score"
+    ],
+    "parameters": {
+      "total": 100993,
+      "trainable": 100993,
+      "non_trainable": 0
+    },
+    "optimizer": "Adam(learning_rate=0.001)",
+    "loss": "BinaryCrossentropy(from_logits=False)",
+    "batch_size_requested": 16,
+    "batch_size_used": 16,
+    "max_epochs": 30,
+    "class_weights": null,
+    "oversampling": false,
+    "jit_compile": false,
+    "mixed_precision": false,
+    "dtype": "float32",
+    "callbacks": {
+      "early_stopping": {
+        "monitor": "val_loss",
+        "mode": "min",
+        "patience": 5,
+        "min_delta": 0,
+        "restore_best_weights": true
+      },
+      "model_checkpoint": {
+        "monitor": "val_loss",
+        "mode": "min",
+        "save_best_only": true,
+        "save_weights_only": false,
+        "file": "models/small_cnn/small_cnn_best.keras"
+      },
+      "terminate_on_nan": true
+    },
+    "train_shuffle": "tf.data shuffle over the whole train set, seed 42, reshuffled every epoch",
+    "evaluation": {
+      "threshold": 0.5,
+      "rule": "score >= threshold; no optimisation or calibration",
+      "score": "sigmoid output = malignant score"
+    }
+  },
+  "versions": {
+    "python": "3.13.14",
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "gpu": {
+    "configuration": {
+      "gpus": [
+        "/physical_device:GPU:0"
+      ],
+      "memory_growth": {
+        "/physical_device:GPU:0": true
+      },
+      "soft_device_placement": false
+    },
+    "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "probe": {
+      "model_variables": 12,
+      "variables_on_gpu0": true,
+      "forward_output_on_gpu0": true,
+      "loss_on_gpu0": true,
+      "gradients_on_gpu0": true,
+      "n_gradients": 10,
+      "none_gradients": 0,
+      "loss": 0.692097544670105,
+      "loss_after_one_step": 0.6882607936859131,
+      "gradients_finite": true,
+      "max_abs_gradient": 0.05741535499691963,
+      "weights_changed_by_update": true,
+      "weights_finite_after_update": true,
+      "batch_size": 16,
+      "data": "first 16 TRAIN images in stable order"
+    },
+    "probe_gpu_memory_bytes": {
+      "current": 1634304,
+      "peak": 550222592
+    },
+    "training_gpu_memory_bytes_after_fit": {
+      "current": 202621440,
+      "peak": 697178624
+    },
+    "nvidia_smi_process_memory_mib": [
+      "50438, 938"
+    ],
+    "memory_note": "TensorFlow allocator statistics and nvidia-smi values observed in this run; no memory limit was set by the project",
+    "cuda_libraries_outside_venv": [],
+    "environment_report": {
+      "file": "reports/tables/environment_check.json",
+      "status": "passed",
+      "generated_at": "2026-10-19T19:01:54+02:00",
+      "note": "read only; it does not prove this process's environment"
+    }
+  },
+  "technical_attempts": {
+    "probe_model_initial_weights_sha256": "429e5f11c0ed30422b44a4888d2cc5675a06670b63e6525b8efd9ecb5dd6e02b",
+    "training_attempts": [
+      {
+        "batch_size": 16,
+        "initial_weights_sha256": "429e5f11c0ed30422b44a4888d2cc5675a06670b63e6525b8efd9ecb5dd6e02b",
+        "initial_equals_probe_model_before_update": true,
+        "train_batches_per_epoch": 70,
+        "validation_batches": 25,
+        "outcome": "completed",
+        "train_seconds": 90.1
+      }
+    ]
+  },
+  "training": {
+    "epochs_run": 30,
+    "best_epoch": 28,
+    "best_val_loss": 0.5782506465911865,
+    "stop_reason": "epoch_limit_reached",
+    "early_stopping_stopped_epoch": null,
+    "epoch_limit": 30,
+    "training_seconds": 90.1,
+    "epoch_seconds": {
+      "min": 2.571,
+      "median": 2.854,
+      "max": 7.167,
+      "first_epoch": 7.167
+    },
+    "data_loading_seconds": {
+      "train": 3.866,
+      "validation": 1.359
+    }
+  },
+  "checkpoint": {
+    "file": "models/small_cnn/small_cnn_best.keras",
+    "sha256": "b9fc953b72d7e0463a300ac8a41149d9f28ef7242d165d11045228ddb76e33e0",
+    "local_only": true,
+    "restored_model_vs_checkpoint_max_abs_score_difference": 0.0,
+    "restored_model_vs_checkpoint_max_abs_weight_difference": 0.0,
+    "second_load_max_abs_score_difference": 0.0,
+    "tolerance": 1e-05,
+    "binary_files_not_expected_byte_identical_between_runs": true
+  },
+  "evaluation": {
+    "validation": {
+      "roc_auc": 0.7155076923076924,
+      "average_precision": 0.5506883239161925,
+      "sensitivity": 0.448,
+      "specificity": 0.85,
+      "precision": 0.5894736842105263,
+      "f1": 0.509090909090909,
+      "accuracy": 0.7194805194805195,
+      "tn": 221,
+      "fp": 39,
+      "fn": 69,
+      "tp": 56
+    }
+  },
+  "path_control": {
+    "distinct_png_files_opened": 1499,
+    "forbidden_hits": [],
+    "allowed": "train and validation images only"
+  },
+  "outputs": {
+    "reports/tables/small_cnn_history.csv": "e6c50b06f5efa1606c12e0a06a2277a5e53efcd35e910054870697938d7a6923",
+    "reports/tables/small_cnn_metrics.csv": "6b3615ce78cf69ffab71c9d60cb1f4bb8da9c4cce783ae352f437b4de2342f59",
+    "reports/tables/small_cnn_predictions.csv": "ae625019adf535410eb373283ab30b0ff54444b7216109523e452a3fd91f5168",
+    "reports/tables/model_comparison_validation.csv": "838a118e08c99e778d5f63b07565b45ee268620c0ba76d27786e1dcccdc52146",
+    "models/small_cnn/model_summary.txt": "69cfc24956ab8951472293c23769af84eef8c25ec3890c49b609c12b4dc990df",
+    "models/small_cnn/small_cnn_config.json": "faf1224344112ad38fa0a039a65b62eb194cbda3c52e2c708247f0aad511ed6e",
+    "models/small_cnn/small_cnn_best.keras": "b9fc953b72d7e0463a300ac8a41149d9f28ef7242d165d11045228ddb76e33e0",
+    "reports/figures/small_cnn_learning_curves.png": "a9ea38e12ff2f1fae88324ad415a7e3041dc4231a653da2d90e71476b4b262ac",
+    "reports/figures/model_comparison_validation.png": "4698102089d513a0afe4f30f0d512bde37e73ee098985d3b40eeb4a3c12d520b"
+  },
+  "total_runtime_seconds": 111.1,
+  "limitations": [
+    "One fixed holdout, one seed and one run: no variance estimate, no significance statement.",
+    "Resolution, model family and augmentation differ from the LogReg baseline; the comparison is between whole pipelines.",
+    "Training curves (flip, dropout) and validation curves (inference mode) are computed under different conditions.",
+    "The seed supports traceability; byte-identical GPU training runs are not promised.",
+    "The horizontal flip keeps the class but does not remove burned-in markers or device cues.",
+    "Scores are sigmoid outputs, not shown to be calibrated disease probabilities; the 0.5 threshold is a fixed convention.",
+    "Train-set metrics only describe the fit to the training data.",
+    "Test data were not used."
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "split_is_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "split_status.json status 'frozen'"
+    },
+    {
+      "name": "split_hash_matches_freeze_and_expectation",
+      "passed": true,
+      "severity": "error",
+      "detail": "sha256 fdce9bc991b949cf... (expected fdce9bc991b949cf...)"
+    },
+    {
+      "name": "ids_unique",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875 rows, 1875 unique IDs"
+    },
+    {
+      "name": "label_mapping",
+      "passed": true,
+      "severity": "error",
+      "detail": "label 0 = benign, 1 = malignant in every row"
+    },
+    {
+      "name": "subset_names",
+      "passed": true,
+      "severity": "error",
+      "detail": "split values ['test', 'train', 'validation']"
+    },
+    {
+      "name": "subset_counts_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 1114, 'cases': 639, 'benign': 754, 'malignant': 360}"
+    },
+    {
+      "name": "subset_counts_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 385, 'cases': 213, 'benign': 260, 'malignant': 125}"
+    },
+    {
+      "name": "subset_counts_test",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 376, 'cases': 212, 'benign': 254, 'malignant': 122}"
+    },
+    {
+      "name": "subsets_case_disjoint",
+      "passed": true,
+      "severity": "error",
+      "detail": "pairwise case overlaps {'train__validation': 0, 'train__test': 0, 'validation__test': 0}"
+    },
+    {
+      "name": "one_label_per_case",
+      "passed": true,
+      "severity": "error",
+      "detail": "every case has exactly one label"
+    },
+    {
+      "name": "filtered_subsets",
+      "passed": true,
+      "severity": "error",
+      "detail": "train 1114, validation 385 images, rows in stable ID order"
+    },
+    {
+      "name": "baseline_status_passed",
+      "passed": true,
+      "severity": "error",
+      "detail": "baseline status 'passed', same split hash: True"
+    },
+    {
+      "name": "baseline_files_match_recorded_hashes",
+      "passed": true,
+      "severity": "error",
+      "detail": "baseline metrics and predictions equal the files recorded at baseline time; differing: none"
+    },
+    {
+      "name": "environment_report_passed",
+      "passed": true,
+      "severity": "warning",
+      "detail": "environment_check.json: status 'passed', generated 2026-10-19T19:01:54+02:00"
+    },
+    {
+      "name": "input_contract_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "shape (1114, 160, 160, 1) float32, range [0.000, 1.000], mean 0.2575; row i belongs to ID/Case/label of row i (first ID bus_0001-l)"
+    },
+    {
+      "name": "input_contract_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "shape (385, 160, 160, 1) float32, range [0.000, 1.000], mean 0.2500; row i belongs to ID/Case/label of row i (first ID bus_0008-l)"
+    },
+    {
+      "name": "only_train_and_validation_images_decoded",
+      "passed": true,
+      "severity": "error",
+      "detail": "1499 distinct PNG files opened; allowed 1499; test/mask/contact-sheet hits 0"
+    },
+    {
+      "name": "gpu_configuration",
+      "passed": true,
+      "severity": "error",
+      "detail": "GPUs ['/physical_device:GPU:0'], memory growth {'/physical_device:GPU:0': True}, soft placement False, no memory limit set by the project"
+    },
+    {
+      "name": "tensorflow_keras_versions",
+      "passed": true,
+      "severity": "error",
+      "detail": "TensorFlow 2.20.0, Keras 3.15.1, backend tensorflow"
+    },
+    {
+      "name": "gpu_probe_variables_and_math_on_gpu",
+      "passed": true,
+      "severity": "error",
+      "detail": "12 variables, forward output, loss and 10 gradients on GPU:0"
+    },
+    {
+      "name": "gpu_probe_finite_and_update",
+      "passed": true,
+      "severity": "error",
+      "detail": "loss 0.6921 -> 0.6883 after one step, max |gradient| 0.0574, gradients and weights finite, weights changed"
+    },
+    {
+      "name": "cuda_libraries_from_project_venv",
+      "passed": true,
+      "severity": "error",
+      "detail": "CUDA libraries outside .venv: none"
+    },
+    {
+      "name": "training_completed",
+      "passed": true,
+      "severity": "error",
+      "detail": "attempts: [(16, 'completed')]"
+    },
+    {
+      "name": "initial_weights_unaffected_by_probe",
+      "passed": true,
+      "severity": "error",
+      "detail": "initial weights of the real model equal those of the probe model before its gradient step"
+    },
+    {
+      "name": "gpu_used_during_training",
+      "passed": true,
+      "severity": "error",
+      "detail": "TensorFlow allocator peak on GPU:0 665 MiB (observation), all model variables on GPU:0"
+    },
+    {
+      "name": "history_finite",
+      "passed": true,
+      "severity": "error",
+      "detail": "30 epochs, all loss/metric values finite"
+    },
+    {
+      "name": "weights_finite",
+      "passed": true,
+      "severity": "error",
+      "detail": "all weights finite after training"
+    },
+    {
+      "name": "stop_reason_consistent",
+      "passed": true,
+      "severity": "error",
+      "detail": "stop reason epoch_limit_reached: 30 epochs, best epoch 28, patience 5"
+    },
+    {
+      "name": "best_epoch_matches_callback",
+      "passed": true,
+      "severity": "error",
+      "detail": "EarlyStopping best epoch 28 == argmin(val_loss) 28"
+    },
+    {
+      "name": "checkpoint_exists",
+      "passed": true,
+      "severity": "error",
+      "detail": "models/small_cnn/small_cnn_best.keras (1266590 bytes)"
+    },
+    {
+      "name": "loaded_models_use_jit_compile_false",
+      "passed": true,
+      "severity": "error",
+      "detail": "jit_compile: trained model False, loaded False/False (same fixed setting for training and evaluation)"
+    },
+    {
+      "name": "restored_best_model_equals_checkpoint",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| 0.00e+00 (tolerance 1e-05), max |weight difference| 0.00e+00"
+    },
+    {
+      "name": "second_checkpoint_load_reproduces_scores",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| 0.00e+00 (tolerance 1e-05)"
+    },
+    {
+      "name": "augmentation_and_dropout_off_at_inference",
+      "passed": true,
+      "severity": "error",
+      "detail": "flip layer identity at inference: True, changes images when training: True; repeated predictions differ by 0.00e+00"
+    },
+    {
+      "name": "predictions_unique_and_ordered",
+      "passed": true,
+      "severity": "error",
+      "detail": "1499 rows, unique per (subset, ID), scores in [0, 1], rows follow the ID order of the frames"
+    },
+    {
+      "name": "comparison_contract_shared",
+      "passed": true,
+      "severity": "error",
+      "detail": "same validation images (385), cases (213), positive class, threshold 0.5; baseline score rows in the same ID/label order: True"
+    },
+    {
+      "name": "baseline_validation_values_unchanged",
+      "passed": true,
+      "severity": "error",
+      "detail": "stored baseline validation ROC-AUC: Dummy 0.5, LogReg about 0.6692"
+    },
+    {
+      "name": "parameter_count",
+      "passed": true,
+      "severity": "error",
+      "detail": "{'total': 100993, 'trainable': 100993, 'non_trainable': 0} (expected 100,993 from the fixed architecture)"
+    },
+    {
+      "name": "no_test_data_used",
+      "passed": true,
+      "severity": "error",
+      "detail": "no test image, mask or test prediction was used"
+    }
+  ],
+  "metadata_corrections": [
+    {
+      "id": "cnn_preprocessing_contract_2026-10-19",
+      "corrected_at": "2026-10-19T19:46:02+02:00",
+      "kind": "metadata correction only; no new training",
+      "reason": "The description of the CNN input had been taken over from the classical baselines and named a flatten step (row-major, float64, for scikit-learn) and n_features 25600. The CNN receives (N, 160, 160, 1) float32 arrays in [0, 1] without flattening; the data path itself was correct and unchanged.",
+      "fields_removed": {
+        "flatten": "row-major (C order), then C-contiguous float64 for scikit-learn (exact conversion)",
+        "n_features": 25600
+      },
+      "fields_added": [
+        "output_layout",
+        "output_channels",
+        "output_dtype",
+        "output_value_range",
+        "pixels_per_image",
+        "rescaling_in_model"
+      ],
+      "unchanged": [
+        "run_id",
+        "started_at",
+        "generated_at",
+        "history",
+        "metrics",
+        "predictions",
+        "checkpoint",
+        "checkpoint_sha256",
+        "all other output hashes"
+      ],
+      "config_sha256_after": "faf1224344112ad38fa0a039a65b62eb194cbda3c52e2c708247f0aad511ed6e",
+      "checkpoint_sha256_unchanged": "b9fc953b72d7e0463a300ac8a41149d9f28ef7242d165d11045228ddb76e33e0"
+    }
+  ],
+  "metadata_last_corrected_at": "2026-10-19T19:46:02+02:00"
+}

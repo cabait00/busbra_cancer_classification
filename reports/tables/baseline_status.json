@@ -1,0 +1,387 @@
+{
+  "status": "passed",
+  "complete": true,
+  "started_at": "2026-10-19T11:48:46+02:00",
+  "generated_at": "2026-10-19T11:48:57+02:00",
+  "script": "analysis/03_image_pipeline_and_baselines.py",
+  "convergence_note": "The logistic regression converged.",
+  "split": {
+    "file": "data/processed/manifest_split.csv",
+    "sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+    "frozen_status": "frozen",
+    "first_frozen_at": "2026-10-19T10:48:12+02:00",
+    "subsets_used": [
+      "train",
+      "validation"
+    ],
+    "subsets_not_used": [
+      "test"
+    ],
+    "images": {
+      "train": 1114,
+      "validation": 385
+    },
+    "cases": {
+      "train": 639,
+      "validation": 213
+    }
+  },
+  "preprocessing": {
+    "source": "original PNG at image_relpath (pixels only; no mask, bbox or metadata)",
+    "color": "single grayscale channel, 8 bit (mode 'L'); other modes are rejected",
+    "target_size_width_height": [
+      64,
+      64
+    ],
+    "geometry": "whole image scaled down proportionally to fit (PIL.ImageOps.contain), centred on a black canvas; no crop, no stretch",
+    "interpolation": "bilinear (PIL.Image.Resampling.BILINEAR)",
+    "side_rounding": "Pillow rounds the scaled side with Python round() (half to even)",
+    "centering": "offset = (target - scaled) // 2; an odd remainder lies right/bottom",
+    "pad_value_uint8": 0,
+    "scaling": "float32(uint8) / 255 -> [0, 1]; fixed, nothing estimated from data",
+    "learned_normalization": null,
+    "flatten": "row-major (C order), then C-contiguous float64 for scikit-learn (exact conversion)",
+    "n_features": 4096,
+    "pillow_version": "13.0.0"
+  },
+  "models": {
+    "dummy_prior": {
+      "class": "DummyClassifier",
+      "parameters": {
+        "constant": null,
+        "random_state": null,
+        "strategy": "prior"
+      },
+      "classes_": [
+        0,
+        1
+      ],
+      "class_prior_": [
+        0.6768402154398564,
+        0.3231597845601436
+      ],
+      "fit_seconds": 0.007,
+      "fit_data": "train labels only; pixels ignored"
+    },
+    "logreg_l2": {
+      "class": "LogisticRegression",
+      "parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "classes_": [
+        0,
+        1
+      ],
+      "fit_attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": 158,
+          "fit_seconds": 4.525,
+          "convergence_warning": false
+        }
+      ],
+      "converged": true,
+      "n_iter": 158,
+      "fit_data": "train only"
+    }
+  },
+  "evaluation": {
+    "positive_class": "malignant (label 1)",
+    "threshold": 0.5,
+    "rule": "score >= threshold; no threshold optimisation or calibration",
+    "primary_metric": "validation ROC-AUC",
+    "validation": {
+      "dummy_prior": {
+        "roc_auc": 0.5,
+        "average_precision": 0.3246753246753247,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "precision": null,
+        "f1": 0.0,
+        "accuracy": 0.6753246753246753,
+        "tn": 260,
+        "fp": 0,
+        "fn": 125,
+        "tp": 0
+      },
+      "logreg_l2": {
+        "roc_auc": 0.6692,
+        "average_precision": 0.5091573412368177,
+        "sensitivity": 0.376,
+        "specificity": 0.7807692307692308,
+        "precision": 0.4519230769230769,
+        "f1": 0.4104803493449782,
+        "accuracy": 0.6493506493506493,
+        "tn": 203,
+        "fp": 57,
+        "fn": 78,
+        "tp": 47
+      }
+    },
+    "undefined_rates": "reported as null (JSON) / empty (CSV) / 'nicht definiert' (text)"
+  },
+  "path_control": {
+    "distinct_png_files_opened": 1499,
+    "test_or_mask_or_contact_sheet_files_opened": [],
+    "allowed": "train and validation images only"
+  },
+  "runtimes_seconds": {
+    "load_and_preprocess_train_s": 3.367,
+    "load_and_preprocess_validation_s": 1.086,
+    "dummy_fit": 0.007,
+    "logreg_fit_attempts": [
+      4.525
+    ],
+    "dummy_prior_train_s": 0.0003,
+    "dummy_prior_validation_s": 0.0002,
+    "logreg_l2_train_s": 0.0188,
+    "logreg_l2_validation_s": 0.0027
+  },
+  "runtime_note": "CPU measurements of this run; no basis for estimating neural-network training time.",
+  "versions": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "pillow": "13.0.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "environment": {
+    "tensorflow_imported": false,
+    "cuda_visible_devices_set_by_script": false,
+    "device": "CPU (scikit-learn)"
+  },
+  "warnings_captured": [],
+  "figure": {
+    "generated": true,
+    "blocker": null
+  },
+  "preview": {
+    "generated": true,
+    "ids": [
+      "bus_0404-l",
+      "bus_0663-r",
+      "bus_0317-l",
+      "bus_0250-l",
+      "bus_1010-r",
+      "bus_1057-r",
+      "bus_0851-s",
+      "bus_0858-l"
+    ],
+    "path": "data/processed/baseline_preprocessing_preview.png",
+    "local_only": true
+  },
+  "outputs": {
+    "reports/tables/baseline_metrics.csv": "c23751524f013d4ec562a4c8a379ce75839a07aaf8f1bca9ced27574189fa16c",
+    "reports/tables/baseline_predictions.csv": "f31ee283072f5083674e972babec9a963cf752968fae5cb4881f35028736a883",
+    "models/baselines/preprocessing_and_class_contract.json": "1cc15cd65a3e43412b553546cb7ac3f224eb0652baa317d5b9d0c6a097bf9bc2",
+    "models/baselines/dummy_prior.joblib": "01e2d5cdcd411d119e317288363f839d2730ebcde3c89c5023f9707c1f1c9361",
+    "models/baselines/logreg_l2_64px.joblib": "a4e21207036a121e6f05178181891d67dc14abbb11f73fee71408bf31be5f01d",
+    "reports/figures/baseline_comparison.png": "d205c2e359f0c0d0dbcde0d87d78451ac8f69a4458769f8c6886532232889a29"
+  },
+  "output_note": "Model binaries are local and are not expected to be byte-identical between runs.",
+  "limitations": [
+    "Low resolution (64x64) and a linear model on raw pixels are part of this simple baseline; the later comparison evaluates whole pipelines.",
+    "Padding and the remaining image content do not remove possible device-specific cues (burned-in markers, image layout, size).",
+    "One fixed holdout, one institution; images of one case are not independent patients.",
+    "Scores are not calibrated probabilities; the 0.5 threshold is a fixed convention.",
+    "Train-set metrics only describe possible overfitting."
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "split_is_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "split_status.json status 'frozen'"
+    },
+    {
+      "name": "split_file_hash_matches_freeze",
+      "passed": true,
+      "severity": "error",
+      "detail": "sha256 fdce9bc991b949cf... vs recorded fdce9bc991b949cf..."
+    },
+    {
+      "name": "ids_unique",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875 rows, 1875 unique IDs"
+    },
+    {
+      "name": "label_mapping",
+      "passed": true,
+      "severity": "error",
+      "detail": "label is 0 for benign and 1 for malignant in every row"
+    },
+    {
+      "name": "subset_names",
+      "passed": true,
+      "severity": "error",
+      "detail": "split values ['test', 'train', 'validation']"
+    },
+    {
+      "name": "subset_counts_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 1114, 'cases': 639, 'benign': 754, 'malignant': 360} vs expected {'images': 1114, 'cases': 639, 'benign': 754, 'malignant': 360}"
+    },
+    {
+      "name": "subset_counts_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 385, 'cases': 213, 'benign': 260, 'malignant': 125} vs expected {'images': 385, 'cases': 213, 'benign': 260, 'malignant': 125}"
+    },
+    {
+      "name": "subset_counts_test",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 376, 'cases': 212, 'benign': 254, 'malignant': 122} vs expected {'images': 376, 'cases': 212, 'benign': 254, 'malignant': 122}"
+    },
+    {
+      "name": "subsets_case_disjoint",
+      "passed": true,
+      "severity": "error",
+      "detail": "pairwise case overlaps {'train__validation': 0, 'train__test': 0, 'validation__test': 0}"
+    },
+    {
+      "name": "one_label_per_case",
+      "passed": true,
+      "severity": "error",
+      "detail": "every case has exactly one label"
+    },
+    {
+      "name": "filtered_subsets",
+      "passed": true,
+      "severity": "error",
+      "detail": "train 1114 images, validation 385 images"
+    },
+    {
+      "name": "array_contract_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "images (1114, 64, 64) float32, features (1114, 4096) float64, value range [0.000, 1.000], mean 0.2576"
+    },
+    {
+      "name": "order_and_labels_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "rows follow ID order; labels coupled to rows (first ID bus_0001-l, label 1)"
+    },
+    {
+      "name": "array_contract_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "images (385, 64, 64) float32, features (385, 4096) float64, value range [0.000, 1.000], mean 0.2501"
+    },
+    {
+      "name": "order_and_labels_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "rows follow ID order; labels coupled to rows (first ID bus_0008-l, label 0)"
+    },
+    {
+      "name": "no_test_or_mask_images_opened",
+      "passed": true,
+      "severity": "error",
+      "detail": "1499 distinct PNG files opened; test/mask/contact-sheet hits: none"
+    },
+    {
+      "name": "opened_images_equal_train_plus_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "opened 1499 files, allowed 1499; outside allowed: 0, never opened: 0"
+    },
+    {
+      "name": "dummy_classes_and_prior",
+      "passed": true,
+      "severity": "error",
+      "detail": "classes_ [0, 1], class_prior_ [0.67684, 0.32316] (train malignant share 0.323160)"
+    },
+    {
+      "name": "logreg_converged",
+      "passed": true,
+      "severity": "warning",
+      "detail": "attempts [{'max_iter': 2000, 'n_iter': 158, 'fit_seconds': 4.525, 'convergence_warning': False}]; final n_iter 158 of max_iter 2000"
+    },
+    {
+      "name": "logreg_effective_parameters",
+      "passed": true,
+      "severity": "error",
+      "detail": "C=1.0, l1_ratio=0.0 (L2), lbfgs, fit_intercept=True, class_weight=None, tol=1e-4; deprecated 'penalty' argument not used"
+    },
+    {
+      "name": "logreg_classes_and_features",
+      "passed": true,
+      "severity": "error",
+      "detail": "classes_ [0, 1], coef_ (1, 4096)"
+    },
+    {
+      "name": "scores_cover_every_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "2998 prediction rows, unique per (model, subset, ID), scores in [0, 1]"
+    },
+    {
+      "name": "logreg_score_orientation",
+      "passed": true,
+      "severity": "error",
+      "detail": "decision_function > 0 exactly where the malignant score exceeds 0.5"
+    },
+    {
+      "name": "dummy_control_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "constant score 0.323160 (= 360/1114), ROC-AUC 0.5000, AP 0.3232 (positive share 0.3232)"
+    },
+    {
+      "name": "dummy_control_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "constant score 0.323160 (= 360/1114), ROC-AUC 0.5000, AP 0.3247 (positive share 0.3247)"
+    },
+    {
+      "name": "dummy_validation_confusion",
+      "passed": true,
+      "severity": "error",
+      "detail": "TN/FP/FN/TP = 260/0/125/0, sensitivity 0.0, specificity 1.0, precision undefined, F1 0.0"
+    },
+    {
+      "name": "reload_reproduces_validation_scores_dummy_prior",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| 0.00e+00 (tolerance 1e-12); preprocessing/class contract identical: True"
+    },
+    {
+      "name": "reload_reproduces_validation_scores_logreg_l2",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| 0.00e+00 (tolerance 1e-12); preprocessing/class contract identical: True"
+    },
+    {
+      "name": "preview_opened_only_train_images",
+      "passed": true,
+      "severity": "error",
+      "detail": "1499 distinct PNG files opened in total, none outside train/validation"
+    },
+    {
+      "name": "tensorflow_not_imported",
+      "passed": true,
+      "severity": "error",
+      "detail": "scikit-learn baselines run without TensorFlow"
+    }
+  ]
+}

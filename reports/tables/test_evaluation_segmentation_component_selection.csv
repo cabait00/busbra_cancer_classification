@@ -1,0 +1,9 @@
+group_type,group,n_images_with_several_components,n_cases,n_largest_is_also_best_overlap_with_expert,n_chosen_overlaps_expert_but_another_component_overlaps_more,n_chosen_has_no_overlap_but_another_component_does,n_no_component_overlaps_expert,n_ties_for_the_largest
+all,all,58,50,56.0,0.0,2.0,0,0
+class,benign,33,30,31.0,0.0,2.0,0,0
+class,malignant,25,20,25.0,0.0,0.0,0,0
+device,GE Logiq 5 @10-12MHz,15,14,15.0,0.0,0.0,0,0
+device,GE Logiq 7 @10-14MHz,33,27,32.0,0.0,1.0,0,0
+device,Toshiba Aplio 300 @12-14 MHz,8,7,7.0,0.0,1.0,0,0
+device,U-Systems @10-14MHz,2,2,2.0,0.0,0.0,0,0
+all_images,images with exactly one component,315,199,,,,0,0

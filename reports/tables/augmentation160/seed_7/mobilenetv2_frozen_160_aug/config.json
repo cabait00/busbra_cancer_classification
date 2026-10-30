@@ -1,0 +1,186 @@
+{
+  "run_id": "ms-20261020T023544-e3dcbdba",
+  "study_id": "aug160-110415a4",
+  "plan_sha256": "110415a4b5bdf53e294544d714f36add25b382687be1be70272faf224aae4d62",
+  "seed": 7,
+  "pipeline": "mobilenetv2_frozen_160_aug",
+  "model_name": "mobilenetv2_frozen_160_aug",
+  "display": "MobileNetV2 frozen, 160 px, flip + rotation + zoom",
+  "input_size": 160,
+  "stage": "final",
+  "registered_before_training_at": "2026-10-20T02:35:55+02:00",
+  "random_sources": {
+    "study_seed": 7,
+    "PYTHONHASHSEED": "7",
+    "python_numpy_tensorflow_keras": 7,
+    "weight_initialisation": "fresh construction after keras.utils.set_random_seed(7)",
+    "RandomFlip": 8,
+    "Dropout": 9,
+    "train_shuffle": 10,
+    "train_shuffle_reshuffle_each_iteration": true,
+    "RandomRotation": 11,
+    "RandomZoom": 12
+  },
+  "generator_contract_read_from_the_built_layers": {
+    "augment_flip": {
+      "class": "RandomFlip",
+      "seed_argument": 8,
+      "generator_state": [
+        8,
+        0
+      ]
+    },
+    "augment_rotation": {
+      "class": "RandomRotation",
+      "seed_argument": 11,
+      "generator_state": [
+        11,
+        0
+      ]
+    },
+    "augment_zoom": {
+      "class": "RandomZoom",
+      "seed_argument": 12,
+      "generator_state": [
+        12,
+        0
+      ]
+    },
+    "dropout": {
+      "class": "Dropout",
+      "seed_argument": 9,
+      "generator_state": [
+        9,
+        0
+      ]
+    }
+  },
+  "shuffle_contract": {
+    "seed": 10,
+    "reshuffle_each_iteration": true,
+    "first_epoch_order_sha256_of_an_index_dataset_with_this_seed": "f2200c6394f9cac29f36bc02ae0125d5ee8d26989d5a82289113dcb0aa97f257",
+    "note": "documents the seed mapping of the shuffle; the training dataset uses the same shuffle seed"
+  },
+  "start": {
+    "kind": "local ImageNet backbone file + new head",
+    "weights_file": {
+      "file_name": "mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160_no_top.h5",
+      "size_bytes": 9406464,
+      "sha256_local_identification": "1e9310d901d6e4346c8b4d89ad04267c3299ccf252dbe2641dd2b0eb048bf04e",
+      "note": "the SHA-256 identifies the local file; it is no publisher confirmation"
+    }
+  },
+  "released_layers": null,
+  "batchnorm": "all 52 layers fully fixed",
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "state": "new, nothing inherited"
+  },
+  "loss": "BinaryCrossentropy(from_logits=False)",
+  "batch_size": 16,
+  "max_epochs": 30,
+  "callbacks": {
+    "early_stopping": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "patience": 5,
+      "min_delta": 0,
+      "restore_best_weights": true
+    },
+    "model_checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "save_best_only": true,
+      "save_weights_only": false
+    },
+    "terminate_on_nan": true
+  },
+  "numerics": {
+    "dtype": "float32",
+    "jit_compile": false,
+    "mixed_precision": false
+  },
+  "class_weights": null,
+  "architecture": "MobileNetV2 alpha1.0 no_top 160x160 with flip + rotation + zoom (training only), GAP, Dropout0.3, Dense1 sigmoid",
+  "augmentation": {
+    "layers_in_order": [
+      "augment_flip",
+      "augment_rotation",
+      "augment_zoom"
+    ],
+    "active": "training only; identity at inference",
+    "augment_flip": {
+      "class": "RandomFlip",
+      "mode": "horizontal",
+      "seed": "s+1 (as in 3F)"
+    },
+    "augment_rotation": {
+      "class": "RandomRotation",
+      "factor": 0.027777777777777776,
+      "factor_meaning": "fraction of a full turn: 10/360 = at most +-10 degrees",
+      "fill_mode": "constant",
+      "fill_value": 0.0,
+      "interpolation": "bilinear",
+      "seed": "s+4"
+    },
+    "augment_zoom": {
+      "class": "RandomZoom",
+      "height_factor": [
+        -0.1,
+        0.1
+      ],
+      "width_factor": null,
+      "meaning": "isotropic zoom in or out by at most 10 %",
+      "fill_mode": "constant",
+      "fill_value": 0.0,
+      "interpolation": "bilinear",
+      "seed": "s+5"
+    },
+    "not_used": [
+      "brightness",
+      "contrast",
+      "colour",
+      "vertical flip",
+      "mask as a feature",
+      "any other augmentation"
+    ]
+  },
+  "planned_parameters": {
+    "trainable": 1281,
+    "tensors": 2,
+    "total": 2259265
+  },
+  "note": "historical descriptions with RandomFlip seed=42 are not the contract of this study; the seed mapping above is",
+  "batch_size_used": 16,
+  "checkpoint": "models/augmentation160/seed_7/mobilenetv2_frozen_160_aug/mobilenetv2_frozen_160_aug_seed7_best.keras",
+  "checkpoint_sha256": "f6ca90b42c90a1165580afd71d65b8fd7dd584cc6c1ff02a3ba56d96b6e77fb1",
+  "best_epoch": 18,
+  "parameters": {
+    "total": 2259265,
+    "backbone_total": 2257984,
+    "backbone_trainable": 0,
+    "backbone_non_trainable": 2257984,
+    "head_total": 1281,
+    "trainable_total": 1281,
+    "non_trainable_total": 2257984,
+    "trainable_weight_names": [
+      "output/kernel",
+      "output/bias"
+    ],
+    "backbone_flag_trainable": false,
+    "n_backbone_batchnorm_layers": 52,
+    "n_trainable_weights": 2
+  },
+  "source_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "class_contract": {
+    "labels": {
+      "0": "benign",
+      "1": "malignant"
+    },
+    "score": "sigmoid output = score for class 1 (malignant); not shown to be a calibrated probability",
+    "threshold": 0.5,
+    "decision_rule": "score >= threshold"
+  },
+  "trained_on": "train; best checkpoint chosen by validation loss"
+}

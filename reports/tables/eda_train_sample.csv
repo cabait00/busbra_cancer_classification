@@ -1,0 +1,9 @@
+ID,Case,Device,Pathology,image_width,image_height,image_relpath
+bus_0404-l,404,GE Logiq 5 @10-12MHz,benign,324,434,data/raw/BUSBRA/Images/bus_0404-l.png
+bus_0663-r,663,GE Logiq 5 @10-12MHz,malignant,325,451,data/raw/BUSBRA/Images/bus_0663-r.png
+bus_0317-l,317,GE Logiq 7 @10-14MHz,benign,276,313,data/raw/BUSBRA/Images/bus_0317-l.png
+bus_0250-l,250,GE Logiq 7 @10-14MHz,malignant,276,383,data/raw/BUSBRA/Images/bus_0250-l.png
+bus_1010-r,1010,Toshiba Aplio 300 @12-14 MHz,benign,276,304,data/raw/BUSBRA/Images/bus_1010-r.png
+bus_1057-r,1057,Toshiba Aplio 300 @12-14 MHz,malignant,276,306,data/raw/BUSBRA/Images/bus_1057-r.png
+bus_0851-s,851,U-Systems @10-14MHz,benign,387,404,data/raw/BUSBRA/Images/bus_0851-s.png
+bus_0858-l,858,U-Systems @10-14MHz,malignant,319,403,data/raw/BUSBRA/Images/bus_0858-l.png

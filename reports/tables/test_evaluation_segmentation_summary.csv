@@ -1,0 +1,43 @@
+group_type,group,n_images,n_cases,metric,n_defined,mean,sd_ddof1,min,p05,q1,median,q3,p95,max,note,n_flagged,n_flagged_cases
+all,all,376,212,dice_original,376,0.8704664106044304,0.14843735796634608,0.0,0.5955602154152653,0.8616382706309038,0.9187405161385178,0.9473078202095092,0.9673893569163496,0.9801973933949133,,,
+all,all,376,212,iou_original,376,0.7927902450432607,0.17263860087669175,0.0,0.42465199913030255,0.7569107873210634,0.8496958422140124,0.8998907409153314,0.9368388347604089,0.9611638439109126,,,
+all,all,376,212,count_empty_prediction,376,0.007978723404255319,,,,,,,,,share of the images of the group; n_flagged images,3.0,3.0
+all,all,376,212,count_dice_below_0.5,376,0.034574468085106384,,,,,,,,,share of the images of the group; n_flagged images,13.0,11.0
+all,all,376,212,count_several_components_in_the_raw_prediction,376,0.15425531914893617,,,,,,,,,share of the images of the group; n_flagged images,58.0,50.0
+all,all,376,212,count_prediction_over_half_of_the_image,376,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+class,benign,254,144,dice_original,254,0.8854888987825429,0.1369782107533045,0.0,0.6496290939039745,0.8855559457317869,0.9297944108322675,0.9513250366351751,0.9692981458872673,0.9801973933949133,,,
+class,benign,254,144,iou_original,254,0.8137774242470899,0.16088657797513944,0.0,0.4811137289387008,0.7946180517835146,0.8687998292985253,0.9071687419223355,0.9404253610136947,0.9611638439109126,,,
+class,benign,254,144,count_empty_prediction,254,0.007874015748031496,,,,,,,,,share of the images of the group; n_flagged images,2.0,2.0
+class,benign,254,144,count_dice_below_0.5,254,0.023622047244094488,,,,,,,,,share of the images of the group; n_flagged images,6.0,4.0
+class,benign,254,144,count_several_components_in_the_raw_prediction,254,0.12992125984251968,,,,,,,,,share of the images of the group; n_flagged images,33.0,30.0
+class,benign,254,144,count_prediction_over_half_of_the_image,254,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+class,malignant,122,68,dice_original,122,0.8391900827581962,0.16611528584837829,0.0,0.49652872198550124,0.8110487877506917,0.891525334417951,0.9370605824297649,0.9613588729279604,0.9797724861918871,,,
+class,malignant,122,68,iou_original,122,0.7490956260451243,0.1881390849527497,0.0,0.3302948542995117,0.6821566852356936,0.8042841624042991,0.881574806153248,0.9255939916419953,0.9603470529183995,,,
+class,malignant,122,68,count_empty_prediction,122,0.00819672131147541,,,,,,,,,share of the images of the group; n_flagged images,1.0,1.0
+class,malignant,122,68,count_dice_below_0.5,122,0.05737704918032787,,,,,,,,,share of the images of the group; n_flagged images,7.0,7.0
+class,malignant,122,68,count_several_components_in_the_raw_prediction,122,0.20491803278688525,,,,,,,,,share of the images of the group; n_flagged images,25.0,20.0
+class,malignant,122,68,count_prediction_over_half_of_the_image,122,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,GE Logiq 5 @10-12MHz,145,90,dice_original,145,0.8938016748532717,0.10818303928639746,0.1271857662138894,0.7159564223810944,0.8879372564114901,0.9296812749003984,0.9496130696474635,0.9685443908476002,0.9801973933949133,,,
+device,GE Logiq 5 @10-12MHz,145,90,iou_original,145,0.8211873225115879,0.13828013521502727,0.06791157602255547,0.5575824699994468,0.7984596746278989,0.8686022706123209,0.904060248853962,0.939007402139074,0.9611638439109126,,,
+device,GE Logiq 5 @10-12MHz,145,90,count_empty_prediction,145,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,GE Logiq 5 @10-12MHz,145,90,count_dice_below_0.5,145,0.013793103448275862,,,,,,,,,share of the images of the group; n_flagged images,2.0,2.0
+device,GE Logiq 5 @10-12MHz,145,90,count_several_components_in_the_raw_prediction,145,0.10344827586206896,,,,,,,,,share of the images of the group; n_flagged images,15.0,14.0
+device,GE Logiq 5 @10-12MHz,145,90,count_prediction_over_half_of_the_image,145,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,GE Logiq 7 @10-14MHz,192,102,dice_original,192,0.87548892077406,0.1310355813051274,0.0,0.6260816974675828,0.8642914242572279,0.9179015427887083,0.9470747510690752,0.9651912563162542,0.9797724861918871,,,
+device,GE Logiq 7 @10-14MHz,192,102,iou_original,192,0.7968909662182965,0.16099056052817914,0.0,0.4558093759754081,0.7610182893289329,0.8482606521551246,0.8994703452236545,0.9327242982532333,0.9603470529183995,,,
+device,GE Logiq 7 @10-14MHz,192,102,count_empty_prediction,192,0.005208333333333333,,,,,,,,,share of the images of the group; n_flagged images,1.0,1.0
+device,GE Logiq 7 @10-14MHz,192,102,count_dice_below_0.5,192,0.036458333333333336,,,,,,,,,share of the images of the group; n_flagged images,7.0,6.0
+device,GE Logiq 7 @10-14MHz,192,102,count_several_components_in_the_raw_prediction,192,0.171875,,,,,,,,,share of the images of the group; n_flagged images,33.0,27.0
+device,GE Logiq 7 @10-14MHz,192,102,count_prediction_over_half_of_the_image,192,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,Toshiba Aplio 300 @12-14 MHz,33,17,dice_original,33,0.7346848582861244,0.28373155421883534,0.0,0.056209317166560316,0.7105633802816902,0.8404642694583523,0.9305392041441017,0.9605247647061972,0.9647338528595958,,,
+device,Toshiba Aplio 300 @12-14 MHz,33,17,iou_original,33,0.6405841703293679,0.28049261897382843,0.0,0.029485806106052496,0.5510649918077554,0.7248282630029441,0.8701012769704976,0.9240552311301933,0.9318703750956877,,,
+device,Toshiba Aplio 300 @12-14 MHz,33,17,count_empty_prediction,33,0.06060606060606061,,,,,,,,,share of the images of the group; n_flagged images,2.0,2.0
+device,Toshiba Aplio 300 @12-14 MHz,33,17,count_dice_below_0.5,33,0.12121212121212122,,,,,,,,,share of the images of the group; n_flagged images,4.0,3.0
+device,Toshiba Aplio 300 @12-14 MHz,33,17,count_several_components_in_the_raw_prediction,33,0.24242424242424243,,,,,,,,,share of the images of the group; n_flagged images,8.0,7.0
+device,Toshiba Aplio 300 @12-14 MHz,33,17,count_prediction_over_half_of_the_image,33,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,U-Systems @10-14MHz,6,3,dice_original,6,0.8926090702466324,0.0728095451296496,0.7997139906252483,0.8020034639141147,0.8305090946441909,0.9126641369993795,0.9467103261751808,0.9651495784835404,0.9694290204295443,small groups are not interpreted,,
+device,U-Systems @10-14MHz,6,3,iou_original,6,0.8124378728839434,0.11671570089196913,0.6662695260788986,0.6694722710398003,0.7119714172940754,0.8398207696967572,0.898972274046477,0.9327447980646937,0.9406717631750162,small groups are not interpreted,,
+device,U-Systems @10-14MHz,6,3,count_empty_prediction,6,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,U-Systems @10-14MHz,6,3,count_dice_below_0.5,6,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0
+device,U-Systems @10-14MHz,6,3,count_several_components_in_the_raw_prediction,6,0.3333333333333333,,,,,,,,,share of the images of the group; n_flagged images,2.0,2.0
+device,U-Systems @10-14MHz,6,3,count_prediction_over_half_of_the_image,6,0.0,,,,,,,,,share of the images of the group; n_flagged images,0.0,0.0

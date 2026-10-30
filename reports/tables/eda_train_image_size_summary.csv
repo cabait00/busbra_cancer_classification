@@ -1,0 +1,22 @@
+group_type,group,metric,n,min,p25,median,p75,max,unique_width_height_pairs,images_with_csv_height_mismatch
+all,all,width,1114,261.0,276.0,318.0,323.0,579.0,521,3
+all,all,height,1114,268.0,351.0,386.0,447.0,478.0,521,3
+all,all,aspect_ratio,1114,0.6725,0.7342,0.75,0.8291,2.1119,521,3
+Pathology,benign,width,754,261.0,276.0,318.0,323.0,571.0,408,1
+Pathology,benign,height,754,268.0,351.0,389.5,450.0,475.0,408,1
+Pathology,benign,aspect_ratio,754,0.6784,0.735,0.7497,0.8265,2.1119,408,1
+Pathology,malignant,width,360,261.0,276.0,300.5,324.0,579.0,231,2
+Pathology,malignant,height,360,295.0,351.0,383.0,436.0,478.0,231,2
+Pathology,malignant,aspect_ratio,360,0.6725,0.7269,0.7514,0.902,1.7344,231,2
+Device,GE Logiq 5 @10-12MHz,width,522,267.0,321.0,323.0,325.0,572.0,240,0
+Device,GE Logiq 5 @10-12MHz,height,522,396.0,434.0,450.0,457.0,478.0,240,0
+Device,GE Logiq 5 @10-12MHz,aspect_ratio,522,0.6725,0.713,0.7402,0.751,1.2375,240,0
+Device,GE Logiq 7 @10-14MHz,width,504,261.0,275.0,276.0,280.0,566.0,247,2
+Device,GE Logiq 7 @10-14MHz,height,504,268.0,349.0,352.0,371.0,408.0,247,2
+Device,GE Logiq 7 @10-14MHz,aspect_ratio,504,0.688,0.7444,0.7841,0.8195,2.1119,247,2
+Device,Toshiba Aplio 300 @12-14 MHz,width,75,275.0,276.0,276.0,276.0,529.0,23,0
+Device,Toshiba Aplio 300 @12-14 MHz,height,75,301.0,303.5,305.0,306.0,313.0,23,0
+Device,Toshiba Aplio 300 @12-14 MHz,aspect_ratio,75,0.8818,0.9048,0.9076,0.9109,1.7344,23,0
+Device,U-Systems @10-14MHz,width,13,316.0,317.0,319.0,385.0,579.0,12,1
+Device,U-Systems @10-14MHz,height,13,353.0,403.0,405.0,407.0,473.0,12,1
+Device,U-Systems @10-14MHz,aspect_ratio,13,0.7166,0.7827,0.7862,0.9796,1.2241,12,1

@@ -1,0 +1,27 @@
+metric,observed,reference,matches
+images,1875,1875,True
+masks,1875,1875,True
+cases,1064,1064,True
+benign_images,1268,1268,True
+malignant_images,607,607,True
+benign_cases,722,722,True
+malignant_cases,342,342,True
+cases_with_1_image,253,253,True
+cases_with_2_images,811,811,True
+unique_image_sizes,713,713,True
+image_width_min,240,240,True
+image_width_max,579,579,True
+image_height_min,268,268,True
+image_height_max,478,478,True
+image_width_median,286.0,286,True
+image_height_median,383.0,383,True
+csv_dimension_mismatch_ids,"[""bus_0856-l"", ""bus_0857-r"", ""bus_0912-l"", ""bus_0990-l""]","[""bus_0856-l"", ""bus_0857-r"", ""bus_0912-l"", ""bus_0990-l""]",True
+birads_inconsistent_cases,"[""856""]","[""856""]",True
+inner_train_val_case_overlap_5fold,"{""valid_1"": 210, ""valid_2"": 201, ""valid_3"": 212, ""valid_4"": 216, ""valid_5"": 211}","{""valid_1"": 210, ""valid_2"": 201, ""valid_3"": 212, ""valid_4"": 216, ""valid_5"": 211}",True
+inner_train_val_case_overlap_10fold_range,"[221, 245]","[221, 245]",True
+split_train_images,1114,1114,True
+split_train_cases,639,639,True
+split_validation_images,385,385,True
+split_validation_cases,213,213,True
+split_test_images,376,376,True
+split_test_cases,212,212,True

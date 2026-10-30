@@ -1,0 +1,198 @@
+{
+  "run_id": "seg-20261020T203046-561c6fe1",
+  "study_id": "seg4fa-d5456bec",
+  "plan_sha256": "d5456becca3ce3c8d23c931b554f0eaa244e4b4c7ebc1ae9119b64adec7429e4",
+  "seed": 7,
+  "model_name": "unet_256_seed7",
+  "stage": "final",
+  "input": "whole ultrasound image, 256 x 256 x 1 float32 in [0, 1] (proportional scaling, centred black padding); target: the expert mask with the same geometry (nearest neighbour)",
+  "data_fingerprints": {
+    "train": {
+      "n": 1114,
+      "image_shape": [
+        1114,
+        256,
+        256,
+        1
+      ],
+      "image_dtype": "float32",
+      "mask_shape": [
+        1114,
+        256,
+        256,
+        1
+      ],
+      "mask_dtype": "uint8",
+      "images_sha256": "157b8a5de2413f4754259eb287eafac483dded4047d9e36106855a9e0c0bee06",
+      "masks_sha256": "b2d56286de621acec8bc3eeed65642905162466a9e5033af5cd5dd2384f56f99",
+      "ids_sha256": "d14a08160a077c74989e6b9c75eb8910c0e6420c408d4f268e166394750dfae7"
+    },
+    "validation": {
+      "n": 385,
+      "image_shape": [
+        385,
+        256,
+        256,
+        1
+      ],
+      "image_dtype": "float32",
+      "mask_shape": [
+        385,
+        256,
+        256,
+        1
+      ],
+      "mask_dtype": "uint8",
+      "images_sha256": "4ee02fcf75807078a8082115e138c9da463a797decf2571aee379357adf9c06c",
+      "masks_sha256": "d9ccabb4bdebb0507cb0825febe05876129630b3fc33047a43461753f234d10a",
+      "ids_sha256": "6e40aefef7e7f90e14543994dc77569e60b2e7cfef278c3828faaab4f865c608"
+    }
+  },
+  "registered_before_training_at": "2026-10-20T20:31:06+02:00",
+  "random_sources": {
+    "study_seed": 7,
+    "PYTHONHASHSEED": "7",
+    "python_numpy_tensorflow_keras": 7,
+    "weight_initialisation": "fresh construction after keras.utils.set_random_seed(7)",
+    "train_flip": 8,
+    "train_shuffle": 10,
+    "epoch_streams": "numpy default_rng([seed, epoch]) for the shuffle order and for the flip decisions of every epoch (index = epoch, first epoch 0); the flip decision is indexed by IMAGE, not by position",
+    "random_layers_in_the_network": "none (no dropout; the augmentation is done on image/mask pairs outside the network)"
+  },
+  "train_epoch_evidence": {
+    "n_train_images": 1114,
+    "shuffle_seed": 10,
+    "flip_seed": 8,
+    "first_epochs": [
+      {
+        "epoch": 0,
+        "order_sha256": "909da155aab563abfaa605216ce2a63165d30dff2c267bec9ecfa22a5c23a28a",
+        "flips_sha256": "57eb76f75242520a5f66c830addd79fcc39c695fa42709591aa5de5f980507c6",
+        "n_flipped": 579,
+        "share_flipped": 0.5197486535008977
+      },
+      {
+        "epoch": 1,
+        "order_sha256": "638f180080b82318b6e881ffc3c096bc3d775f73f09a08342976eb48b41936f9",
+        "flips_sha256": "4da15ff3e4406371e41e6d5cbcad8a7ef3638f8daa002b7f94436e63f9c9a640",
+        "n_flipped": 556,
+        "share_flipped": 0.4991023339317774
+      },
+      {
+        "epoch": 2,
+        "order_sha256": "42e39418e908209bbbdf89a99ef8b01121b11b111def2a305651185bfd50d809",
+        "flips_sha256": "4f380f9a00dcd43f00282e6549305b582052f0254e6fb1699bd6f47c556d32fb",
+        "n_flipped": 540,
+        "share_flipped": 0.48473967684021546
+      }
+    ]
+  },
+  "initial_weights": {
+    "trainable": "ee69236e9cb323f64954c2946f41852dc4eae712f2a2cfe33746a1ac96cebe9e",
+    "non_trainable": "07d9e5398b6e7b3125fc8b93cb8c2853619d27cfbc8136166bc1c5320003a254",
+    "all_weights": "d679d38b9767df3f3bd0c393b1e63f614496e038c2eea403538e506427f7dc73"
+  },
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "state": "new, nothing inherited"
+  },
+  "loss": {
+    "definition": "per image: BCE (mean over all pixels, probabilities clipped to [1e-7, 1 - 1e-7]) + (1 - soft Dice); mean over the images of the batch; equal weights 1 : 1",
+    "soft_dice": "(2 * sum(p * g) + s) / (sum(p) + sum(g) + s) per image, sums over all 256 x 256 pixels, smoothing s = 1.0 (added to numerator and denominator)",
+    "from_logits": false,
+    "class_weights": null
+  },
+  "batch_size": 8,
+  "max_epochs": 40,
+  "steps_per_epoch": 140,
+  "callbacks": {
+    "early_stopping": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "patience": 7,
+      "min_delta": 0,
+      "restore_best_weights": true
+    },
+    "model_checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "save_best_only": true,
+      "save_weights_only": false
+    },
+    "terminate_on_nan": true
+  },
+  "numerics": {
+    "dtype": "float32",
+    "jit_compile": false,
+    "mixed_precision": false
+  },
+  "augmentation": {
+    "training_only": true,
+    "kind": "joint horizontal flip of image and mask, probability 0.5 per image and epoch (one decision per image, applied to both arrays)",
+    "not_used": [
+      "rotation",
+      "zoom",
+      "any transformation that treats image and mask differently",
+      "brightness, contrast, noise",
+      "vertical flip"
+    ],
+    "validation": "no augmentation"
+  },
+  "binary_threshold": {
+    "value": 0.5,
+    "rule": "probability >= 0.5",
+    "status": "fixed in this first attempt before the training; not tuned on validation or anywhere else"
+  },
+  "architecture": {
+    "family": "compact U-Net-like encoder-decoder with skip connections, trained from scratch (no pretrained weights, no additional model family, no hyperparameter search)",
+    "input": [
+      256,
+      256,
+      1
+    ],
+    "output": [
+      256,
+      256,
+      1
+    ],
+    "output_activation": "sigmoid (probability of lesion pixel; not a calibrated clinical probability)",
+    "encoder_filters": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "bottleneck_filters": 256,
+    "block": "Conv2D 3x3 same (he_normal, no bias) -> BatchNormalization -> ReLU, twice per block",
+    "downsampling": "MaxPooling2D 2x2 after each encoder block (four times: 256 -> 16)",
+    "upsampling": "Conv2DTranspose 2x2 stride 2 (same), concatenation with the skip of the same level, one block per level",
+    "head": "Conv2D 1x1 with sigmoid",
+    "batch_normalization": "trained normally (training mode in training, moving statistics at inference); no dropout",
+    "expected_parameters": {
+      "total": 1945233,
+      "trainable": 1942289,
+      "non_trainable": 2944
+    }
+  },
+  "planned_parameters": {
+    "total": 1945233,
+    "trainable": 1942289,
+    "non_trainable": 2944
+  },
+  "batch_size_used": 8,
+  "checkpoint": "models/segmentation/unet_seed7/unet_256_seed7_best.keras",
+  "checkpoint_sha256": "b2b16c3de9034318cdcd52fb103a30dacf607bf4e2fb722ad6f0fb963e171947",
+  "best_epoch": 26,
+  "parameters": {
+    "total": 1945233,
+    "trainable": 1942289,
+    "non_trainable": 2944,
+    "n_trainable_weights": 64,
+    "n_batchnorm_layers": 18,
+    "n_conv_layers": 19,
+    "ok": true
+  },
+  "source_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "trained_on": "train; best checkpoint chosen by the validation loss (the validation expert masks steer it: not an independent assessment)"
+}

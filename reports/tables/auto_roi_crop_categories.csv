@@ -1,0 +1,36 @@
+group_type,group,category,n_images,n_cases,denominator_images,denominator_cases,share_of_images
+all,all,fallback_full_image,6,5,385,213,0.015584415584415584
+all,all,covers_all_expert_pixels,346,203,385,213,0.8987012987012987
+all,all,covers_90_to_below_100_percent,19,17,385,213,0.04935064935064935
+all,all,covers_more_than_0_to_below_90_percent,10,10,385,213,0.025974025974025976
+all,all,covers_no_expert_pixel,4,4,385,213,0.01038961038961039
+class,benign,fallback_full_image,4,3,260,144,0.015384615384615385
+class,benign,covers_all_expert_pixels,246,140,260,144,0.9461538461538461
+class,benign,covers_90_to_below_100_percent,5,5,260,144,0.019230769230769232
+class,benign,covers_more_than_0_to_below_90_percent,3,3,260,144,0.011538461538461539
+class,benign,covers_no_expert_pixel,2,2,260,144,0.007692307692307693
+class,malignant,fallback_full_image,2,2,125,69,0.016
+class,malignant,covers_all_expert_pixels,100,63,125,69,0.8
+class,malignant,covers_90_to_below_100_percent,14,12,125,69,0.112
+class,malignant,covers_more_than_0_to_below_90_percent,7,7,125,69,0.056
+class,malignant,covers_no_expert_pixel,2,2,125,69,0.016
+device,GE Logiq 5 @10-12MHz,fallback_full_image,2,1,142,85,0.014084507042253521
+device,GE Logiq 5 @10-12MHz,covers_all_expert_pixels,135,82,142,85,0.9507042253521126
+device,GE Logiq 5 @10-12MHz,covers_90_to_below_100_percent,4,3,142,85,0.028169014084507043
+device,GE Logiq 5 @10-12MHz,covers_more_than_0_to_below_90_percent,0,0,142,85,0.0
+device,GE Logiq 5 @10-12MHz,covers_no_expert_pixel,1,1,142,85,0.007042253521126761
+device,GE Logiq 7 @10-14MHz,fallback_full_image,1,1,206,109,0.0048543689320388345
+device,GE Logiq 7 @10-14MHz,covers_all_expert_pixels,186,105,206,109,0.9029126213592233
+device,GE Logiq 7 @10-14MHz,covers_90_to_below_100_percent,11,10,206,109,0.05339805825242718
+device,GE Logiq 7 @10-14MHz,covers_more_than_0_to_below_90_percent,6,6,206,109,0.02912621359223301
+device,GE Logiq 7 @10-14MHz,covers_no_expert_pixel,2,2,206,109,0.009708737864077669
+device,Toshiba Aplio 300 @12-14 MHz,fallback_full_image,3,3,31,16,0.0967741935483871
+device,Toshiba Aplio 300 @12-14 MHz,covers_all_expert_pixels,21,13,31,16,0.6774193548387096
+device,Toshiba Aplio 300 @12-14 MHz,covers_90_to_below_100_percent,3,3,31,16,0.0967741935483871
+device,Toshiba Aplio 300 @12-14 MHz,covers_more_than_0_to_below_90_percent,3,3,31,16,0.0967741935483871
+device,Toshiba Aplio 300 @12-14 MHz,covers_no_expert_pixel,1,1,31,16,0.03225806451612903
+device,U-Systems @10-14MHz,fallback_full_image,0,0,6,3,0.0
+device,U-Systems @10-14MHz,covers_all_expert_pixels,4,3,6,3,0.6666666666666666
+device,U-Systems @10-14MHz,covers_90_to_below_100_percent,1,1,6,3,0.16666666666666666
+device,U-Systems @10-14MHz,covers_more_than_0_to_below_90_percent,1,1,6,3,0.16666666666666666
+device,U-Systems @10-14MHz,covers_no_expert_pixel,0,0,6,3,0.0

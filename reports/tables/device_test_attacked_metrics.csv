@@ -1,0 +1,401 @@
+condition,epsilon_255,combo_id,group_id,seed,level,group,n_images,n_units,n_positive,n_negative,roc_auc,average_precision
+full,0,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.8771534044298606,0.8257419855222685
+full,0,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.8719309887193099,0.7666636226633575
+full,0,full_finetuned|seed7,full_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8650793650793651,0.7866324586719323
+full,0,full_finetuned|seed7,full_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+full,0,full_finetuned|seed7,full_finetuned,7,image,all,376,376,122,254,0.8809539176455403,0.7972643532574355
+full,0,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.8747949699289228,0.8391373973803522
+full,0,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.8828703703703703,0.8133911924489459
+full,0,full_finetuned|seed7,full_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8333333333333334,0.7384920634920634
+full,0,full_finetuned|seed7,full_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+full,0,full_finetuned|seed7,full_finetuned,7,case,all,376,212,68,144,0.8845996732026142,0.8194058156234119
+full,1,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.029327317473338804,0.21539891412220896
+full,1,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.013934970139349695,0.16239053023033428
+full,1,full_finetuned|seed7,full_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.003968253968253972,0.22416121347093862
+full,1,full_finetuned|seed7,full_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,1,full_finetuned|seed7,full_finetuned,7,image,all,376,376,122,254,0.019555957144701173,0.18546500131569366
+full,1,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.01968288682340076,0.20307015254343103
+full,1,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.005092592592592582,0.16914523058495384
+full,1,full_finetuned|seed7,full_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,1,full_finetuned|seed7,full_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,1,full_finetuned|seed7,full_finetuned,7,case,all,376,212,68,144,0.009906045751633983,0.18376107801711705
+full,2,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.004306808859721086,0.21382724898910227
+full,2,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.0030524220305242168,0.16194932686656058
+full,2,full_finetuned|seed7,full_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.003968253968253972,0.22416121347093862
+full,2,full_finetuned|seed7,full_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,2,full_finetuned|seed7,full_finetuned,7,image,all,376,376,122,254,0.004356525106492835,0.18476054099291647
+full,2,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.0032804811372334594,0.20193317835851693
+full,2,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.001388888888888884,0.1689832393133421
+full,2,full_finetuned|seed7,full_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,2,full_finetuned|seed7,full_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,2,full_finetuned|seed7,full_finetuned,7,case,all,376,212,68,144,0.0019403594771241794,0.18334566842272085
+full,4,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.0016406890894175563,0.21376633540309933
+full,4,full_finetuned|seed7,full_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.003317850033178498,0.1619625417132055
+full,4,full_finetuned|seed7,full_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.003968253968253972,0.22416121347093862
+full,4,full_finetuned|seed7,full_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,4,full_finetuned|seed7,full_finetuned,7,image,all,376,376,122,254,0.003969278430360139,0.18474265539492962
+full,4,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.0021869874248223015,0.2019355384953152
+full,4,full_finetuned|seed7,full_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0013888888888888876,0.16896610770032006
+full,4,full_finetuned|seed7,full_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,4,full_finetuned|seed7,full_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,4,full_finetuned|seed7,full_finetuned,7,case,all,376,212,68,144,0.0024509803921568623,0.18334848446076152
+full,0,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9017637407711239,0.862760414966662
+full,0,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.906171201061712,0.8281733209692014
+full,0,full_finetuned|seed21,full_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.9444444444444444,0.913991509579745
+full,0,full_finetuned|seed21,full_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+full,0,full_finetuned|seed21,full_finetuned,21,image,all,376,376,122,254,0.906576739382987,0.840806784267789
+full,0,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.8955713504647348,0.8557868724100179
+full,0,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.9185185185185185,0.8507902802196614
+full,0,full_finetuned|seed21,full_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.9848484848484849,0.9761904761904762
+full,0,full_finetuned|seed21,full_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+full,0,full_finetuned|seed21,full_finetuned,21,case,all,376,212,68,144,0.9124795751633987,0.8542480151611014
+full,1,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.05926989335520919,0.2176832941796123
+full,1,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.018978102189781017,0.16253173064116055
+full,1,full_finetuned|seed21,full_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.007936507936507936,0.22435962616935132
+full,1,full_finetuned|seed21,full_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,1,full_finetuned|seed21,full_finetuned,21,image,all,376,376,122,254,0.031012004646960106,0.18588299594653004
+full,1,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.06287588846364134,0.2061770513531591
+full,1,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.011111111111111098,0.16936757808859113
+full,1,full_finetuned|seed21,full_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,1,full_finetuned|seed21,full_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,1,full_finetuned|seed21,full_finetuned,21,case,all,376,212,68,144,0.026756535947712413,0.18429703682006876
+full,2,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.009639048400328138,0.2140261593416425
+full,2,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.00690112806901128,0.1619984036193584
+full,2,full_finetuned|seed21,full_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.007936507936507936,0.22435962616935132
+full,2,full_finetuned|seed21,full_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,2,full_finetuned|seed21,full_finetuned,21,image,all,376,376,122,254,0.008035368529753452,0.18482744795477454
+full,2,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.006560962274466919,0.20202529244278603
+full,2,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.004166666666666667,0.16901999275420512
+full,2,full_finetuned|seed21,full_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,2,full_finetuned|seed21,full_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,2,full_finetuned|seed21,full_finetuned,21,case,all,376,212,68,144,0.005821078431372545,0.18341261054178049
+full,4,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.0024610336341263335,0.21376099616622418
+full,4,full_finetuned|seed21,full_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.009688122096881219,0.16204855604010704
+full,4,full_finetuned|seed21,full_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.011904761904761908,0.22457892441496535
+full,4,full_finetuned|seed21,full_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,4,full_finetuned|seed21,full_finetuned,21,image,all,376,376,122,254,0.006454111268878276,0.184766456889745
+full,4,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.0021869874248223085,0.20188857867571794
+full,4,full_finetuned|seed21,full_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.006018518518518519,0.16905257665775675
+full,4,full_finetuned|seed21,full_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,4,full_finetuned|seed21,full_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,4,full_finetuned|seed21,full_finetuned,21,case,all,376,212,68,144,0.004391339869281046,0.18336242310650006
+full,0,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9042247744052502,0.8713300920074198
+full,0,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.8910418049104181,0.7922288562529515
+full,0,full_finetuned|seed42,full_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.873015873015873,0.7995527892586717
+full,0,full_finetuned|seed42,full_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+full,0,full_finetuned|seed42,full_finetuned,42,image,all,376,376,122,254,0.8950561507680393,0.8177095599670351
+full,0,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.8977583378895572,0.8674655986004897
+full,0,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.8921296296296296,0.8064109458701194
+full,0,full_finetuned|seed42,full_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8787878787878788,0.8214646464646465
+full,0,full_finetuned|seed42,full_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+full,0,full_finetuned|seed42,full_finetuned,42,case,all,376,212,68,144,0.8905228758169934,0.8246000904155008
+full,1,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.0666529942575882,0.21872441359826245
+full,1,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.01539482415394824,0.16235900951668147
+full,1,full_finetuned|seed42,full_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.011904761904761908,0.22457892441496535
+full,1,full_finetuned|seed42,full_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,1,full_finetuned|seed42,full_finetuned,42,image,all,376,376,122,254,0.031108816315993288,0.18597714951890948
+full,1,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.07381082558775287,0.2078228555585227
+full,1,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0037037037037036978,0.16905524024232244
+full,1,full_finetuned|seed42,full_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,1,full_finetuned|seed42,full_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,1,full_finetuned|seed42,full_finetuned,42,case,all,376,212,68,144,0.02747140522875817,0.18456537530390782
+full,2,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.01579163248564397,0.21444847895855668
+full,2,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.0021234240212342397,0.1619071941075953
+full,2,full_finetuned|seed42,full_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.007936507936507936,0.22435962616935132
+full,2,full_finetuned|seed42,full_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,2,full_finetuned|seed42,full_finetuned,42,image,all,376,376,122,254,0.007422227959210017,0.1848354152192838
+full,2,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.01913613996719519,0.2029053001908387
+full,2,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0004629629629629613,0.16895288018709256
+full,2,full_finetuned|seed42,full_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,2,full_finetuned|seed42,full_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,2,full_finetuned|seed42,full_finetuned,42,case,all,376,212,68,144,0.006842320261437912,0.18353050260577
+full,4,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.006152584085315835,0.2139008984056436
+full,4,full_finetuned|seed42,full_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.0022561380225613794,0.16190082217343255
+full,4,full_finetuned|seed42,full_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.007936507936507936,0.22435962616935132
+full,4,full_finetuned|seed42,full_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,4,full_finetuned|seed42,full_finetuned,42,image,all,376,376,122,254,0.0054859945785465354,0.18476046079646732
+full,4,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.010934937124111532,0.2022866193851721
+full,4,full_finetuned|seed42,full_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0009259259259259263,0.16895940079220473
+full,4,full_finetuned|seed42,full_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,4,full_finetuned|seed42,full_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,4,full_finetuned|seed42,full_finetuned,42,case,all,376,212,68,144,0.005106209150326797,0.18343115569278307
+full,0,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9152994257588186,0.8789889121404537
+full,0,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.8829462508294624,0.7779117463621656
+full,0,full_finetuned|seed123,full_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8928571428571428,0.8070436507936508
+full,0,full_finetuned|seed123,full_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+full,0,full_finetuned|seed123,full_finetuned,123,image,all,376,376,122,254,0.8963469730218149,0.8175288106952332
+full,0,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.910880262438491,0.8734063047596908
+full,0,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.8671296296296296,0.7861863616575331
+full,0,full_finetuned|seed123,full_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.9090909090909091,0.7999999999999999
+full,0,full_finetuned|seed123,full_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+full,0,full_finetuned|seed123,full_finetuned,123,case,all,376,212,68,144,0.8880718954248367,0.8159521028298591
+full,1,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.053732567678424936,0.21692504945050847
+full,1,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.0159256801592568,0.16229478394473595
+full,1,full_finetuned|seed123,full_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.007936507936507936,0.22435962616935132
+full,1,full_finetuned|seed123,full_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,1,full_finetuned|seed123,full_finetuned,123,image,all,376,376,122,254,0.030302052407383498,0.18565857018476042
+full,1,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.059595407326407876,0.20582454593647714
+full,1,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.011111111111111101,0.16932465052229387
+full,1,full_finetuned|seed123,full_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+full,1,full_finetuned|seed123,full_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,1,full_finetuned|seed123,full_finetuned,123,case,all,376,212,68,144,0.02879901960784314,0.18436420695335543
+full,2,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.013740771123872024,0.21415128888717136
+full,2,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.0043795620437956165,0.1619487861767756
+full,2,full_finetuned|seed123,full_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0,0.22398083829056348
+full,2,full_finetuned|seed123,full_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,2,full_finetuned|seed123,full_finetuned,123,image,all,376,376,122,254,0.010068413579450108,0.18484540013858095
+full,2,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.018589393110989613,0.20255580685715435
+full,2,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.004166666666666659,0.1690623445333142
+full,2,full_finetuned|seed123,full_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,2,full_finetuned|seed123,full_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,2,full_finetuned|seed123,full_finetuned,123,case,all,376,212,68,144,0.010008169934640522,0.1835444401204882
+full,4,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.007383100902379,0.2139495359172453
+full,4,full_finetuned|seed123,full_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.006104844061048439,0.16198916494205784
+full,4,full_finetuned|seed123,full_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0,0.22398083829056348
+full,4,full_finetuned|seed123,full_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,4,full_finetuned|seed123,full_finetuned,123,image,all,376,376,122,254,0.00890667355105202,0.1848274656645863
+full,4,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.013121924548933841,0.20236888913150702
+full,4,full_finetuned|seed123,full_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0050925925925925895,0.16906140258508864
+full,4,full_finetuned|seed123,full_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,4,full_finetuned|seed123,full_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,4,full_finetuned|seed123,full_finetuned,123,case,all,376,212,68,144,0.009293300653594766,0.1835292368368825
+full,0,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.8822805578342905,0.8318647250829164
+full,0,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.9049767750497677,0.8159686392536526
+full,0,full_finetuned|seed2026,full_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8531746031746031,0.69059770638718
+full,0,full_finetuned|seed2026,full_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+full,0,full_finetuned|seed2026,full_finetuned,2026,image,all,376,376,122,254,0.8950238802116949,0.7958453010171765
+full,0,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.896664844177146,0.8362608655307613
+full,0,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.9106481481481481,0.8373777526956551
+full,0,full_finetuned|seed2026,full_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8636363636363635,0.6746031746031745
+full,0,full_finetuned|seed2026,full_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+full,0,full_finetuned|seed2026,full_finetuned,2026,case,all,376,212,68,144,0.9027777777777778,0.7989636583609624
+full,1,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.0404019688269073,0.21683343644886638
+full,1,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.012607830126078294,0.16219628643928094
+full,1,full_finetuned|seed2026,full_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.003968253968253972,0.22416121347093862
+full,1,full_finetuned|seed2026,full_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,1,full_finetuned|seed2026,full_finetuned,2026,image,all,376,376,122,254,0.024622434490770614,0.18570318606667013
+full,1,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.0235101148168398,0.20346242225938999
+full,1,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.006018518518518519,0.16909446526897615
+full,1,full_finetuned|seed2026,full_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,1,full_finetuned|seed2026,full_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,1,full_finetuned|seed2026,full_finetuned,2026,case,all,376,212,68,144,0.013582516339869278,0.18383496334085417
+full,2,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.006357670221493026,0.21398423154686477
+full,2,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.0018579960185799598,0.16190154504428436
+full,2,full_finetuned|seed2026,full_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0,0.22398083829056348
+full,2,full_finetuned|seed2026,full_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,2,full_finetuned|seed2026,full_finetuned,2026,image,all,376,376,122,254,0.0052278301277914035,0.18477854901504348
+full,2,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.0027337342810278805,0.2019449651652498
+full,2,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0004629629629629613,0.16895288018709256
+full,2,full_finetuned|seed2026,full_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,2,full_finetuned|seed2026,full_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,2,full_finetuned|seed2026,full_finetuned,2026,case,all,376,212,68,144,0.0015318627450980355,0.18334315687077354
+full,4,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.004511894995898276,0.21379474211467397
+full,4,full_finetuned|seed2026,full_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.002521566025215661,0.16190735674872753
+full,4,full_finetuned|seed2026,full_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0,0.22398083829056348
+full,4,full_finetuned|seed2026,full_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,0.0,0.26666666666666666
+full,4,full_finetuned|seed2026,full_finetuned,2026,image,all,376,376,122,254,0.004421066219181619,0.18472542821949248
+full,4,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.0043739748496446134,0.20194576562733796
+full,4,full_finetuned|seed2026,full_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0004629629629629613,0.16895288018709256
+full,4,full_finetuned|seed2026,full_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+full,4,full_finetuned|seed2026,full_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+full,4,full_finetuned|seed2026,full_finetuned,2026,case,all,376,212,68,144,0.002144607843137254,0.18332738991514966
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9446267432321575,0.9280300577250562
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.9246184472461845,0.8288308767659222
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8412698412698413,0.7507768790663528
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,all,376,376,122,254,0.9287143410352394,0.8722840062648903
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.9311098961180974,0.9159739239555957
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.9310185185185185,0.8554071955122156
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8787878787878787,0.7884920634920635
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+auto,0,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,all,376,212,68,144,0.9328022875816993,0.8883092706544575
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.24425758818703855,0.25392101426292957
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.18367617783676177,0.1806992265377366
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.07142857142857142,0.23214948124181511
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,0.375,0.41666666666666663
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,all,376,376,122,254,0.2069510778365819,0.21007759204841553
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.2624384909786769,0.2446751907173233
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.19537037037037036,0.19190144875731271
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.09090909090909091,0.2426528944911298
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,0.5,0.5
+auto,1,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,all,376,212,68,144,0.22058823529411767,0.21187533847468798
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.13084495488105005,0.2272615425838912
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.12196416721964166,0.17087343901879493
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.047619047619047616,0.228526292836018
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,0.125,0.29166666666666663
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,all,376,376,122,254,0.12162772686201108,0.19443400823470966
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.14871514488791687,0.21824466960091699
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.12916666666666665,0.17977670091657313
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.06060606060606061,0.23753995187818716
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,2,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,all,376,212,68,144,0.1352124183006536,0.1953580806459974
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.09639048400328137,0.22187105870365645
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.11891174518911744,0.17034394257300045
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0515873015873016,0.2285509963933303
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,U-Systems @10-14MHz,6,6,2,4,0.5,0.41666666666666663
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,image,all,376,376,122,254,0.11207564218407126,0.19305878666871035
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.11809732094040457,0.21311527596147684
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.1384259259259259,0.18103874278079995
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.07575757575757576,0.2396767040149393
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,U-Systems @10-14MHz,6,3,1,2,0.5,0.5
+auto,4,auto_roi_finetuned|seed7,auto_roi_finetuned,7,case,all,376,212,68,144,0.1284722222222222,0.19432179070559835
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.939909762100082,0.9211202805141336
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.8958195089581951,0.7840774138733699
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8134920634920635,0.7513539238539239
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,all,376,376,122,254,0.9114495933909901,0.854376127512446
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.9240021869874248,0.9094719249334977
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.9037037037037037,0.8134867840967586
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8484848484848485,0.7994047619047618
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+auto,0,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,all,376,212,68,144,0.9144199346405228,0.8714068129557087
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.11115668580803939,0.22417302111597243
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.06609157266091571,0.16504614132681675
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.011904761904761908,0.22457892441496535
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,0.125,0.29166666666666663
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,all,376,376,122,254,0.09029301665160706,0.1905009649272123
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.12903225806451613,0.21513497400536152
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.07592592592592592,0.17355046372958732
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,1,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,all,376,212,68,144,0.09895833333333334,0.1905085115876624
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.0553732567678425,0.21745014357158077
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.04618447246184472,0.16354881158199747
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.015873015873015872,0.2248225891323143
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,0.125,0.29166666666666663
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,all,376,376,122,254,0.055053569123531695,0.1872156609161338
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.06396938217605248,0.2064189301131783
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.04768518518518519,0.17113023900322893
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.015151515151515155,0.231858133696369
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,2,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,all,376,212,68,144,0.05565767973856208,0.18613695211805575
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.03814602132895817,0.21600891961887475
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.03702720637027206,0.1632720227557689
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0,0.22398083829056348
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,U-Systems @10-14MHz,6,6,2,4,0.375,0.41666666666666663
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,image,all,376,376,122,254,0.04669549503033432,0.18669609778477056
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.044286495352651715,0.20491678997251664
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.03194444444444444,0.17049126012418975
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.0,0.23059550743374274
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,U-Systems @10-14MHz,6,3,1,2,0.5,0.5
+auto,4,auto_roi_finetuned|seed21,auto_roi_finetuned,21,case,all,376,212,68,144,0.043096405228758176,0.18543301865214482
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9409351927809679,0.9240418010626984
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.9138686131386861,0.7982613008555032
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.7579365079365079,0.669236818249976
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,all,376,376,122,254,0.913676261778753,0.8495676157386047
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.9267359212684527,0.9151787971184009
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.913425925925926,0.8125335079014401
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8181818181818181,0.6882936507936508
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+auto,0,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,all,376,212,68,144,0.9141135620915034,0.8602212822582858
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.2422067268252666,0.25132268642661065
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.1887193098871931,0.1808595737353167
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.07142857142857142,0.2306383816328894
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,0.125,0.29166666666666663
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,all,376,376,122,254,0.20459532722344134,0.2085990742786629
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.2618917441224713,0.2431308055764551
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.1842592592592593,0.1890275005935374
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.06060606060606061,0.23736188920012452
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,1,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,all,376,212,68,144,0.20843545751633985,0.20840335700959528
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.1400738310090238,0.2291062236308652
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.1274054412740544,0.17178636799610927
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.03571428571428571,0.22643864618315396
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,0.125,0.29166666666666663
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,all,376,376,122,254,0.1309216470891958,0.19595937339807776
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.16019682886823403,0.22094219369993312
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.11805555555555557,0.17910840522130136
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.04545454545454545,0.23522513706337236
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,2,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,all,376,212,68,144,0.1321486928104575,0.19553419283587098
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.09351927809680066,0.22210601924584994
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.12196416721964166,0.1710056171688718
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.03571428571428571,0.22673202110888185
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,U-Systems @10-14MHz,6,6,2,4,0.25,0.325
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,image,all,376,376,122,254,0.10839679876081063,0.19295835440197126
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.10224166211044286,0.21161864285747078
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.11898148148148147,0.1789033381210563
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.04545454545454545,0.23551003734827264
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,4,auto_roi_finetuned|seed42,auto_roi_finetuned,42,case,all,376,212,68,144,0.1071282679738562,0.19196599930906952
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9403199343724364,0.9140855507001133
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.9077637690776377,0.7996766751684156
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8015873015873016,0.6485820824056119
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,all,376,376,122,254,0.9098683361301149,0.8296917305520605
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.9376708583925643,0.9156309699130113
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.9162037037037036,0.8223450935982219
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.8484848484848485,0.6607142857142857
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+auto,0,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,all,376,212,68,144,0.9196282679738562,0.8448877979186282
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.16570959803117308,0.2339448480352047
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.18619774386197743,0.18112890961670103
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.07936507936507936,0.23197047546498326
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,0.25,0.3333333333333333
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,all,376,376,122,254,0.1724538531044275,0.20286135986427611
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.16839803171131768,0.22198337040127397
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.21064814814814814,0.19454177301948866
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.06060606060606061,0.23736188920012452
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,1,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,all,376,212,68,144,0.18280228758169934,0.20357833776496617
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.11464315012305168,0.22438830539551008
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.1980092899800929,0.1850555453639497
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.0873015873015873,0.23411060385511162
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,0.25,0.3333333333333333
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,all,376,376,122,254,0.15744804440428553,0.20070295259472862
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.11755057408419901,0.21288535275268572
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.22268518518518512,0.19847492777831738
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.07575757575757576,0.24051614235437765
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,2,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,all,376,212,68,144,0.16625816993464052,0.20084358470929334
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.13781788351107466,0.22859764861103063
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.28082282680822823,0.21474856966671346
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.1388888888888889,0.24499023348474125
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,U-Systems @10-14MHz,6,6,2,4,0.875,0.8333333333333333
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,image,all,376,376,122,254,0.21279204853491673,0.21616744914238317
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.14980863860032803,0.21848128044145476
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.31342592592592594,0.24222559649514402
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.1515151515151515,0.2577322595704949
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+auto,4,auto_roi_finetuned|seed123,auto_roi_finetuned,123,case,all,376,212,68,144,0.22926879084967317,0.21974278031104713
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.9284249384741591,0.9144731150345666
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.9195753151957531,0.8167219190295785
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.8174603174603174,0.7913159371492705
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,1.0,1.0
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,all,376,376,122,254,0.9109978056021685,0.8533547199681161
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.9141607435757244,0.9050780813895025
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.9189814814814814,0.8315569763995566
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.9242424242424243,0.8833333333333333
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,1.0,1.0
+auto,0,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,all,376,212,68,144,0.913296568627451,0.8707193875064173
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.17083675143560298,0.23463610743428515
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.12554744525547445,0.17114876730137846
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.09126984126984126,0.23363253889175256
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,0.25,0.3333333333333333
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,all,376,376,122,254,0.1454756680005163,0.19796814499555093
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.17659923455440132,0.2236154294741828
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.1375,0.18120706049822896
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.12121212121212122,0.24792539976363506
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,1,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,all,376,212,68,144,0.1559436274509804,0.19877028442833458
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.09741591468416734,0.22255700562056557
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.08971466489714666,0.16715532178452722
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.05952380952380952,0.2293300603245681
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,0.25,0.3333333333333333
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,all,376,376,122,254,0.09452045953272235,0.1911597626913175
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.09622744669218151,0.21017217411862682
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.08888888888888888,0.17501039372284583
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.10606060606060608,0.24540014723838255
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,0.0,0.3333333333333333
+auto,2,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,all,376,212,68,144,0.0985498366013072,0.19048227716953295
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 5 @10-12MHz,145,145,53,92,0.07588187038556193,0.21942581744098863
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,GE Logiq 7 @10-14MHz,192,192,55,137,0.09064366290643662,0.1672613406705504
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,Toshiba Aplio 300 @12-14 MHz,33,33,12,21,0.055555555555555566,0.22919720203953592
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,U-Systems @10-14MHz,6,6,2,4,0.625,0.5
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,image,all,376,376,122,254,0.08864721827804312,0.19039521539022602
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 5 @10-12MHz,145,90,31,59,0.07982504100601423,0.20795126290781252
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,GE Logiq 7 @10-14MHz,192,102,30,72,0.0898148148148148,0.17526511323922958
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,Toshiba Aplio 300 @12-14 MHz,33,17,6,11,0.09090909090909091,0.24328374512198045
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,U-Systems @10-14MHz,6,3,1,2,0.5,0.5
+auto,4,auto_roi_finetuned|seed2026,auto_roi_finetuned,2026,case,all,376,212,68,144,0.09170751633986929,0.18980602524865622

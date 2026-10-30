@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "complete": true,
+  "run_id": "mask-20261020T165852-30b9954c",
+  "started_at": "2026-10-20T16:58:52+02:00",
+  "generated_at": "2026-10-20T16:59:05+02:00",
+  "script": "analysis/13_mask_eda_and_roi_definition.py",
+  "script_sha256": "65567371bb01f609c1f2096751efb87ce03cc05e2d3cee83b7bcfd1e6b43ca3e",
+  "roi_module_sha256": "1579f4e756bb719c0b9041b33e5cdd8a5e8e9b5bcb87492b6e2539dec543c425",
+  "phase": "outputs",
+  "design": {
+    "scope": "training pairs only",
+    "validation_use": "Case values only, for the separation check",
+    "test_use": "none (rows only counted)",
+    "target_size": 160,
+    "components": "8-connected",
+    "margin": "20 % (exact fractions, floor left/top, ceil right/bottom, clip to the image)"
+  },
+  "sources": {
+    "manifest": {
+      "manifest_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+      "manifest_rows_by_split": {
+        "train": 1114,
+        "test": 376,
+        "validation": 385
+      },
+      "train": {
+        "images": 1114,
+        "cases": 639,
+        "benign": 754,
+        "malignant": 360
+      },
+      "validation_cases_for_separation_check": 213
+    },
+    "audit_status": "reports/tables/audit_status.json",
+    "split_status": "reports/tables/split_status.json"
+  },
+  "mask_encoding_evidence": {
+    "n_masks": 1114,
+    "encoding": {
+      "png_mode": "1",
+      "array_dtype": "bool",
+      "values": [
+        false,
+        true
+      ]
+    },
+    "direction_rule": "True is the lesion iff the median True share over the training masks is below one half (the typical mask covers a small part of the image); masks above one half are reported as findings, not repaired",
+    "true_share_min": 0.0060902936689549965,
+    "true_share_median": 0.06344119406235096,
+    "true_share_max": 0.5753866551849042,
+    "n_with_true_share_above_half": 2,
+    "ids_with_true_share_above_half": [
+      "bus_0666-l",
+      "bus_0666-r"
+    ],
+    "conclusion": "True = annotated lesion (0 = background); the only conversion that is applied"
+  },
+  "roi_contract": {
+    "file": "reports/tables/roi_contract.json",
+    "version": "roi-expert-mask-v1",
+    "contract_sha256": "a0c72744776e92a4ea63265c21a0939626691ab98f4d911b37040625067e0aad",
+    "frozen_at": "2026-10-20T16:58:43+02:00",
+    "file_sha256": "eebde4248cba3c405ae8f3ddffaa7e6ecd46dca9437885f67e665b9481f8798e"
+  },
+  "results": {
+    "training_pairs": 1114,
+    "training_cases": 639,
+    "geometry_problems": 0,
+    "masks_covering_more_than_half_of_the_image": 2,
+    "multiple_components": 0,
+    "tight_box_touches_any_border": 8,
+    "expansion_cut_by_image_border": 248,
+    "crop_enlarged_to_160": 407,
+    "known_csv_size_discrepancy_in_train": 3
+  },
+  "preview": {
+    "file": "data/processed/roi_preview_train_only.png",
+    "sha256": "c94332b86f49964f5588dca40e41a2e91699f63409d2b8e31ddd97176ade666e",
+    "ids": [
+      "bus_0496-l",
+      "bus_0428-r",
+      "bus_0311-r",
+      "bus_0250-r",
+      "bus_1051-r",
+      "bus_1062-r",
+      "bus_0851-s",
+      "bus_0854-s",
+      "bus_1008-r",
+      "bus_0666-l",
+      "bus_0164-l",
+      "bus_0666-r"
+    ],
+    "selection_file": "reports/tables/roi_preview_selection.csv",
+    "local_only": "not versioned, not part of any review package; it was written but NOT opened by this script"
+  },
+  "visual_inspection": {
+    "status": "open",
+    "who": "Carlo, locally, on the preview file above, before any ROI training",
+    "to_judge": [
+      "lesion inside the expanded box and the crop",
+      "tight and expanded box plausible for each listed ID",
+      "mask contour on the visible lesion",
+      "unusual masks (several components, border contact)",
+      "burned-in text and markers inside the crop"
+    ],
+    "note": "Not performed by this script or in this step. A main run must not be described as inspected beforehand if the inspection happens afterwards."
+  },
+  "execution": {
+    "mode": "computed",
+    "reproduces_previous_success": {
+      "run_id": "mask-20261020T165833-e8018684",
+      "all_output_files_byte_identical": true
+    },
+    "seconds": 12.6,
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "pillow": "13.0.0",
+    "tensorflow_imported": false,
+    "file_opens_recorded": {
+      "distinct_files_read": 2228,
+      "opens_for_reading": 3366,
+      "training_images": 1114,
+      "training_masks": 1114
+    }
+  },
+  "outputs": {
+    "reports/tables/mask_eda_train_pairs.csv": "c7b0bf5e9b937020a7fb9ba781e27411958b95f4f07280bbc3a97c2fd95500c5",
+    "reports/tables/mask_eda_summary.csv": "a65392e8c16b7c2db83f1d4d65fa9ddd178a93238441267220af9252b22c997d",
+    "reports/tables/mask_eda_flag_counts.csv": "a8ffa31d225f66f67cc06bdf7315fb9ff973a4599ed8ff37e78170210f4e1878",
+    "reports/tables/mask_eda_extremes.csv": "404fa604972b724f9a9da02166d7f9d94e8e61a86dee0e7955cc15cf33ba61a7",
+    "reports/tables/mask_eda_encoding.csv": "f7a65c866242b5ab3965f1496f82045ae0a56071220d61f1c0f2be49afbb31ff",
+    "reports/tables/roi_preview_selection.csv": "dd17a829d796a106ffc44693ec3905f07bd6c3bade463b1d3a6c5344cab2b4d0",
+    "reports/figures/mask_eda_train_overview.png": "70388509d69e5bc72a74059ec3e54aa5ef4d2b84de7cf2a2c87e454a09e23f2c",
+    "data/processed/roi_preview_train_only.png": "c94332b86f49964f5588dca40e41a2e91699f63409d2b8e31ddd97176ade666e"
+  },
+  "contract_file_sha256": "eebde4248cba3c405ae8f3ddffaa7e6ecd46dca9437885f67e665b9481f8798e",
+  "limitations": [
+    "descriptive; images of one case are dependent, a case is not shown to be an independent patient",
+    "the mask quality and the lesion boundary were not judged clinically",
+    "the mask is neither a cancer label nor a marker of healthy tissue",
+    "the 20 % margin is a fixed experimental choice, not optimised and not a millimetre value",
+    "the expert-mask ROI needs a manual mask at application time: not a pure image-to-score pipeline",
+    "burned-in text and markers stay inside the crops",
+    "crops smaller than 160 pixels are enlarged by the existing resize rule (interpolation)",
+    "the visual inspection of the preview is open"
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "project_interpreter_is_project_venv",
+      "passed": true,
+      "severity": "error",
+      "detail": "running environment <project>/.venv, expected <project>/.venv (executable <project>/.venv/bin/python); start with .venv/bin/python analysis/13_mask_eda_and_roi_definition.py from the project root"
+    },
+    {
+      "name": "audit_passed",
+      "passed": true,
+      "severity": "error",
+      "detail": "audit_status.json status 'passed', errors []"
+    },
+    {
+      "name": "split_is_frozen_and_hash_matches",
+      "passed": true,
+      "severity": "error",
+      "detail": "split_status.json status 'frozen'; manifest sha256 fdce9bc991b949cf... (frozen value fdce9bc991b949cf...)"
+    },
+    {
+      "name": "train_counts_as_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed training rows {'images': 1114, 'cases': 639, 'benign': 754, 'malignant': 360}, frozen {'images': 1114, 'cases': 639, 'benign': 754, 'malignant': 360}"
+    },
+    {
+      "name": "validation_only_used_for_case_separation",
+      "passed": true,
+      "severity": "error",
+      "detail": "validation: 385 rows / 213 cases (Case values only, no image or mask is opened); train/validation case overlap 0; rows of other subsets in the manifest: only counted ({'test': 376}), never evaluated"
+    },
+    {
+      "name": "train_pairs_linked_by_id_through_the_manifest",
+      "passed": true,
+      "severity": "error",
+      "detail": "each of the 1114 training rows links ID, Case, label, image path and mask path explicitly (image = Images/<ID>.png, mask = Masks/mask_<NNNN-x>.png, files present, no independently sorted file lists); problems: none"
+    },
+    {
+      "name": "mask_encoding_is_unique_and_the_accepted_one",
+      "passed": true,
+      "severity": "error",
+      "detail": "all 1114 training masks: encodings [(('1', 'bool', 'False|True'), 1114)]; accepted exactly PNG mode '1' / bool / values False|True; no other mode, no intermediate value, no empty mask; findings: none"
+    },
+    {
+      "name": "foreground_direction_true_is_lesion",
+      "passed": true,
+      "severity": "error",
+      "detail": "rule fixed in the contract: True is the lesion iff the median True share over the training masks is below one half (the typical mask covers a small part of the image); masks above one half are reported as findings, not repaired; observed True share per mask: min 0.0061, median 0.0634, max 0.5754; True is the minority value in 1112 of 1114 masks"
+    },
+    {
+      "name": "masks_covering_more_than_half_of_the_image",
+      "passed": true,
+      "severity": "info",
+      "detail": "2 of 1114 training masks have a True share above one half (findings for the visual inspection, no error, no repair): [('bus_0666-l', 0.575), ('bus_0666-r', 0.554)]"
+    },
+    {
+      "name": "all_train_pairs_measured_and_geometry_gate_passed",
+      "passed": true,
+      "severity": "error",
+      "detail": "1114 of 1114 training pairs: decoded image and mask sizes equal (and equal to the audited sizes), accepted mask encoding, no empty mask, all positive pixels inside the tight box, expanded box contains the tight box, margins exactly min(ceil(edge/5), distance to the border), all positive pixels inside the crop; problems: none"
+    },
+    {
+      "name": "roi_contract_registered_and_unchanged",
+      "passed": true,
+      "severity": "error",
+      "detail": "registered contract roi-expert-mask-v1 hash a0c72744776e92a4... vs the rule defined by the code a0c72744776e92a4...; frozen 2026-10-20T16:58:43+02:00"
+    },
+    {
+      "name": "access_control_only_train_images_and_train_masks",
+      "passed": true,
+      "severity": "error",
+      "detail": "image-like or raw-data files opened for reading: 2228 distinct files (1114 training images, 1114 training masks; 3366 opens in total), expected exactly the 1114 training images and 1114 training masks; any other file: none; model or weight files opened: none; TensorFlow/Keras/PyTorch imported: no; validation and test images and masks were not opened (the manifest was read line by line; only validation Case values and the number of other rows were kept)"
+    }
+  ]
+}

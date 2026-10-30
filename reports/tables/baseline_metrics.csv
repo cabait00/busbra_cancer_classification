@@ -1,0 +1,5 @@
+model,subset,positive_class,threshold,decision_rule,n_images,n_cases,n_malignant_cases,n_benign_cases,n_malignant_images,n_benign_images,n_predicted_malignant,tn,fp,fn,tp,sensitivity,specificity,precision,f1,accuracy,roc_auc,average_precision,model_converged
+dummy_prior,train,malignant (label 1),0.5,score >= threshold,1114,639,205,434,360,754,0,754,0,360,0,0.0,1.0,,0.0,0.6768402154398564,0.5,0.3231597845601436,True
+dummy_prior,validation,malignant (label 1),0.5,score >= threshold,385,213,69,144,125,260,0,260,0,125,0,0.0,1.0,,0.0,0.6753246753246753,0.5,0.3246753246753247,True
+logreg_l2,train,malignant (label 1),0.5,score >= threshold,1114,639,205,434,360,754,331,744,10,39,321,0.8916666666666667,0.986737400530504,0.9697885196374623,0.9290882778581766,0.9560143626570916,0.9918287651046273,0.986753354823839,True
+logreg_l2,validation,malignant (label 1),0.5,score >= threshold,385,213,69,144,125,260,104,203,57,78,47,0.376,0.7807692307692308,0.4519230769230769,0.4104803493449782,0.6493506493506493,0.6692,0.5091573412368177,True

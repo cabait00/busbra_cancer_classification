@@ -1,0 +1,7 @@
+Pathology,images_per_case,cases,images,denominator_cases
+benign,1,114,114,434
+benign,2,320,640,434
+malignant,1,50,50,205
+malignant,2,155,310,205
+all,1,164,164,639
+all,2,475,950,639

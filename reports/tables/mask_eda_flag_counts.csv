@@ -1,0 +1,71 @@
+group_type,group,flag,n_flagged_images,n_flagged_cases,denominator_images,denominator_cases,share_of_images
+all,all training pairs,multiple_components,0,0,1114,639,0.0
+all,all training pairs,mask_covers_more_than_half_of_the_image,2,1,1114,639,0.0017953321364452424
+all,all training pairs,tight_box_touches_any_border,8,8,1114,639,0.00718132854578097
+all,all training pairs,tight_box_touches_left,2,2,1114,639,0.0017953321364452424
+all,all training pairs,tight_box_touches_right,6,6,1114,639,0.005385996409335727
+all,all training pairs,tight_box_touches_top,0,0,1114,639,0.0
+all,all training pairs,tight_box_touches_bottom,0,0,1114,639,0.0
+all,all training pairs,expansion_cut_by_image_border,248,182,1114,639,0.22262118491921004
+all,all training pairs,crop_enlarged_to_160,407,250,1114,639,0.3653500897666068
+all,all training pairs,known_csv_size_discrepancy,3,3,1114,639,0.0026929982046678637
+class,benign,multiple_components,0,0,754,434,0.0
+class,benign,mask_covers_more_than_half_of_the_image,0,0,754,434,0.0
+class,benign,tight_box_touches_any_border,4,4,754,434,0.005305039787798408
+class,benign,tight_box_touches_left,2,2,754,434,0.002652519893899204
+class,benign,tight_box_touches_right,2,2,754,434,0.002652519893899204
+class,benign,tight_box_touches_top,0,0,754,434,0.0
+class,benign,tight_box_touches_bottom,0,0,754,434,0.0
+class,benign,expansion_cut_by_image_border,132,96,754,434,0.17506631299734748
+class,benign,crop_enlarged_to_160,334,205,754,434,0.44297082228116713
+class,benign,known_csv_size_discrepancy,1,1,754,434,0.001326259946949602
+class,malignant,multiple_components,0,0,360,205,0.0
+class,malignant,mask_covers_more_than_half_of_the_image,2,1,360,205,0.005555555555555556
+class,malignant,tight_box_touches_any_border,4,4,360,205,0.011111111111111112
+class,malignant,tight_box_touches_left,0,0,360,205,0.0
+class,malignant,tight_box_touches_right,4,4,360,205,0.011111111111111112
+class,malignant,tight_box_touches_top,0,0,360,205,0.0
+class,malignant,tight_box_touches_bottom,0,0,360,205,0.0
+class,malignant,expansion_cut_by_image_border,116,86,360,205,0.32222222222222224
+class,malignant,crop_enlarged_to_160,73,45,360,205,0.20277777777777778
+class,malignant,known_csv_size_discrepancy,2,2,360,205,0.005555555555555556
+device,GE Logiq 5 @10-12MHz,multiple_components,0,0,522,315,0.0
+device,GE Logiq 5 @10-12MHz,mask_covers_more_than_half_of_the_image,2,1,522,315,0.0038314176245210726
+device,GE Logiq 5 @10-12MHz,tight_box_touches_any_border,4,4,522,315,0.007662835249042145
+device,GE Logiq 5 @10-12MHz,tight_box_touches_left,0,0,522,315,0.0
+device,GE Logiq 5 @10-12MHz,tight_box_touches_right,4,4,522,315,0.007662835249042145
+device,GE Logiq 5 @10-12MHz,tight_box_touches_top,0,0,522,315,0.0
+device,GE Logiq 5 @10-12MHz,tight_box_touches_bottom,0,0,522,315,0.0
+device,GE Logiq 5 @10-12MHz,expansion_cut_by_image_border,103,75,522,315,0.19731800766283525
+device,GE Logiq 5 @10-12MHz,crop_enlarged_to_160,175,112,522,315,0.33524904214559387
+device,GE Logiq 5 @10-12MHz,known_csv_size_discrepancy,0,0,522,315,0.0
+device,GE Logiq 7 @10-14MHz,multiple_components,0,0,504,277,0.0
+device,GE Logiq 7 @10-14MHz,mask_covers_more_than_half_of_the_image,0,0,504,277,0.0
+device,GE Logiq 7 @10-14MHz,tight_box_touches_any_border,4,4,504,277,0.007936507936507936
+device,GE Logiq 7 @10-14MHz,tight_box_touches_left,2,2,504,277,0.003968253968253968
+device,GE Logiq 7 @10-14MHz,tight_box_touches_right,2,2,504,277,0.003968253968253968
+device,GE Logiq 7 @10-14MHz,tight_box_touches_top,0,0,504,277,0.0
+device,GE Logiq 7 @10-14MHz,tight_box_touches_bottom,0,0,504,277,0.0
+device,GE Logiq 7 @10-14MHz,expansion_cut_by_image_border,127,94,504,277,0.251984126984127
+device,GE Logiq 7 @10-14MHz,crop_enlarged_to_160,189,113,504,277,0.375
+device,GE Logiq 7 @10-14MHz,known_csv_size_discrepancy,2,2,504,277,0.003968253968253968
+device,Toshiba Aplio 300 @12-14 MHz,multiple_components,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,mask_covers_more_than_half_of_the_image,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,tight_box_touches_any_border,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,tight_box_touches_left,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,tight_box_touches_right,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,tight_box_touches_top,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,tight_box_touches_bottom,0,0,75,39,0.0
+device,Toshiba Aplio 300 @12-14 MHz,expansion_cut_by_image_border,13,10,75,39,0.17333333333333334
+device,Toshiba Aplio 300 @12-14 MHz,crop_enlarged_to_160,37,22,75,39,0.49333333333333335
+device,Toshiba Aplio 300 @12-14 MHz,known_csv_size_discrepancy,0,0,75,39,0.0
+device,U-Systems @10-14MHz,multiple_components,0,0,13,8,0.0
+device,U-Systems @10-14MHz,mask_covers_more_than_half_of_the_image,0,0,13,8,0.0
+device,U-Systems @10-14MHz,tight_box_touches_any_border,0,0,13,8,0.0
+device,U-Systems @10-14MHz,tight_box_touches_left,0,0,13,8,0.0
+device,U-Systems @10-14MHz,tight_box_touches_right,0,0,13,8,0.0
+device,U-Systems @10-14MHz,tight_box_touches_top,0,0,13,8,0.0
+device,U-Systems @10-14MHz,tight_box_touches_bottom,0,0,13,8,0.0
+device,U-Systems @10-14MHz,expansion_cut_by_image_border,5,3,13,8,0.38461538461538464
+device,U-Systems @10-14MHz,crop_enlarged_to_160,6,3,13,8,0.46153846153846156
+device,U-Systems @10-14MHz,known_csv_size_discrepancy,1,1,13,8,0.07692307692307693

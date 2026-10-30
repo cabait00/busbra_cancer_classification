@@ -1,0 +1,7 @@
+group,n_images,n_images_malignant,n_images_benign,n_cases,n_cases_malignant,n_cases_benign
+GE Logiq 5 @10-12MHz,145,53,92,90,31,59
+GE Logiq 7 @10-14MHz,192,55,137,102,30,72
+Toshiba Aplio 300 @12-14 MHz,33,12,21,17,6,11
+U-Systems @10-14MHz,6,2,4,3,1,2
+mixed devices,0,0,0,0,0,0
+all,376,122,254,212,68,144

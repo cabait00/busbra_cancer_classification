@@ -1,0 +1,78 @@
+pipeline,metric,n_runs,n_defined,mean,sd_ddof1,min,max,undefined_note,historical_single_seed_value
+small_cnn_160,roc_auc,5,5,0.6614215384615385,0.05983460992083676,0.587476923076923,0.706153846153846,,0.7155076923076924
+small_cnn_160,average_precision,5,5,0.5041540437374271,0.04221149885768994,0.4485404957756827,0.538004148964311,,0.5506883239161925
+small_cnn_160,sensitivity,5,5,0.0656,0.0615532289973483,0.0,0.128,,
+small_cnn_160,specificity,5,5,0.9807692307692306,0.018842228790639858,0.9576923076923076,1.0,,
+small_cnn_160,precision,5,3,0.6253383508285468,0.02885845229674351,0.5925925925925926,0.6470588235294118,some runs have an undefined value (zero denominator); not replaced by zero,
+small_cnn_160,f1,5,5,0.11118641674609053,0.10343305372009046,0.0,0.2105263157894736,,
+small_cnn_160,accuracy,5,5,0.6836363636363637,0.007661236988962405,0.6753246753246753,0.6909090909090909,,
+small_cnn_160,tn,5,5,255.0,4.898979485566356,249.0,260.0,,
+small_cnn_160,fp,5,5,5.0,4.898979485566356,0.0,11.0,,
+small_cnn_160,fn,5,5,116.8,7.694153624668537,109.0,125.0,,
+small_cnn_160,tp,5,5,8.2,7.694153624668538,0.0,16.0,,
+mobilenetv2_frozen_160,roc_auc,5,5,0.8093538461538461,0.004067361792693486,0.8053846153846154,0.8137230769230769,,0.8159692307692308
+mobilenetv2_frozen_160,average_precision,5,5,0.7057942587838341,0.010628736632784689,0.6932162077901023,0.7191616823610996,,0.7210699348647384
+mobilenetv2_frozen_160,sensitivity,5,5,0.44160000000000005,0.040948748454623124,0.392,0.504,,
+mobilenetv2_frozen_160,specificity,5,5,0.936153846153846,0.006435846357954351,0.9307692307692308,0.946153846153846,,
+mobilenetv2_frozen_160,precision,5,5,0.7681823611653337,0.025618477100199884,0.7313432835820896,0.8,,
+mobilenetv2_frozen_160,f1,5,5,0.5602480719696392,0.037426420905400874,0.5104166666666666,0.6116504854368932,,
+mobilenetv2_frozen_160,accuracy,5,5,0.7755844155844157,0.014059603743090246,0.7558441558441559,0.7922077922077922,,
+mobilenetv2_frozen_160,tn,5,5,243.4,1.6733200530681511,242.0,246.0,,
+mobilenetv2_frozen_160,fp,5,5,16.6,1.6733200530681511,14.0,18.0,,
+mobilenetv2_frozen_160,fn,5,5,69.8,5.118593556827891,62.0,76.0,,
+mobilenetv2_frozen_160,tp,5,5,55.2,5.118593556827891,49.0,63.0,,
+mobilenetv2_finetuned_160,roc_auc,5,5,0.8247507692307693,0.003483288930758932,0.8208307692307693,0.8301230769230769,,0.8235076923076924
+mobilenetv2_finetuned_160,average_precision,5,5,0.7297551848843146,0.006523378174806937,0.7229887678798519,0.7371574971356311,,0.7392636921838098
+mobilenetv2_finetuned_160,sensitivity,5,5,0.528,0.07244308110509932,0.416,0.592,,
+mobilenetv2_finetuned_160,specificity,5,5,0.9123076923076923,0.02670239224263042,0.8884615384615384,0.95,,
+mobilenetv2_finetuned_160,precision,5,5,0.7482570187002736,0.03979968414216666,0.7096774193548387,0.8,,
+mobilenetv2_finetuned_160,f1,5,5,0.6150441119572025,0.043096462854712504,0.5473684210526316,0.6548672566371682,,
+mobilenetv2_finetuned_160,accuracy,5,5,0.7875324675324675,0.010126539579022304,0.7766233766233767,0.7974025974025974,,
+mobilenetv2_finetuned_160,tn,5,5,237.2,6.942621983083912,231.0,247.0,,
+mobilenetv2_finetuned_160,fp,5,5,22.8,6.942621983083913,13.0,29.0,,
+mobilenetv2_finetuned_160,fn,5,5,59.0,9.055385138137417,51.0,73.0,,
+mobilenetv2_finetuned_160,tp,5,5,66.0,9.055385138137417,52.0,74.0,,
+mobilenetv2_extended_160,roc_auc,5,5,0.8397969230769229,0.011540196792595594,0.830123076923077,0.8544615384615384,,0.8332923076923077
+mobilenetv2_extended_160,average_precision,5,5,0.7415917530295255,0.017094172959195415,0.7211260710606806,0.7665797109533954,,0.7614726785006635
+mobilenetv2_extended_160,sensitivity,5,5,0.6176000000000001,0.042104631574210453,0.56,0.672,,
+mobilenetv2_extended_160,specificity,5,5,0.9038461538461539,0.00666173387526484,0.8923076923076924,0.9076923076923076,,
+mobilenetv2_extended_160,precision,5,5,0.7552049739386895,0.01243037882736504,0.7368421052631579,0.7692307692307693,,
+mobilenetv2_extended_160,f1,5,5,0.6789946277071164,0.028242749220287418,0.6363636363636364,0.7088607594936709,,
+mobilenetv2_extended_160,accuracy,5,5,0.8109090909090909,0.011817468224495926,0.7922077922077922,0.8207792207792208,,
+mobilenetv2_extended_160,tn,5,5,235.0,1.7320508075688772,232.0,236.0,,
+mobilenetv2_extended_160,fp,5,5,25.0,1.7320508075688772,24.0,28.0,,
+mobilenetv2_extended_160,fn,5,5,47.8,5.263078946776307,41.0,55.0,,
+mobilenetv2_extended_160,tp,5,5,77.2,5.263078946776307,70.0,84.0,,
+mobilenetv2_higher_lr_160,roc_auc,5,5,0.8620861538461538,0.014588061910201027,0.8441230769230769,0.8758769230769231,,0.8650153846153847
+mobilenetv2_higher_lr_160,average_precision,5,5,0.7560717916466093,0.03051576694918777,0.7042118558712405,0.7849192969824837,,0.7788710375236474
+mobilenetv2_higher_lr_160,sensitivity,5,5,0.6784000000000001,0.07362608233499866,0.608,0.768,,
+mobilenetv2_higher_lr_160,specificity,5,5,0.8646153846153846,0.062100796095860514,0.7807692307692308,0.9153846153846154,,
+mobilenetv2_higher_lr_160,precision,5,5,0.7181327474385981,0.07070693569624192,0.62,0.7755102040816326,,
+mobilenetv2_higher_lr_160,f1,5,5,0.6920206879705159,0.018252673178170472,0.6763636363636364,0.7137546468401487,,
+mobilenetv2_higher_lr_160,accuracy,5,5,0.8041558441558442,0.02185525607061053,0.7688311688311689,0.825974025974026,,
+mobilenetv2_higher_lr_160,tn,5,5,224.8,16.146206984923733,203.0,238.0,,
+mobilenetv2_higher_lr_160,fp,5,5,35.2,16.146206984923737,22.0,57.0,,
+mobilenetv2_higher_lr_160,fn,5,5,40.2,9.20326029187483,29.0,49.0,,
+mobilenetv2_higher_lr_160,tp,5,5,84.8,9.20326029187483,76.0,96.0,,
+dummy_prior,roc_auc,1,1,0.5,,0.5,0.5,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.5
+dummy_prior,average_precision,1,1,0.3246753246753247,,0.3246753246753247,0.3246753246753247,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.3246753246753247
+dummy_prior,sensitivity,1,1,0.0,,0.0,0.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.0
+dummy_prior,specificity,1,1,1.0,,1.0,1.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",1.0
+dummy_prior,precision,1,0,,,,,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",
+dummy_prior,f1,1,1,0.0,,0.0,0.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.0
+dummy_prior,accuracy,1,1,0.6753246753246753,,0.6753246753246753,0.6753246753246753,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.6753246753246753
+dummy_prior,tn,1,1,260.0,,260.0,260.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",260.0
+dummy_prior,fp,1,1,0.0,,0.0,0.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.0
+dummy_prior,fn,1,1,125.0,,125.0,125.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",125.0
+dummy_prior,tp,1,1,0.0,,0.0,0.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.0
+logreg_l2,roc_auc,1,1,0.6692,,0.6692,0.6692,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.6692
+logreg_l2,average_precision,1,1,0.5091573412368177,,0.5091573412368177,0.5091573412368177,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.5091573412368177
+logreg_l2,sensitivity,1,1,0.376,,0.376,0.376,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.376
+logreg_l2,specificity,1,1,0.7807692307692308,,0.7807692307692308,0.7807692307692308,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.7807692307692308
+logreg_l2,precision,1,1,0.4519230769230769,,0.4519230769230769,0.4519230769230769,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.4519230769230769
+logreg_l2,f1,1,1,0.4104803493449782,,0.4104803493449782,0.4104803493449782,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.4104803493449782
+logreg_l2,accuracy,1,1,0.6493506493506493,,0.6493506493506493,0.6493506493506493,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",0.6493506493506493
+logreg_l2,tn,1,1,203.0,,203.0,203.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",203.0
+logreg_l2,fp,1,1,57.0,,57.0,57.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",57.0
+logreg_l2,fn,1,1,78.0,,78.0,78.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",78.0
+logreg_l2,tp,1,1,47.0,,47.0,47.0,"fixed reference from the accepted baseline run (not re-trained, no seed spread)",47.0

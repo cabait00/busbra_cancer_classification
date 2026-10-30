@@ -1,0 +1,15 @@
+group_type,group,basis,n_images,n_cases,n_defined,mean,sd_ddof1,min,p05,q1,median,q3,p95,max,n_below_100_percent,n_below_90_percent,n_zero
+all,all,without_fallback_images,379,212,379,0.9739230242450733,0.14125946888155866,0.0,0.9438914288394012,1.0,1.0,1.0,1.0,1.0,33,14,4
+all,all,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,385,213,385,0.9743294186724228,0.14018884454855643,0.0,0.9470778961044964,1.0,1.0,1.0,1.0,1.0,33,14,4
+class,benign,without_fallback_images,256,143,256,0.984390110802673,0.11530511001187115,0.0,1.0,1.0,1.0,1.0,1.0,1.0,10,5,2
+class,benign,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,260,144,260,0.9846302629441702,0.11442745033841917,0.0,1.0,1.0,1.0,1.0,1.0,1.0,10,5,2
+class,malignant,without_fallback_images,123,69,123,0.9521378684829144,0.1825589075743955,0.0,0.8294743561276542,1.0,1.0,1.0,1.0,1.0,23,9,2
+class,malignant,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,125,69,125,0.9529036625871878,0.18118103448402023,0.0,0.8294864374805335,1.0,1.0,1.0,1.0,1.0,23,9,2
+device,GE Logiq 5 @10-12MHz,without_fallback_images,140,84,140,0.9920001339574628,0.08474130686310326,0.0,1.0,1.0,1.0,1.0,1.0,1.0,5,1,1
+device,GE Logiq 5 @10-12MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,142,85,142,0.9921128081270759,0.08414347660202849,0.0,1.0,1.0,1.0,1.0,1.0,1.0,5,1,1
+device,GE Logiq 7 @10-14MHz,without_fallback_images,205,109,205,0.9725353865842012,0.14871103615059186,0.0,0.9170344296127126,1.0,1.0,1.0,1.0,1.0,19,8,2
+device,GE Logiq 7 @10-14MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,206,109,206,0.9726687099502975,0.14836022389496795,0.0,0.9198569528734959,1.0,1.0,1.0,1.0,1.0,19,8,2
+device,Toshiba Aplio 300 @12-14 MHz,without_fallback_images,28,16,28,0.8954239364449634,0.257536013238095,0.0,0.36985587363791794,0.9984276729559749,1.0,1.0,1.0,1.0,7,4,1
+device,Toshiba Aplio 300 @12-14 MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,31,16,31,0.905544200659967,0.24633331051769575,0.0,0.3793184206144963,1.0,1.0,1.0,1.0,1.0,7,4,1
+device,U-Systems @10-14MHz,without_fallback_images,6,3,6,0.9658638274362884,0.06816688732508369,0.8295830883035686,0.863587285306217,0.9741999072356216,1.0,1.0,1.0,1.0,2,1,0
+device,U-Systems @10-14MHz,fallback_images_counted_as_full_coverage_NOT_a_localisation_quality,6,3,6,0.9658638274362884,0.06816688732508369,0.8295830883035686,0.863587285306217,0.9741999072356216,1.0,1.0,1.0,1.0,2,1,0

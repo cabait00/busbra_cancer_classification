@@ -1,0 +1,31 @@
+{
+  "status": "frozen",
+  "plan_sha256": "0e9e0f3f539ded4c5bad352bdd7be2366ad89c92db9c407ef3873bd63344e3f1",
+  "study_id": "test5c-0e9e0f3f",
+  "frozen_at": "2026-10-21T14:29:17+02:00",
+  "run_id": "test5c-20261021T142915-cc2ecff4",
+  "n_images": 376,
+  "inputs_fingerprint": {
+    "n": 376,
+    "shape": [
+      376,
+      160,
+      160,
+      1
+    ],
+    "dtype": "float32",
+    "array_sha256": "bff3250d84481e82152a799e90fb2e79a34ac126df304523d16b40f3ec4afae2",
+    "ids_sha256": "646fffdbec10b4a3ea5988dc1b38233e3d410100cf80e4c7c0307a14066e63e4",
+    "labels_sha256": "a0e1ba65461435018a1adea036c2d89d0f40fae21080c5be08acad565f6bbad9"
+  },
+  "geometry_table": {
+    "file": "reports/tables/test_evaluation/expert_roi_geometry_test.csv",
+    "sha256": "66977e601d23dcb91cef5332d14c2ce93d2e5a4e4043e6b5a257919655046d4c",
+    "rows": 376
+  },
+  "contract": {
+    "file": "reports/tables/roi_contract.json",
+    "sha256": "eebde4248cba3c405ae8f3ddffaa7e6ecd46dca9437885f67e665b9481f8798e"
+  },
+  "note": "Expert boxes from the test masks by the frozen contract roi-expert-mask-v1, derived after the automatic ROIs were frozen; the classification rebuilds the crops from these boxes and the images only."
+}

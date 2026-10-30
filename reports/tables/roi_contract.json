@@ -1,0 +1,79 @@
+{
+  "contract_version": "roi-expert-mask-v1",
+  "contract_sha256": "a0c72744776e92a4ea63265c21a0939626691ab98f4d911b37040625067e0aad",
+  "frozen_at": "2026-10-20T16:58:43+02:00",
+  "contract": {
+    "version": "roi-expert-mask-v1",
+    "kind": "expert-mask region of interest (information condition: a manual lesion mask is required at application time)",
+    "information_condition": "The crop is derived from an expert lesion mask. Applying the ROI branch later needs a manual mask, so its classification performance must not be reported as a pure image-to-score pipeline. Only a separate segmentation branch could create the crop without an expert mask. The full-image branch and its results stay valid and unchanged.",
+    "mask_meaning": "The mask annotates the lesion (benign lesions have masks as well). It is neither a cancer label nor a marker of histologically healthy background.",
+    "mask_encoding": {
+      "accepted": {
+        "png_mode": "1",
+        "array_dtype": "bool",
+        "values": [
+          false,
+          true
+        ]
+      },
+      "conversion": "True -> 1 = annotated lesion, False -> 0 = background; any other encoding, intermediate value, empty mask or size mismatch is an error (no threshold, no repair)",
+      "foreground_direction_rule": "True is the lesion iff the median True share over the training masks is below one half (the typical mask covers a small part of the image); masks above one half are reported as findings, not repaired",
+      "foreground_direction_evidence": "recorded in the status of the analysis (True share of every training mask, masks above one half listed as findings)"
+    },
+    "coordinates": "original pixel coordinates of the decoded image, half-open [x0, x1) x [y0, y1), w = x1 - x0, h = y1 - y0",
+    "box": "axis-parallel box around ALL positive mask pixels; with several components every component is included; empty mask = abort, no substitute box",
+    "components": {
+      "neighbourhood": "8-connected",
+      "use": "descriptive only; the box always includes all components"
+    },
+    "expansion": {
+      "fraction": "1/5 (20 %) of the box width on the left and right and of the box height at the top and bottom",
+      "order": "1) tight box from all positive pixels, 2) expand in exact rational arithmetic, 3) clip to [0, W] x [0, H]",
+      "rounding": "left = floor(x0 - w/5), right = ceil(x1 + w/5), top = floor(y0 - h/5), bottom = ceil(y1 + h/5); equal to a margin of ceil(w/5) resp. ceil(h/5) pixels on both sides",
+      "border_contact": "a side that touches or would pass the image border stops at the border (no mirroring, no padding with invented pixels); the cut-off is recorded"
+    },
+    "crop": "the UNMASKED original image inside the expanded box (plain crop)",
+    "preparation": {
+      "rule": "existing aspect-ratio preserving rule of busbra.image_processing.resize_with_padding (whole crop fitted into the square, bilinear, centred on black)",
+      "size": [
+        160,
+        160
+      ],
+      "output": "(160, 160, 1) float32 in [0, 1] (uint8 / 255)",
+      "note": "Pillow's ImageOps.contain also enlarges crops that are smaller than 160 pixels; the scale factor is reported per image"
+    },
+    "not_used": [
+      "mask channel",
+      "blackening or masking outside the lesion",
+      "contrast stretching",
+      "OCR",
+      "marker removal",
+      "BBOX or BI-RADS metadata as model input",
+      "ground-truth masks of validation or test data in this step"
+    ],
+    "fixed_choices": "The 20 % margin is a fixed experimental choice. It was not optimised on validation data, is not a millimetre value and is not claimed to be optimal.",
+    "preview_selection_rule": [
+      "Only training pairs are candidates (split == train); validation and test pairs are never candidates.",
+      "Part 1: for every combination (device in alphabetical order, class benign then malignant) the image whose positive-pixel fraction is closest to the median fraction of that group; ties go to the smallest ID.",
+      "Part 2, extremes (each takes the best candidate that is not selected yet; ties go to the smallest ID): smallest number of positive pixels; largest positive-pixel fraction; most connected components (only if more than one); touching the most image borders with the tight box (only if at least one); largest number of pixels cut off by the image border from the expanded box (only if above zero).",
+      "No selection by visual impression, by model output or by validation/test information."
+    ],
+    "geometry_checks": [
+      "all positive mask pixels lie inside the tight box",
+      "the tight box is minimal",
+      "the expanded box contains the tight box and lies inside the image",
+      "each margin equals min(ceil(edge/5), distance to the image border)",
+      "all positive mask pixels lie inside the crop",
+      "crop size equals expanded box size"
+    ]
+  },
+  "frozen_after_geometry_gate": {
+    "training_pairs_checked": 1114,
+    "geometry_problems": 0,
+    "split_manifest_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a"
+  },
+  "script": "analysis/13_mask_eda_and_roi_definition.py",
+  "script_sha256_at_registration": "65567371bb01f609c1f2096751efb87ce03cc05e2d3cee83b7bcfd1e6b43ca3e",
+  "roi_module_sha256_at_registration": "1579f4e756bb719c0b9041b33e5cdd8a5e8e9b5bcb87492b6e2539dec543c425",
+  "note": "Frozen before any validation or test mask is used for anything. A later change is only possible as a new contract version with a documented reason; this file is never rewritten and a differing rule stops the analysis."
+}

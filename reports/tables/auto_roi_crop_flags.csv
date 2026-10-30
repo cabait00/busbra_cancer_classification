@@ -1,0 +1,85 @@
+group_type,group,flag,description,denominator_basis,n_flagged_images,n_flagged_cases,denominator_images,denominator_cases,share_of_images
+all,all,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,6,5,385,213,0.015584415584415584
+all,all,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,70,62,385,213,0.18181818181818182
+all,all,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,385,213,0.0
+all,all,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,14,14,379,212,0.036939313984168866
+all,all,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,33,30,379,212,0.0870712401055409
+all,all,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,4,4,379,212,0.010554089709762533
+all,all,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,12,12,379,212,0.0316622691292876
+all,all,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,22,14,385,213,0.05714285714285714
+all,all,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,1,1,385,213,0.0025974025974025974
+all,all,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,60,44,379,212,0.158311345646438
+all,all,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,379,212,0.0
+all,all,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,379,212,0.0
+class,benign,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,4,3,260,144,0.015384615384615385
+class,benign,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,35,34,260,144,0.1346153846153846
+class,benign,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,260,144,0.0
+class,benign,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,5,5,256,143,0.01953125
+class,benign,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,10,10,256,143,0.0390625
+class,benign,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,2,2,256,143,0.0078125
+class,benign,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,4,4,256,143,0.015625
+class,benign,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,14,9,260,144,0.05384615384615385
+class,benign,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,1,1,260,144,0.0038461538461538464
+class,benign,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,34,26,256,143,0.1328125
+class,benign,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,256,143,0.0
+class,benign,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,256,143,0.0
+class,malignant,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,2,2,125,69,0.016
+class,malignant,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,35,28,125,69,0.28
+class,malignant,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,125,69,0.0
+class,malignant,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,9,9,123,69,0.07317073170731707
+class,malignant,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,23,20,123,69,0.18699186991869918
+class,malignant,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,2,2,123,69,0.016260162601626018
+class,malignant,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,8,8,123,69,0.06504065040650407
+class,malignant,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,8,5,125,69,0.064
+class,malignant,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,0,0,125,69,0.0
+class,malignant,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,26,18,123,69,0.21138211382113822
+class,malignant,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,123,69,0.0
+class,malignant,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,123,69,0.0
+device,GE Logiq 5 @10-12MHz,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,2,1,142,85,0.014084507042253521
+device,GE Logiq 5 @10-12MHz,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,15,13,142,85,0.1056338028169014
+device,GE Logiq 5 @10-12MHz,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,142,85,0.0
+device,GE Logiq 5 @10-12MHz,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,1,1,140,84,0.007142857142857143
+device,GE Logiq 5 @10-12MHz,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,5,4,140,84,0.03571428571428571
+device,GE Logiq 5 @10-12MHz,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,1,1,140,84,0.007142857142857143
+device,GE Logiq 5 @10-12MHz,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,1,1,140,84,0.007142857142857143
+device,GE Logiq 5 @10-12MHz,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,0,0,142,85,0.0
+device,GE Logiq 5 @10-12MHz,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,0,0,142,85,0.0
+device,GE Logiq 5 @10-12MHz,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,17,14,140,84,0.12142857142857143
+device,GE Logiq 5 @10-12MHz,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,140,84,0.0
+device,GE Logiq 5 @10-12MHz,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,140,84,0.0
+device,GE Logiq 7 @10-14MHz,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,1,1,206,109,0.0048543689320388345
+device,GE Logiq 7 @10-14MHz,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,41,38,206,109,0.19902912621359223
+device,GE Logiq 7 @10-14MHz,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,206,109,0.0
+device,GE Logiq 7 @10-14MHz,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,8,8,205,109,0.03902439024390244
+device,GE Logiq 7 @10-14MHz,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,19,17,205,109,0.09268292682926829
+device,GE Logiq 7 @10-14MHz,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,2,2,205,109,0.00975609756097561
+device,GE Logiq 7 @10-14MHz,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,7,7,205,109,0.03414634146341464
+device,GE Logiq 7 @10-14MHz,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,15,9,206,109,0.07281553398058252
+device,GE Logiq 7 @10-14MHz,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,1,1,206,109,0.0048543689320388345
+device,GE Logiq 7 @10-14MHz,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,38,27,205,109,0.18536585365853658
+device,GE Logiq 7 @10-14MHz,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,205,109,0.0
+device,GE Logiq 7 @10-14MHz,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,205,109,0.0
+device,Toshiba Aplio 300 @12-14 MHz,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,3,3,31,16,0.0967741935483871
+device,Toshiba Aplio 300 @12-14 MHz,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,9,8,31,16,0.2903225806451613
+device,Toshiba Aplio 300 @12-14 MHz,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,31,16,0.0
+device,Toshiba Aplio 300 @12-14 MHz,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,4,4,28,16,0.14285714285714285
+device,Toshiba Aplio 300 @12-14 MHz,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,7,7,28,16,0.25
+device,Toshiba Aplio 300 @12-14 MHz,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,1,1,28,16,0.03571428571428571
+device,Toshiba Aplio 300 @12-14 MHz,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,4,4,28,16,0.14285714285714285
+device,Toshiba Aplio 300 @12-14 MHz,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,7,5,31,16,0.22580645161290322
+device,Toshiba Aplio 300 @12-14 MHz,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,0,0,31,16,0.0
+device,Toshiba Aplio 300 @12-14 MHz,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,3,2,28,16,0.10714285714285714
+device,Toshiba Aplio 300 @12-14 MHz,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,28,16,0.0
+device,Toshiba Aplio 300 @12-14 MHz,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,28,16,0.0
+device,U-Systems @10-14MHz,fallback_full_image,the predicted mask is empty: the whole image is the crop (logged fallback),all images of the group,0,0,6,3,0.0
+device,U-Systems @10-14MHz,multiple_components,more than one 8-connected component in the prediction (only the largest is kept),all images of the group,5,3,6,3,0.8333333333333334
+device,U-Systems @10-14MHz,tie_between_largest_components,several components share the largest pixel count (row-major rule decides),all images of the group,0,0,6,3,0.0
+device,U-Systems @10-14MHz,expert_coverage_below_90_percent,less than 90 % of the expert-mask pixels lie inside the actual crop,images without fallback,1,1,6,3,0.16666666666666666
+device,U-Systems @10-14MHz,expert_coverage_below_100_percent,not every expert-mask pixel lies inside the actual crop,images without fallback,2,2,6,3,0.3333333333333333
+device,U-Systems @10-14MHz,expert_coverage_zero,no expert-mask pixel lies inside the actual crop (the crop misses the lesion),images without fallback,0,0,6,3,0.0
+device,U-Systems @10-14MHz,component_dice_below_0.5,Dice between the kept component and the expert mask below 0.5,images without fallback,0,0,6,3,0.0
+device,U-Systems @10-14MHz,crop_enlarged_by_a_factor_of_2_or_more,"the crop is enlarged by a factor of at least 2 (interpolation, visibly blurred)",all images of the group,0,0,6,3,0.0
+device,U-Systems @10-14MHz,crop_enlarged_by_a_factor_of_3_or_more,the crop is enlarged by a factor of at least 3,all images of the group,0,0,6,3,0.0
+device,U-Systems @10-14MHz,expansion_cut_by_the_image_border,the 20 % expansion is shortened by the image border,images without fallback,2,1,6,3,0.3333333333333333
+device,U-Systems @10-14MHz,tight_box_touches_an_image_border,the tight box of the kept component touches an image border,images without fallback,0,0,6,3,0.0
+device,U-Systems @10-14MHz,crop_is_at_least_90_percent_of_the_image,the crop covers at least 90 % of the image area (practically a full image),images without fallback,0,0,6,3,0.0

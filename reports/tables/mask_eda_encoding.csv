@@ -1,0 +1,2 @@
+png_mode,array_dtype,distinct_values,n_masks,true_share_min,true_share_median,true_share_max
+1,bool,False|True,1114,0.0060902936689549965,0.06344119406235096,0.5753866551849042

@@ -1,0 +1,16 @@
+scheme,run,train_images,train_cases,validation_images,validation_cases,test_images,test_cases,train_validation_case_overlap,train_test_case_overlap,validation_test_case_overlap
+5-fold,valid_1,1200,784,299,278,376,212,210,0,0
+5-fold,valid_2,1193,782,297,270,385,213,201,0,0
+5-fold,valid_3,1208,789,301,274,366,213,212,0,0
+5-fold,valid_4,1209,786,301,280,365,214,216,0,0
+5-fold,valid_5,1194,787,298,276,383,212,211,0,0
+10-fold,valid_1,1347,893,335,309,193,106,244,0,0
+10-fold,valid_2,1347,891,335,300,193,107,234,0,0
+10-fold,valid_3,1352,887,337,310,186,106,239,0,0
+10-fold,valid_4,1355,892,337,311,183,106,245,0,0
+10-fold,valid_5,1353,884,338,309,184,107,236,0,0
+10-fold,valid_6,1353,880,337,304,185,107,227,0,0
+10-fold,valid_7,1350,880,336,305,189,107,228,0,0
+10-fold,valid_8,1347,874,335,305,193,106,221,0,0
+10-fold,valid_9,1350,888,337,310,188,106,240,0,0
+10-fold,valid_10,1356,885,338,309,181,106,236,0,0

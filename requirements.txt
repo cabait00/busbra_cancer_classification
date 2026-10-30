@@ -1,0 +1,21 @@
+# BUS-BRA project - direct dependencies
+# Versions verified in the project .venv on 2026-10-17 (Python 3.13.14, Linux Mint 22.3,
+# NVIDIA driver 595.91.07). Full resolved package state: docs/environment_freeze.txt
+#
+# Install:  .venv/bin/python -m pip install -r requirements.txt
+# Exact:    .venv/bin/python -m pip install -r requirements.txt -c docs/environment_freeze.txt
+#
+# TensorFlow 2.20.0 instead of 2.21.0: with the locally installed 2.21.0 wheel (CPython 3.13,
+# Linux x86_64), libcusolver.so.11 could not be loaded and no GPU was registered; 2.20.0
+# passes the GPU smoke test (the 2.21.0 wheel has an incomplete RUNPATH for the cuSOLVER loader).
+# The nvidia-* CUDA runtime packages are resolved by pip; see docs/environment_freeze.txt.
+tensorflow[and-cuda]==2.20.0
+keras==3.15.1
+numpy==2.5.4
+pandas==3.0.6
+pillow==13.0.0
+matplotlib==3.11.2   # overview figure of the training-set EDA (step 2A)
+scikit-learn==1.9.1  # classical baselines: DummyClassifier, LogisticRegression, metrics (step 2B)
+
+# Only needed to run the "# %%" cells in the VS Code Interactive Window:
+ipykernel==7.4.0

@@ -1,0 +1,4 @@
+Pathology,images,cases,denominator_images,denominator_cases,image_share,case_share
+benign,754,434,1114,639,0.6768,0.6792
+malignant,360,205,1114,639,0.3232,0.3208
+all,1114,639,1114,639,1.0,1.0

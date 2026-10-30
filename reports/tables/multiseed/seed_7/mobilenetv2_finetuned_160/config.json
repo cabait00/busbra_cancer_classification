@@ -1,0 +1,144 @@
+{
+  "run_id": "ms-20261019T232604-b80c9354",
+  "study_id": "ms3f-97e0f17c",
+  "plan_sha256": "97e0f17c595cc1dee23c57be37bb126f963f3feddf2e99d490dadfdcb091c522",
+  "seed": 7,
+  "pipeline": "mobilenetv2_finetuned_160",
+  "model_name": "mobilenetv2_finetuned_160",
+  "display": "Limited fine-tuning 1e-5",
+  "stage": "final",
+  "registered_before_training_at": "2026-10-19T23:26:17+02:00",
+  "random_sources": {
+    "study_seed": 7,
+    "PYTHONHASHSEED": "7",
+    "python_numpy_tensorflow_keras": 7,
+    "weight_initialisation": "fresh construction after keras.utils.set_random_seed(7)",
+    "RandomFlip": 8,
+    "Dropout": 9,
+    "train_shuffle": 10,
+    "train_shuffle_reshuffle_each_iteration": true
+  },
+  "generator_contract_read_from_the_built_layers": {
+    "augment_flip": {
+      "class": "RandomFlip",
+      "seed_argument": 8,
+      "generator_state": [
+        8,
+        0
+      ]
+    },
+    "dropout": {
+      "class": "Dropout",
+      "seed_argument": 9,
+      "generator_state": [
+        9,
+        0
+      ]
+    }
+  },
+  "shuffle_contract": {
+    "seed": 10,
+    "reshuffle_each_iteration": true,
+    "first_epoch_order_sha256_of_an_index_dataset_with_this_seed": "f2200c6394f9cac29f36bc02ae0125d5ee8d26989d5a82289113dcb0aa97f257",
+    "note": "documents the seed mapping of the shuffle; the training dataset uses the same shuffle seed"
+  },
+  "start": {
+    "kind": "frozen_best_checkpoint_of_the_same_seed",
+    "seed": 7,
+    "study_id": "ms3f-97e0f17c",
+    "run_id": "ms-20261019T232440-d7df34b3",
+    "checkpoint": "models/multiseed/seed_7/mobilenetv2_frozen_160/mobilenetv2_frozen_160_seed7_best.keras",
+    "checkpoint_sha256": "285864132cdc11f355102e2ec3d5021f0c06ebcffe713393e47617184c1e6344",
+    "config_sha256": "8d81d26c1366fc6fab9da44eb4c7661de55ed42fb3d7f3c8cac6d2b536d8421a",
+    "status_sha256": "08176c9d5db14d30b2d2e88696426aa509cc515219c4416c63dd926dd26a555e",
+    "network_weights_sha256": "0ccdb8ad8899e301ba9c82a327233ce55bcd2d76c2461d765094208c00fe0c4d"
+  },
+  "released_layers": [
+    "block_16_expand",
+    "block_16_depthwise",
+    "block_16_project",
+    "Conv_1"
+  ],
+  "batchnorm": "all 52 layers fully fixed",
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 1e-05,
+    "state": "new, nothing inherited"
+  },
+  "loss": "BinaryCrossentropy(from_logits=False)",
+  "batch_size": 16,
+  "max_epochs": 20,
+  "callbacks": {
+    "early_stopping": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "patience": 5,
+      "min_delta": 0,
+      "restore_best_weights": true
+    },
+    "model_checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "save_best_only": true,
+      "save_weights_only": false
+    },
+    "terminate_on_nan": true
+  },
+  "numerics": {
+    "dtype": "float32",
+    "jit_compile": false,
+    "mixed_precision": false
+  },
+  "class_weights": null,
+  "architecture": "as frozen",
+  "planned_parameters": {
+    "trainable": 880321,
+    "tensors": 6,
+    "total": 2259265
+  },
+  "note": "historical descriptions with RandomFlip seed=42 are not the contract of this study; the seed mapping above is",
+  "batch_size_used": 16,
+  "checkpoint": "models/multiseed/seed_7/mobilenetv2_finetuned_160/mobilenetv2_finetuned_160_seed7_best.keras",
+  "checkpoint_sha256": "0180a4f8fc80dceb725b95365e40afe5a8c5e9afc5c9c986dc2eab63eef0a978",
+  "best_epoch": 9,
+  "parameters": {
+    "total": 2259265,
+    "trainable_total": 880321,
+    "non_trainable_total": 1378944,
+    "backbone_total": 2257984,
+    "backbone_trainable": 879040,
+    "backbone_non_trainable": 1378944,
+    "head_total": 1281,
+    "trainable_weight_names": [
+      "block_16_expand/kernel",
+      "block_16_depthwise/kernel",
+      "block_16_project/kernel",
+      "Conv_1/kernel",
+      "output/kernel",
+      "output/bias"
+    ],
+    "n_trainable_weights": 6,
+    "n_backbone_batchnorm_layers": 52,
+    "all_batchnorm_layers_fixed": true,
+    "any_batchnorm_weight_trainable": false,
+    "backbone_flag_trainable": true,
+    "released_layer_flags": {
+      "block_16_expand": true,
+      "block_16_depthwise": true,
+      "block_16_project": true,
+      "Conv_1": true
+    },
+    "trainable_names_as_expected": true
+  },
+  "source_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "class_contract": {
+    "labels": {
+      "0": "benign",
+      "1": "malignant"
+    },
+    "score": "sigmoid output = score for class 1 (malignant); not shown to be a calibrated probability",
+    "threshold": 0.5,
+    "decision_rule": "score >= threshold"
+  },
+  "trained_on": "train; best checkpoint chosen by validation loss"
+}

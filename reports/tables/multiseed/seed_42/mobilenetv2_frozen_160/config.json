@@ -1,0 +1,124 @@
+{
+  "run_id": "ms-20261019T233524-2f043838",
+  "study_id": "ms3f-97e0f17c",
+  "plan_sha256": "97e0f17c595cc1dee23c57be37bb126f963f3feddf2e99d490dadfdcb091c522",
+  "seed": 42,
+  "pipeline": "mobilenetv2_frozen_160",
+  "model_name": "mobilenetv2_frozen_160",
+  "display": "MobileNetV2 frozen",
+  "stage": "final",
+  "registered_before_training_at": "2026-10-19T23:35:34+02:00",
+  "random_sources": {
+    "study_seed": 42,
+    "PYTHONHASHSEED": "42",
+    "python_numpy_tensorflow_keras": 42,
+    "weight_initialisation": "fresh construction after keras.utils.set_random_seed(42)",
+    "RandomFlip": 43,
+    "Dropout": 44,
+    "train_shuffle": 45,
+    "train_shuffle_reshuffle_each_iteration": true
+  },
+  "generator_contract_read_from_the_built_layers": {
+    "augment_flip": {
+      "class": "RandomFlip",
+      "seed_argument": 43,
+      "generator_state": [
+        43,
+        0
+      ]
+    },
+    "dropout": {
+      "class": "Dropout",
+      "seed_argument": 44,
+      "generator_state": [
+        44,
+        0
+      ]
+    }
+  },
+  "shuffle_contract": {
+    "seed": 45,
+    "reshuffle_each_iteration": true,
+    "first_epoch_order_sha256_of_an_index_dataset_with_this_seed": "d62a623f89146b9caa31fde080f6423124fb13a4d36db890798d50c41e0d6dd0",
+    "note": "documents the seed mapping of the shuffle; the training dataset uses the same shuffle seed"
+  },
+  "start": {
+    "kind": "local ImageNet backbone file + new head",
+    "weights_file": {
+      "file_name": "mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160_no_top.h5",
+      "size_bytes": 9406464,
+      "sha256_local_identification": "1e9310d901d6e4346c8b4d89ad04267c3299ccf252dbe2641dd2b0eb048bf04e",
+      "note": "the SHA-256 identifies the local file; it is no publisher confirmation"
+    }
+  },
+  "released_layers": null,
+  "batchnorm": "all 52 layers fully fixed",
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "state": "new, nothing inherited"
+  },
+  "loss": "BinaryCrossentropy(from_logits=False)",
+  "batch_size": 16,
+  "max_epochs": 30,
+  "callbacks": {
+    "early_stopping": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "patience": 5,
+      "min_delta": 0,
+      "restore_best_weights": true
+    },
+    "model_checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "save_best_only": true,
+      "save_weights_only": false
+    },
+    "terminate_on_nan": true
+  },
+  "numerics": {
+    "dtype": "float32",
+    "jit_compile": false,
+    "mixed_precision": false
+  },
+  "class_weights": null,
+  "architecture": "MobileNetV2 alpha1.0 no_top 160x160, GAP, Dropout0.3, Dense1 sigmoid",
+  "planned_parameters": {
+    "trainable": 1281,
+    "tensors": 2,
+    "total": 2259265
+  },
+  "note": "historical descriptions with RandomFlip seed=42 are not the contract of this study; the seed mapping above is",
+  "batch_size_used": 16,
+  "checkpoint": "models/multiseed/seed_42/mobilenetv2_frozen_160/mobilenetv2_frozen_160_seed42_best.keras",
+  "checkpoint_sha256": "c5a21312b0cf869251d2079e18059e764eef2a78126800f762c01bb11891a837",
+  "best_epoch": 11,
+  "parameters": {
+    "total": 2259265,
+    "backbone_total": 2257984,
+    "backbone_trainable": 0,
+    "backbone_non_trainable": 2257984,
+    "head_total": 1281,
+    "trainable_total": 1281,
+    "non_trainable_total": 2257984,
+    "trainable_weight_names": [
+      "output/kernel",
+      "output/bias"
+    ],
+    "backbone_flag_trainable": false,
+    "n_backbone_batchnorm_layers": 52,
+    "n_trainable_weights": 2
+  },
+  "source_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "class_contract": {
+    "labels": {
+      "0": "benign",
+      "1": "malignant"
+    },
+    "score": "sigmoid output = score for class 1 (malignant); not shown to be a calibrated probability",
+    "threshold": 0.5,
+    "decision_rule": "score >= threshold"
+  },
+  "trained_on": "train; best checkpoint chosen by validation loss"
+}

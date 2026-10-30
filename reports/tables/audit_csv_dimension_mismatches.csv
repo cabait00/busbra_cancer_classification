@@ -1,0 +1,5 @@
+ID,Case,Device,csv_width,csv_height,image_width,image_height,mask_width,mask_height,csv_width_mismatch,csv_height_mismatch
+bus_0856-l,856,U-Systems @10-14MHz,387,405,387,353,387,353,False,True
+bus_0857-r,857,U-Systems @10-14MHz,384,409,384,393,384,393,False,True
+bus_0912-l,912,GE Logiq 7 @10-14MHz,360,354,360,352,360,352,False,True
+bus_0990-l,990,GE Logiq 7 @10-14MHz,540,354,540,352,540,352,False,True

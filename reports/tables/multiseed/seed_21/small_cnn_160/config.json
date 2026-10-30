@@ -1,0 +1,121 @@
+{
+  "run_id": "ms-20261019T232912-754a0a96",
+  "study_id": "ms3f-97e0f17c",
+  "plan_sha256": "97e0f17c595cc1dee23c57be37bb126f963f3feddf2e99d490dadfdcb091c522",
+  "seed": 21,
+  "pipeline": "small_cnn_160",
+  "model_name": "small_cnn_160",
+  "display": "Small CNN",
+  "stage": "final",
+  "registered_before_training_at": "2026-10-19T23:29:21+02:00",
+  "random_sources": {
+    "study_seed": 21,
+    "PYTHONHASHSEED": "21",
+    "python_numpy_tensorflow_keras": 21,
+    "weight_initialisation": "fresh construction after keras.utils.set_random_seed(21)",
+    "RandomFlip": 22,
+    "Dropout": 23,
+    "train_shuffle": 24,
+    "train_shuffle_reshuffle_each_iteration": true
+  },
+  "generator_contract_read_from_the_built_layers": {
+    "augment_flip": {
+      "class": "RandomFlip",
+      "seed_argument": 22,
+      "generator_state": [
+        22,
+        0
+      ]
+    },
+    "dropout": {
+      "class": "Dropout",
+      "seed_argument": 23,
+      "generator_state": [
+        23,
+        0
+      ]
+    }
+  },
+  "shuffle_contract": {
+    "seed": 24,
+    "reshuffle_each_iteration": true,
+    "first_epoch_order_sha256_of_an_index_dataset_with_this_seed": "a21310f3971624e21551e0a1e245149062cc557710b0e36e9053aa6bcba1736f",
+    "note": "documents the seed mapping of the shuffle; the training dataset uses the same shuffle seed"
+  },
+  "start": {
+    "kind": "random initialisation",
+    "weights_file": null
+  },
+  "released_layers": null,
+  "batchnorm": null,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "state": "new, nothing inherited"
+  },
+  "loss": "BinaryCrossentropy(from_logits=False)",
+  "batch_size": 16,
+  "max_epochs": 30,
+  "callbacks": {
+    "early_stopping": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "patience": 5,
+      "min_delta": 0,
+      "restore_best_weights": true
+    },
+    "model_checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "save_best_only": true,
+      "save_weights_only": false
+    },
+    "terminate_on_nan": true
+  },
+  "numerics": {
+    "dtype": "float32",
+    "jit_compile": false,
+    "mixed_precision": false
+  },
+  "class_weights": null,
+  "architecture": "Conv2D 32/64/128 (3x3, same, ReLU) + MaxPool2, GAP, Dense64 ReLU, Dropout0.3, Dense1 sigmoid",
+  "planned_parameters": {
+    "trainable": 100993,
+    "tensors": 10,
+    "total": 100993
+  },
+  "note": "historical descriptions with RandomFlip seed=42 are not the contract of this study; the seed mapping above is",
+  "batch_size_used": 16,
+  "checkpoint": "models/multiseed/seed_21/small_cnn_160/small_cnn_160_seed21_best.keras",
+  "checkpoint_sha256": "c2df46e0360f1f3fd1e9472abf802c6a8fc4dbd39075b9bcccd86887067affca",
+  "best_epoch": 3,
+  "parameters": {
+    "total": 100993,
+    "trainable": 100993,
+    "non_trainable": 0,
+    "trainable_weight_names": [
+      "conv1/kernel",
+      "conv1/bias",
+      "conv2/kernel",
+      "conv2/bias",
+      "conv3/kernel",
+      "conv3/bias",
+      "dense_64/kernel",
+      "dense_64/bias",
+      "output/kernel",
+      "output/bias"
+    ],
+    "n_trainable_weights": 10
+  },
+  "source_split_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+  "class_contract": {
+    "labels": {
+      "0": "benign",
+      "1": "malignant"
+    },
+    "score": "sigmoid output = score for class 1 (malignant); not shown to be a calibrated probability",
+    "threshold": 0.5,
+    "decision_rule": "score >= threshold"
+  },
+  "trained_on": "train; best checkpoint chosen by validation loss"
+}

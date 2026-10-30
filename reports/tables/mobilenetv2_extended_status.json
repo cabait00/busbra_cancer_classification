@@ -1,0 +1,1144 @@
+{
+  "status": "passed",
+  "complete": true,
+  "run_id": "mnv2ext-20261019T221322-54abc47b",
+  "started_at": "2026-10-19T22:13:22+02:00",
+  "generated_at": "2026-10-19T22:14:24+02:00",
+  "script": "analysis/07_train_mobilenetv2_extended.py",
+  "split": {
+    "file": "data/processed/manifest_split.csv",
+    "sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+    "expected_sha256": "fdce9bc991b949cfa50ca1deca1ebd149fa6259c50dbac28e110a8fd4d38349a",
+    "first_frozen_at": "2026-10-19T10:48:12+02:00",
+    "subsets_used": [
+      "train",
+      "validation"
+    ],
+    "images": {
+      "train": 1114,
+      "validation": 385
+    },
+    "cases": {
+      "train": 639,
+      "validation": 213
+    }
+  },
+  "start": {
+    "frozen_run_id": "mnv2f-20261019T203216-ebb118f5",
+    "checkpoint": "models/mobilenetv2_frozen/mobilenetv2_frozen_best.keras",
+    "checkpoint_sha256": "e1d5d3179a5919205d6b66a41eb90fb7395624137e7fa27b1daa16a3c7d48873",
+    "config_sha256": "80db4aed2bae515f7e341deb7422f4e6a243ed7d92d3efd8a30c06e0961cbc54",
+    "status_sha256": "5fa269e1680dc67b9db3488b0761ab05898a9732bd84e66dd5fb9403c431440f",
+    "epoch": 20,
+    "loaded_locally_no_download": true,
+    "not_started_from": "the 3C limited fine-tuning checkpoint",
+    "start_weight_group_sha256": {
+      "released_backbone": "b6185bcdfedb6bebef1126883a0f1056f387ae6f7585992e1e6ec2531c4b42e5",
+      "batchnorm": "5e770a43a686b0fb256978f86ab471dd1b7a32f9bb067cf97627af77226d0a82",
+      "frozen_backbone_other": "c45d79fc1faa9bfb1fdbc0c7d8f2b9fe84dbbd6d70be631aa304711c7850f326",
+      "head": "a344eb37758c98909c5f49830776e7fc2323e94b6d38d98e8f46b67a7df16021"
+    },
+    "start_weights_sha256": "8246948f06d0ae296f9ae3de9ff08a30da80357d877d4a9ed7b39959aeab9029",
+    "scores_reproduce_3b": {
+      "max_abs_difference": {
+        "train": 1.1102230246251565e-16,
+        "validation": 1.1102230246251565e-16
+      },
+      "tolerance": 1e-05
+    },
+    "start_state_without_update": {
+      "note": "evaluation of the loaded frozen checkpoint before any fine-tuning update; not part of the fine-tuning history",
+      "validation": {
+        "loss": 0.47328917620064515,
+        "roc_auc": 0.8159692307692308,
+        "average_precision": 0.7210699348647384
+      },
+      "train": {
+        "loss": 0.4037436766625529,
+        "roc_auc": 0.8986737400530503,
+        "average_precision": 0.8100343156147842
+      }
+    },
+    "frozen_source_modified": false
+  },
+  "predecessor_limited_finetuning": {
+    "run_id": "mnv2ft-20261019T214649-3962df17",
+    "checkpoint_sha256": "5454f993b6f26826648697351b9811144237d1028516a105e7b650b4a46cc029",
+    "config_sha256": "5363076a750fdd724714a3bc324996b12af9c4ade28c49819712f20097a530f7",
+    "status_sha256": "78081d2ef05d8451e9b5d1d5d9e24b2fa6494d4414e16a1e780791c30e44a601",
+    "best_epoch": 7,
+    "epochs_run": 12,
+    "used_for": "stored metrics and predictions in the comparison only; not loaded, not modified",
+    "modified": false
+  },
+  "earlier_results_used": {
+    "baseline_metrics_sha256": "c23751524f013d4ec562a4c8a379ce75839a07aaf8f1bca9ced27574189fa16c",
+    "baseline_predictions_sha256": "f31ee283072f5083674e972babec9a963cf752968fae5cb4881f35028736a883",
+    "small_cnn_status_sha256": "27f56e008afb933b9413c0b680a43f16613eeaeb9d0ff19c18f4cf845b121fe5",
+    "small_cnn_metrics_sha256": "6b3615ce78cf69ffab71c9d60cb1f4bb8da9c4cce783ae352f437b4de2342f59",
+    "small_cnn_predictions_sha256": "ae625019adf535410eb373283ab30b0ff54444b7216109523e452a3fd91f5168",
+    "frozen_status_sha256": "5fa269e1680dc67b9db3488b0761ab05898a9732bd84e66dd5fb9403c431440f",
+    "frozen_metrics_sha256": "456631ab043c3c04a9b345d184660fa99cfbd182630537e144f1b7dad32b032f",
+    "frozen_predictions_sha256": "add4349e8baff6c2f9c09d5e48b7d757a26119e881d9152e2d3513768fb32051",
+    "limited_status_sha256": "78081d2ef05d8451e9b5d1d5d9e24b2fa6494d4414e16a1e780791c30e44a601",
+    "limited_metrics_sha256": "b4d2f9b7f41c55c959d5244a91d360d9bd3c3583cc0d17a69c316bdc980bfcfb",
+    "limited_predictions_sha256": "0ec16806313c8d56ca9bb1bd2a9ce5e1d09ed28ccc730fd7685678d7c41334ee",
+    "note": "read only; no earlier model except the integrity check of the start point was run"
+  },
+  "input_contract": {
+    "external_model_input": {
+      "source": "original PNG at image_relpath (pixels only; no mask, bbox or metadata)",
+      "color": "single grayscale channel, 8 bit (mode 'L'); other modes are rejected",
+      "target_size_width_height": [
+        160,
+        160
+      ],
+      "geometry": "whole image scaled down proportionally to fit (PIL.ImageOps.contain), centred on a black canvas; no crop, no stretch",
+      "interpolation": "bilinear (PIL.Image.Resampling.BILINEAR)",
+      "side_rounding": "Pillow rounds the scaled side with Python round() (half to even)",
+      "centering": "offset = (target - scaled) // 2; an odd remainder lies right/bottom",
+      "pad_value_uint8": 0,
+      "scaling": "float32(uint8) / 255 -> [0, 1]; fixed, nothing estimated from data",
+      "learned_normalization": null,
+      "pillow_version": "13.0.0",
+      "output_layout": "NHWC: (N, 160, 160, 1)",
+      "output_channels": 1,
+      "output_dtype": "float32",
+      "output_value_range": [
+        0.0,
+        1.0
+      ],
+      "flatten": "none - the CNN receives the image array, no flattening transformation",
+      "pixels_per_image": 25600,
+      "note": "same external preparation as the small CNN"
+    },
+    "in_model_transformations": [
+      {
+        "layer": "augment_flip",
+        "op": "RandomFlip('horizontal', seed=42)",
+        "active": "training only"
+      },
+      {
+        "layer": "gray_to_rgb",
+        "op": "Concatenate([x, x, x])",
+        "result": "(N, 160, 160, 3), three identical channels, no colour information"
+      },
+      {
+        "layer": "scale_to_minus1_1",
+        "op": "Rescaling(scale=2.0, offset=-1.0)",
+        "mapping": "0 -> -1, 0.5 -> 0, 1 -> 1",
+        "equivalent_to": "official MobileNetV2 preprocessing applied to [0, 255] data (x/127.5 - 1)"
+      }
+    ],
+    "internal_backbone_input": {
+      "shape": "(N, 160, 160, 3)",
+      "dtype": "float32",
+      "value_range": [
+        -1.0,
+        1.0
+      ],
+      "note": "black padding becomes -1; no preprocess_input and no second division by 255"
+    },
+    "backbone": {
+      "layer": "mobilenetv2_backbone",
+      "alpha": 1.0,
+      "include_top": false,
+      "weights": "ImageNet weights as in the accepted frozen checkpoint, further trained on BUS-BRA in step 3B (head) and step 3D (released layers)",
+      "pooling": null,
+      "called_with": "training=False",
+      "output": "(N, 5, 5, 1280)",
+      "trainable_flag_of_backbone_container": true,
+      "trainable_weight_layers": [
+        "block_14_expand",
+        "block_14_depthwise",
+        "block_14_project",
+        "block_15_expand",
+        "block_15_depthwise",
+        "block_15_project",
+        "block_16_expand",
+        "block_16_depthwise",
+        "block_16_project",
+        "Conv_1"
+      ],
+      "all_other_layers": "fixed",
+      "batchnorm": "all 52 layers fully fixed: gamma/beta and moving statistics, and training=False"
+    },
+    "head": [
+      "GlobalAveragePooling2D",
+      "Dropout(0.3)",
+      "Dense(1, sigmoid)"
+    ],
+    "no_resize_or_crop_layer": true,
+    "trainability": {
+      "trainable_weights": [
+        "block_14_expand/kernel",
+        "block_14_depthwise/kernel",
+        "block_14_project/kernel",
+        "block_15_expand/kernel",
+        "block_15_depthwise/kernel",
+        "block_15_project/kernel",
+        "block_16_expand/kernel",
+        "block_16_depthwise/kernel",
+        "block_16_project/kernel",
+        "Conv_1/kernel",
+        "output/kernel",
+        "output/bias"
+      ],
+      "fixed": "every other backbone weight incl. all BatchNorm variables; GAP and Dropout have no weights",
+      "start_state": "accepted frozen checkpoint (best epoch 20): trained head and its backbone, no random re-initialisation; NOT the result of the limited fine-tuning",
+      "note": "the whole backbone fingerprint may differ from the start; the fixed groups must stay exactly identical"
+    }
+  },
+  "configuration": {
+    "seed": 42,
+    "released_layers": [
+      "block_14_expand",
+      "block_14_depthwise",
+      "block_14_project",
+      "block_15_expand",
+      "block_15_depthwise",
+      "block_15_project",
+      "block_16_expand",
+      "block_16_depthwise",
+      "block_16_project",
+      "Conv_1"
+    ],
+    "batchnorm": "all 52 layers fully fixed",
+    "backbone_called_with": "training=False",
+    "optimizer": "new Adam(learning_rate=1e-5)",
+    "loss": "BinaryCrossentropy(from_logits=False)",
+    "batch_size_requested": 16,
+    "batch_size_used": 16,
+    "max_epochs": 20,
+    "class_weights": null,
+    "oversampling": false,
+    "jit_compile": false,
+    "mixed_precision": false,
+    "dtype": "float32",
+    "parameters": {
+      "total": 2259265,
+      "trainable_total": 1512001,
+      "non_trainable_total": 747264,
+      "backbone_total": 2257984,
+      "backbone_trainable": 1510720,
+      "backbone_non_trainable": 747264,
+      "head_total": 1281,
+      "trainable_weight_names": [
+        "block_14_expand/kernel",
+        "block_14_depthwise/kernel",
+        "block_14_project/kernel",
+        "block_15_expand/kernel",
+        "block_15_depthwise/kernel",
+        "block_15_project/kernel",
+        "block_16_expand/kernel",
+        "block_16_depthwise/kernel",
+        "block_16_project/kernel",
+        "Conv_1/kernel",
+        "output/kernel",
+        "output/bias"
+      ],
+      "n_trainable_weights": 12,
+      "n_backbone_batchnorm_layers": 52,
+      "all_batchnorm_layers_fixed": true,
+      "any_batchnorm_weight_trainable": false,
+      "backbone_flag_trainable": true,
+      "released_layer_flags": {
+        "block_14_expand": true,
+        "block_14_depthwise": true,
+        "block_14_project": true,
+        "block_15_expand": true,
+        "block_15_depthwise": true,
+        "block_15_project": true,
+        "block_16_expand": true,
+        "block_16_depthwise": true,
+        "block_16_project": true,
+        "Conv_1": true
+      },
+      "trainable_names_as_expected": true
+    },
+    "callbacks": {
+      "early_stopping": {
+        "monitor": "val_loss",
+        "mode": "min",
+        "patience": 5,
+        "min_delta": 0,
+        "restore_best_weights": true
+      },
+      "model_checkpoint": {
+        "monitor": "val_loss",
+        "mode": "min",
+        "save_best_only": true,
+        "save_weights_only": false,
+        "file": "models/mobilenetv2_extended/mobilenetv2_extended_best.keras"
+      },
+      "terminate_on_nan": true
+    },
+    "train_shuffle": "tf.data shuffle over the whole train set, seed 42, reshuffled every epoch",
+    "history_counting": "fine-tuning epochs counted from 1; not a continuation of the frozen history",
+    "evaluation": {
+      "threshold": 0.5,
+      "rule": "score >= threshold; no optimisation or calibration",
+      "score": "sigmoid output = malignant score"
+    }
+  },
+  "candidate_selection": {
+    "rule": {
+      "between_candidates": [
+        "mobilenetv2_frozen_160",
+        "mobilenetv2_finetuned_160",
+        "mobilenetv2_extended_160"
+      ],
+      "decision": "highest unrounded validation ROC-AUC (primary metric of the project definition) among technically valid candidates",
+      "tie_tolerance": 1e-12,
+      "tie_rule": "candidates within the tolerance below the best value count as tied; among tied candidates the one with the fewest trainable parameters wins (frozen before limited fine-tuning before extended fine-tuning)",
+      "invalid_candidates": "a technically invalid or non-finite candidate cannot be selected; if no candidate is valid there is no winner",
+      "missing_predecessor": "a missing or hash-mismatching predecessor run stops the step before training",
+      "minimum_improvement": "none: the extended candidate may be better, equal or worse; a technically valid run passes either way",
+      "not_used_for_the_decision": [
+        "average precision",
+        "metrics at threshold 0.5",
+        "rounded display values"
+      ],
+      "within_a_run": "the checkpoint is the epoch with the smallest validation loss (first one on a tie)",
+      "scope": "An observed preference on this holdout only: no significance claim, no general superiority. Model choice and threshold for the test phase are frozen in a separate later task."
+    },
+    "rule_registered_before_training_at": "2026-10-19T22:13:34+02:00",
+    "candidates": {
+      "mobilenetv2_frozen_160": {
+        "roc_auc": 0.8159692307692308,
+        "valid": true,
+        "trainable_parameters": 1281,
+        "average_precision": 0.7210699348647384
+      },
+      "mobilenetv2_finetuned_160": {
+        "roc_auc": 0.8235076923076924,
+        "valid": true,
+        "trainable_parameters": 880321,
+        "average_precision": 0.7392636921838098
+      },
+      "mobilenetv2_extended_160": {
+        "roc_auc": 0.8332923076923077,
+        "valid": true,
+        "trainable_parameters": 1512001,
+        "average_precision": 0.7614726785006635
+      }
+    },
+    "preferred_by_rule": "mobilenetv2_extended_160",
+    "extended_minus_limited": {
+      "roc_auc": 0.00978461538461528,
+      "average_precision": 0.02220898631685364,
+      "sensitivity": 0.16000000000000003,
+      "specificity": -0.05384615384615399,
+      "precision": -0.04920100925147186,
+      "f1": 0.08146410888608258,
+      "accuracy": 0.01558441558441559,
+      "tn": -14.0,
+      "fp": 14.0,
+      "fn": -20.0,
+      "tp": 20.0
+    },
+    "extended_minus_frozen": {
+      "roc_auc": 0.017323076923076886,
+      "average_precision": 0.04040274363592511,
+      "sensitivity": 0.14400000000000002,
+      "specificity": -0.034615384615384714,
+      "precision": -0.012204571871367698,
+      "f1": 0.08236708418970806,
+      "accuracy": 0.023376623376623384,
+      "tn": -9.0,
+      "fp": 9.0,
+      "fn": -18.0,
+      "tp": 18.0
+    },
+    "limited_minus_frozen_roc_auc": 0.007538461538461605,
+    "caveat": "An observed preference on this holdout: validation was used repeatedly for development (checkpoints and three transfer candidates), which biases the selection optimistically; one seed, one split, several images per case, GPU nondeterminism. No significance claim, no causal claim and no general superiority. Model choice and threshold for the test phase are frozen in a later task."
+  },
+  "weights_evidence": {
+    "probe_change_by_group": {
+      "released_backbone": {
+        "layers": 10,
+        "identical": false,
+        "max_abs_change": 1.0013580322265625e-05,
+        "per_layer_max_abs_change": {
+          "block_14_expand": 1.0000541806221008e-05,
+          "block_14_depthwise": 1.0013580322265625e-05,
+          "block_14_project": 1.0013580322265625e-05,
+          "block_15_expand": 1.0000541806221008e-05,
+          "block_15_depthwise": 1.0013580322265625e-05,
+          "block_15_project": 1.0000541806221008e-05,
+          "block_16_expand": 1.0013580322265625e-05,
+          "block_16_depthwise": 1.0013580322265625e-05,
+          "block_16_project": 1.0013580322265625e-05,
+          "Conv_1": 1.0000541806221008e-05
+        }
+      },
+      "batchnorm": {
+        "layers": 52,
+        "identical": true,
+        "max_abs_change": 0.0,
+        "per_layer_max_abs_change": null
+      },
+      "frozen_backbone_other": {
+        "layers": 42,
+        "identical": true,
+        "max_abs_change": 0.0,
+        "per_layer_max_abs_change": null
+      },
+      "head": {
+        "layers": 1,
+        "identical": false,
+        "max_abs_change": 1.0000541806221008e-05,
+        "per_layer_max_abs_change": {
+          "output": 1.0000541806221008e-05
+        }
+      }
+    },
+    "after_training_vs_start": {
+      "released_backbone": {
+        "layers": 10,
+        "identical": false,
+        "max_abs_change": 0.002074074000120163,
+        "per_layer_max_abs_change": {
+          "block_14_expand": 0.001698218286037445,
+          "block_14_depthwise": 0.0012108683586120605,
+          "block_14_project": 0.0017373263835906982,
+          "block_15_expand": 0.001908374484628439,
+          "block_15_depthwise": 0.0015329569578170776,
+          "block_15_project": 0.001695822924375534,
+          "block_16_expand": 0.0015487521886825562,
+          "block_16_depthwise": 0.0013013482093811035,
+          "block_16_project": 0.0015858039259910583,
+          "Conv_1": 0.002074074000120163
+        }
+      },
+      "batchnorm": {
+        "layers": 52,
+        "identical": true,
+        "max_abs_change": 0.0,
+        "per_layer_max_abs_change": null
+      },
+      "frozen_backbone_other": {
+        "layers": 42,
+        "identical": true,
+        "max_abs_change": 0.0,
+        "per_layer_max_abs_change": null
+      },
+      "head": {
+        "layers": 1,
+        "identical": false,
+        "max_abs_change": 0.0012329667806625366,
+        "per_layer_max_abs_change": {
+          "output": 0.0012329667806625366
+        }
+      }
+    },
+    "restored_model_vs_start": {
+      "released_backbone": {
+        "layers": 10,
+        "identical": false,
+        "max_abs_change": 0.002074074000120163,
+        "per_layer_max_abs_change": {
+          "block_14_expand": 0.001698218286037445,
+          "block_14_depthwise": 0.0012108683586120605,
+          "block_14_project": 0.0017373263835906982,
+          "block_15_expand": 0.001908374484628439,
+          "block_15_depthwise": 0.0015329569578170776,
+          "block_15_project": 0.001695822924375534,
+          "block_16_expand": 0.0015487521886825562,
+          "block_16_depthwise": 0.0013013482093811035,
+          "block_16_project": 0.0015858039259910583,
+          "Conv_1": 0.002074074000120163
+        }
+      },
+      "batchnorm": {
+        "layers": 52,
+        "identical": true,
+        "max_abs_change": 0.0,
+        "per_layer_max_abs_change": null
+      },
+      "frozen_backbone_other": {
+        "layers": 42,
+        "identical": true,
+        "max_abs_change": 0.0,
+        "per_layer_max_abs_change": null
+      },
+      "head": {
+        "layers": 1,
+        "identical": false,
+        "max_abs_change": 0.0012329667806625366,
+        "per_layer_max_abs_change": {
+          "output": 0.0012329667806625366
+        }
+      }
+    },
+    "fixed_groups_identical_to_start": true,
+    "released_layers_max_abs_change": {
+      "block_14_expand": 0.001698218286037445,
+      "block_14_depthwise": 0.0012108683586120605,
+      "block_14_project": 0.0017373263835906982,
+      "block_15_expand": 0.001908374484628439,
+      "block_15_depthwise": 0.0015329569578170776,
+      "block_15_project": 0.001695822924375534,
+      "block_16_expand": 0.0015487521886825562,
+      "block_16_depthwise": 0.0013013482093811035,
+      "block_16_project": 0.0015858039259910583,
+      "Conv_1": 0.002074074000120163
+    },
+    "head_max_abs_change": 0.0012329667806625366,
+    "whole_backbone_fingerprint_start": "03276b4ce9002f91b208dae1b9ffb0e49c0b5c0e21461fcb7792b3c3cd807ba3",
+    "whole_backbone_fingerprint_after": "f90536d872698bd51ed0e4b939f4b1f525b5a23294f05701a690be86f4f6cd88",
+    "group_definitions": {
+      "released_backbone": [
+        "block_14_expand",
+        "block_14_depthwise",
+        "block_14_project",
+        "block_15_expand",
+        "block_15_depthwise",
+        "block_15_project",
+        "block_16_expand",
+        "block_16_depthwise",
+        "block_16_project",
+        "Conv_1"
+      ],
+      "batchnorm": "all 52 BatchNormalization layers incl. gamma, beta, moving mean/variance",
+      "frozen_backbone_other": "all other weight-bearing backbone layers",
+      "head": "output Dense kernel and bias"
+    },
+    "start_weight_group_sha256": {
+      "released_backbone": "b6185bcdfedb6bebef1126883a0f1056f387ae6f7585992e1e6ec2531c4b42e5",
+      "batchnorm": "5e770a43a686b0fb256978f86ab471dd1b7a32f9bb067cf97627af77226d0a82",
+      "frozen_backbone_other": "c45d79fc1faa9bfb1fdbc0c7d8f2b9fe84dbbd6d70be631aa304711c7850f326",
+      "head": "a344eb37758c98909c5f49830776e7fc2323e94b6d38d98e8f46b67a7df16021"
+    },
+    "after_training_weight_group_sha256": {
+      "released_backbone": "d557c6db489df28c12655eba0b6a1db319aa5e40e71a2266b7a29194f6366c02",
+      "batchnorm": "5e770a43a686b0fb256978f86ab471dd1b7a32f9bb067cf97627af77226d0a82",
+      "frozen_backbone_other": "c45d79fc1faa9bfb1fdbc0c7d8f2b9fe84dbbd6d70be631aa304711c7850f326",
+      "head": "4cf4f0f97068554d9272fd38a59e2d4510558208dd6ca85fa00697535c7a925d"
+    }
+  },
+  "versions": {
+    "python": "3.13.14",
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "gpu": {
+    "configuration": {
+      "gpus": [
+        "/physical_device:GPU:0"
+      ],
+      "memory_growth": {
+        "/physical_device:GPU:0": true
+      },
+      "soft_device_placement": false
+    },
+    "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "probe": {
+      "batch_size": 16,
+      "data": "first 16 TRAIN images in stable order",
+      "model_variables": 264,
+      "all_variables_on_gpu0": true,
+      "forward_output_on_gpu0": true,
+      "loss_on_gpu0": true,
+      "n_trainable_variables": 12,
+      "n_gradients": 12,
+      "none_gradients": 0,
+      "gradients_on_gpu0": true,
+      "gradients_finite": true,
+      "max_abs_gradient_per_variable": {
+        "block_14_expand/kernel": 0.21862304210662842,
+        "block_14_depthwise/kernel": 0.04756081849336624,
+        "block_14_project/kernel": 0.2935088276863098,
+        "block_15_expand/kernel": 0.18573300540447235,
+        "block_15_depthwise/kernel": 0.04559939727187157,
+        "block_15_project/kernel": 0.6885362267494202,
+        "block_16_expand/kernel": 0.2137620747089386,
+        "block_16_depthwise/kernel": 0.053509581834077835,
+        "block_16_project/kernel": 0.2404734045267105,
+        "Conv_1/kernel": 0.12704072892665863,
+        "output/kernel": 0.4564579725265503,
+        "output/bias": 0.058787908405065536
+      },
+      "loss": 0.32992127537727356,
+      "loss_after_one_step": 0.3227573037147522,
+      "weights_finite_after_step": true,
+      "weight_change_by_group": {
+        "released_backbone": {
+          "layers": 10,
+          "identical": false,
+          "max_abs_change": 1.0013580322265625e-05,
+          "per_layer_max_abs_change": {
+            "block_14_expand": 1.0000541806221008e-05,
+            "block_14_depthwise": 1.0013580322265625e-05,
+            "block_14_project": 1.0013580322265625e-05,
+            "block_15_expand": 1.0000541806221008e-05,
+            "block_15_depthwise": 1.0013580322265625e-05,
+            "block_15_project": 1.0000541806221008e-05,
+            "block_16_expand": 1.0013580322265625e-05,
+            "block_16_depthwise": 1.0013580322265625e-05,
+            "block_16_project": 1.0013580322265625e-05,
+            "Conv_1": 1.0000541806221008e-05
+          }
+        },
+        "batchnorm": {
+          "layers": 52,
+          "identical": true,
+          "max_abs_change": 0.0,
+          "per_layer_max_abs_change": null
+        },
+        "frozen_backbone_other": {
+          "layers": 42,
+          "identical": true,
+          "max_abs_change": 0.0,
+          "per_layer_max_abs_change": null
+        },
+        "head": {
+          "layers": 1,
+          "identical": false,
+          "max_abs_change": 1.0000541806221008e-05,
+          "per_layer_max_abs_change": {
+            "output": 1.0000541806221008e-05
+          }
+        }
+      }
+    },
+    "probe_gpu_memory_bytes": {
+      "current": 203719168,
+      "peak": 1169944832
+    },
+    "training_gpu_memory_bytes_after_fit": {
+      "current": 351305984,
+      "peak": 1442816256
+    },
+    "nvidia_smi_process_memory_mib": [
+      "76324, 2170"
+    ],
+    "memory_note": "TensorFlow allocator statistics and nvidia-smi values observed in this run; no memory limit was set by the project",
+    "cuda_libraries_outside_venv": [],
+    "environment_report": {
+      "file": "reports/tables/environment_check.json",
+      "status": "passed",
+      "generated_at": "2026-10-19T19:01:54+02:00",
+      "note": "read only; it does not prove this process's environment"
+    }
+  },
+  "technical_attempts": {
+    "probe_attempts": [
+      {
+        "batch_size": 16,
+        "outcome": "completed"
+      }
+    ],
+    "training_attempts": [
+      {
+        "batch_size": 16,
+        "train_batches_per_epoch": 70,
+        "validation_batches": 25,
+        "outcome": "completed",
+        "train_seconds": 41.5
+      }
+    ]
+  },
+  "training": {
+    "epochs_run": 12,
+    "best_epoch": 7,
+    "best_val_loss": 0.4576418101787567,
+    "start_val_loss": 0.47328917620064515,
+    "stop_reason": "early_stopping",
+    "early_stopping_stopped_epoch": 12,
+    "epoch_limit": 20,
+    "training_seconds": 41.5,
+    "epoch_seconds": {
+      "min": 2.765,
+      "median": 2.884,
+      "max": 9.129,
+      "first_epoch": 9.129
+    },
+    "data_loading_seconds": {
+      "train": 1.806,
+      "validation": 0.584
+    }
+  },
+  "checkpoint": {
+    "file": "models/mobilenetv2_extended/mobilenetv2_extended_best.keras",
+    "sha256": "309008465c49073c284cee82296db73f149b5ecbba35f1702f3d3962366f6aaf",
+    "local_only": true,
+    "restored_model_vs_checkpoint_max_abs_score_difference": 0.0,
+    "restored_model_vs_checkpoint_max_abs_weight_difference": 0.0,
+    "second_load_max_abs_score_difference": 0.0,
+    "tolerance": 1e-05,
+    "binary_files_not_expected_byte_identical_between_runs": true
+  },
+  "evaluation": {
+    "validation": {
+      "roc_auc": 0.8332923076923077,
+      "average_precision": 0.7614726785006635,
+      "sensitivity": 0.656,
+      "specificity": 0.8692307692307693,
+      "precision": 0.7068965517241379,
+      "f1": 0.6804979253112033,
+      "accuracy": 0.8,
+      "tn": 226,
+      "fp": 34,
+      "fn": 43,
+      "tp": 82
+    }
+  },
+  "path_control": {
+    "distinct_png_files_opened": 1499,
+    "forbidden_hits": [],
+    "allowed": "train and validation images only"
+  },
+  "additional_presentation_of_3c_history": {
+    "file": "reports/figures/mobilenetv2_finetuned_learning_curves_readable.png",
+    "sha256": "ca5c85be05e4a1636d5598232d6de95140b856eb9b4c88a034d6582900c4a807",
+    "created_from": {
+      "history": "reports/tables/mobilenetv2_finetuned_history.csv",
+      "history_sha256": "19fc25121b919b7ed59959529f653b2bf3504e25ce851b70fdaefd39a336852a",
+      "status": "reports/tables/mobilenetv2_finetuned_status.json",
+      "status_sha256": "78081d2ef05d8451e9b5d1d5d9e24b2fa6494d4414e16a1e780791c30e44a601"
+    },
+    "note": "readable re-plot of the stored 3C values by analysis/plot_fine_tuning_history.py; no model, image or training involved; not an output of this run; the original 3C figure is unchanged"
+  },
+  "outputs": {
+    "reports/tables/mobilenetv2_extended_history.csv": "1ca648a93d15282a009f211da190527167b555123e346543a80cb8724523ed45",
+    "reports/tables/mobilenetv2_extended_metrics.csv": "7b8a6c4d11cbf5e109b947493f3da52d13fd51124964eb8db93bbaedbbec2641",
+    "reports/tables/mobilenetv2_extended_predictions.csv": "9b3293b86ed618ec4de687d1965ef36d453878c046d78caba7eccec3e7a88c0f",
+    "reports/tables/extended_fine_tuning_comparison_validation.csv": "339fc5ec6407ee18231915c329138b755f4558a98b1315118975199a58a027ac",
+    "models/mobilenetv2_extended/model_summary.txt": "cbb24de7ee23ad1f78f5c6040cbbeac59e1f2f01792ddd1dd5bba4db080b3559",
+    "models/mobilenetv2_extended/mobilenetv2_extended_config.json": "a9f15dd1cff4e19bc63d4d13181799067605361923c462b79a1fde3fffeb4af1",
+    "models/mobilenetv2_extended/mobilenetv2_extended_best.keras": "309008465c49073c284cee82296db73f149b5ecbba35f1702f3d3962366f6aaf",
+    "reports/figures/mobilenetv2_extended_learning_curves.png": "dfb2e76c4ef0f4b5203f4af3d1fe2d27d427f4a7cdfe6e247f3d93e5f16c319a",
+    "reports/figures/extended_fine_tuning_comparison_validation.png": "c35b8f6e7cdb632baa0fe1f47a24cd1444cfeba77c5df31169454da6a8b0d03b"
+  },
+  "total_runtime_seconds": 61.7,
+  "limitations": [
+    "One fixed holdout, one seed and one run: no variance estimate, no significance statement; images of one case are not independent.",
+    "The preference among frozen, limited and extended fine-tuning follows the pre-registered AUC rule on validation. Validation was used repeatedly for development and for checkpoint and candidate selection, so it is no independent assessment and the observed best value is optimistically biased.",
+    "The comparison is between whole pipelines; the earlier pipelines differ in architecture, pretraining, resolution and augmentation.",
+    "Training curves (flip, dropout) and validation curves (inference mode) are computed under different conditions.",
+    "The seed supports traceability; byte-identical GPU training runs are not promised.",
+    "Fine-tuning does not remove burned-in markers or device cues; whether they are used is not studied.",
+    "Scores are sigmoid outputs, not shown to be calibrated probabilities; the 0.5 threshold is a fixed convention.",
+    "Model choice and threshold for the test phase are not frozen here. Test data were not used."
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "split_is_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "split_status.json status 'frozen'"
+    },
+    {
+      "name": "split_hash_matches_freeze_and_expectation",
+      "passed": true,
+      "severity": "error",
+      "detail": "sha256 fdce9bc991b949cf... (expected fdce9bc991b949cf...)"
+    },
+    {
+      "name": "ids_unique",
+      "passed": true,
+      "severity": "error",
+      "detail": "1875 rows, 1875 unique IDs"
+    },
+    {
+      "name": "label_mapping",
+      "passed": true,
+      "severity": "error",
+      "detail": "label 0 = benign, 1 = malignant in every row"
+    },
+    {
+      "name": "subset_names",
+      "passed": true,
+      "severity": "error",
+      "detail": "split values ['test', 'train', 'validation']"
+    },
+    {
+      "name": "subset_counts_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 1114, 'cases': 639, 'benign': 754, 'malignant': 360}"
+    },
+    {
+      "name": "subset_counts_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 385, 'cases': 213, 'benign': 260, 'malignant': 125}"
+    },
+    {
+      "name": "subset_counts_test",
+      "passed": true,
+      "severity": "error",
+      "detail": "observed {'images': 376, 'cases': 212, 'benign': 254, 'malignant': 122}"
+    },
+    {
+      "name": "subsets_case_disjoint",
+      "passed": true,
+      "severity": "error",
+      "detail": "pairwise case overlaps {'train__validation': 0, 'train__test': 0, 'validation__test': 0}"
+    },
+    {
+      "name": "one_label_per_case",
+      "passed": true,
+      "severity": "error",
+      "detail": "every case has exactly one label"
+    },
+    {
+      "name": "filtered_subsets",
+      "passed": true,
+      "severity": "error",
+      "detail": "train 1114, validation 385 images, rows in stable ID order"
+    },
+    {
+      "name": "frozen_status_file_hash",
+      "passed": true,
+      "severity": "error",
+      "detail": "mobilenetv2_frozen_status.json sha256 5fa269e1680dc67b... as accepted"
+    },
+    {
+      "name": "frozen_run_is_accepted_run",
+      "passed": true,
+      "severity": "error",
+      "detail": "3B status 'passed', run mnv2f-20261019T203216-ebb118f5, best epoch 20, stop early_stopping after 25 epochs, same split hash"
+    },
+    {
+      "name": "frozen_outputs_match_status_hashes",
+      "passed": true,
+      "severity": "error",
+      "detail": "9 3B outputs checked against the status; differing: none"
+    },
+    {
+      "name": "frozen_checkpoint_and_config_hashes",
+      "passed": true,
+      "severity": "error",
+      "detail": "checkpoint e1d5d3179a591920..., config 80db4aed2bae515f..."
+    },
+    {
+      "name": "frozen_validation_auc_as_expected",
+      "passed": true,
+      "severity": "error",
+      "detail": "stored frozen validation ROC-AUC 0.8159692308 (expected 0.8159692308)"
+    },
+    {
+      "name": "limited_status_file_hash",
+      "passed": true,
+      "severity": "error",
+      "detail": "mobilenetv2_finetuned_status.json sha256 78081d2ef05d8451... as accepted"
+    },
+    {
+      "name": "limited_run_is_accepted_run",
+      "passed": true,
+      "severity": "error",
+      "detail": "3C status 'passed', run mnv2ft-20261019T214649-3962df17, best new epoch 7 of 12 epochs, same split hash, started from the accepted frozen checkpoint"
+    },
+    {
+      "name": "limited_outputs_match_status_hashes",
+      "passed": true,
+      "severity": "error",
+      "detail": "9 3C outputs checked against the status; differing: none"
+    },
+    {
+      "name": "limited_checkpoint_and_config_hashes",
+      "passed": true,
+      "severity": "error",
+      "detail": "3C checkpoint 5454f993b6f26826..., config 5363076a750fdd72..."
+    },
+    {
+      "name": "limited_validation_results_as_expected",
+      "passed": true,
+      "severity": "error",
+      "detail": "stored 3C validation ROC-AUC 0.8235076923 (expected 0.8235076923), TN/FP/FN/TP (240, 20, 63, 62) expected"
+    },
+    {
+      "name": "baseline_status_and_files",
+      "passed": true,
+      "severity": "error",
+      "detail": "baseline status passed, same split hash, metrics and predictions equal their recorded hashes"
+    },
+    {
+      "name": "cnn_status_and_outputs",
+      "passed": true,
+      "severity": "error",
+      "detail": "CNN run cnn-20261019T192513-3cfd6ee8, 9 outputs match the status (differing: none), validation ROC-AUC 0.7155076923"
+    },
+    {
+      "name": "environment_report_passed",
+      "passed": true,
+      "severity": "warning",
+      "detail": "environment_check.json: status 'passed', generated 2026-10-19T19:01:54+02:00 (read only; it does not prove this process's environment)"
+    },
+    {
+      "name": "input_contract_train",
+      "passed": true,
+      "severity": "error",
+      "detail": "external input (1114, 160, 160, 1) float32, range [0.000, 1.000], mean 0.2575; row i belongs to ID/Case/label of row i (first ID bus_0001-l)"
+    },
+    {
+      "name": "input_contract_validation",
+      "passed": true,
+      "severity": "error",
+      "detail": "external input (385, 160, 160, 1) float32, range [0.000, 1.000], mean 0.2500; row i belongs to ID/Case/label of row i (first ID bus_0008-l)"
+    },
+    {
+      "name": "only_train_and_validation_images_decoded",
+      "passed": true,
+      "severity": "error",
+      "detail": "1499 distinct PNG files opened; allowed 1499; test/mask/contact-sheet hits 0"
+    },
+    {
+      "name": "gpu_configuration",
+      "passed": true,
+      "severity": "error",
+      "detail": "GPUs ['/physical_device:GPU:0'], memory growth {'/physical_device:GPU:0': True}, soft placement False, no memory limit set by the project"
+    },
+    {
+      "name": "tensorflow_keras_versions",
+      "passed": true,
+      "severity": "error",
+      "detail": "TensorFlow 2.20.0, Keras 3.15.1, backend tensorflow"
+    },
+    {
+      "name": "start_snapshot_complete",
+      "passed": true,
+      "severity": "error",
+      "detail": "10 released layers, 52 BatchNorm layers, 42 other weight-bearing frozen layers, head ['output']"
+    },
+    {
+      "name": "explicit_layer_structure",
+      "passed": true,
+      "severity": "error",
+      "detail": "released layers by name and type: {'block_14_expand': 'Conv2D', 'block_14_depthwise': 'DepthwiseConv2D', 'block_14_project': 'Conv2D', 'block_15_expand': 'Conv2D', 'block_15_depthwise': 'DepthwiseConv2D', 'block_15_project': 'Conv2D', 'block_16_expand': 'Conv2D', 'block_16_depthwise': 'DepthwiseConv2D', 'block_16_project': 'Conv2D', 'Conv_1': 'Conv2D'}; 52 BatchNormalization layers in 154 backbone layers"
+    },
+    {
+      "name": "start_backbone_equals_frozen_status",
+      "passed": true,
+      "severity": "error",
+      "detail": "backbone fingerprint of the loaded checkpoint equals the one recorded by the 3B run after training"
+    },
+    {
+      "name": "trainability_as_planned",
+      "passed": true,
+      "severity": "error",
+      "detail": "trainable weights ['block_14_expand/kernel', 'block_14_depthwise/kernel', 'block_14_project/kernel', 'block_15_expand/kernel', 'block_15_depthwise/kernel', 'block_15_project/kernel', 'block_16_expand/kernel', 'block_16_depthwise/kernel', 'block_16_project/kernel', 'Conv_1/kernel', 'output/kernel', 'output/bias']; trainable 1512001 of 2259265 (backbone 1510720, head 1281); 52 BatchNorm layers all fixed, no BatchNorm variable trainable"
+    },
+    {
+      "name": "configuration_did_not_change_weights",
+      "passed": true,
+      "severity": "error",
+      "detail": "changing trainability and compiling left every weight bit-identical to the checkpoint as saved"
+    },
+    {
+      "name": "fresh_optimizer_and_settings",
+      "passed": true,
+      "severity": "error",
+      "detail": "new Adam: iterations 0, learning rate 1.0e-05, jit_compile False"
+    },
+    {
+      "name": "start_scores_reproduce_3b_scores",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| to the stored 3B scores: validation 1.11e-16, train 1.11e-16 (tolerance 1e-05, jit_compile=False); this is the only re-run of an earlier model, as an integrity check of the start point"
+    },
+    {
+      "name": "start_loss_matches_3b_history",
+      "passed": true,
+      "severity": "error",
+      "detail": "start validation loss 0.4732891762 vs 3B history best epoch 0.4732891619; start validation ROC-AUC 0.8159692308, AP 0.7210699349"
+    },
+    {
+      "name": "start_state_equals_3c_start_state",
+      "passed": true,
+      "severity": "error",
+      "detail": "the shared frozen start state reproduces the start values documented by the 3C run (validation loss/ROC-AUC, train loss)"
+    },
+    {
+      "name": "gpu_probe_completed",
+      "passed": true,
+      "severity": "error",
+      "detail": "probe attempts: [{'batch_size': 16, 'outcome': 'completed'}]"
+    },
+    {
+      "name": "gpu_probe_variables_and_math_on_gpu",
+      "passed": true,
+      "severity": "error",
+      "detail": "264 variables, forward output, loss and 12 gradients (10 released kernels, head kernel and bias) on GPU:0, no missing gradient"
+    },
+    {
+      "name": "gpu_probe_finite",
+      "passed": true,
+      "severity": "error",
+      "detail": "loss 0.3299 -> 0.3228 after one step; all gradients and weights finite"
+    },
+    {
+      "name": "gpu_probe_every_released_layer_changed",
+      "passed": true,
+      "severity": "warning",
+      "detail": "largest absolute change per released layer after the probe step: {'block_14_expand': '1.0e-05', 'block_14_depthwise': '1.0e-05', 'block_14_project': '1.0e-05', 'block_15_expand': '1.0e-05', 'block_15_depthwise': '1.0e-05', 'block_15_project': '1.0e-05', 'block_16_expand': '1.0e-05', 'block_16_depthwise': '1.0e-05', 'block_16_project': '1.0e-05', 'Conv_1': '1.0e-05'}"
+    },
+    {
+      "name": "gpu_probe_update_pattern",
+      "passed": true,
+      "severity": "error",
+      "detail": "after the probe step the released backbone weights and the head changed; every other backbone weight and all BatchNorm variables are bit-identical (largest released change 1.00e-05, head 1.00e-05)"
+    },
+    {
+      "name": "cuda_libraries_from_project_venv",
+      "passed": true,
+      "severity": "error",
+      "detail": "CUDA libraries outside .venv: none"
+    },
+    {
+      "name": "reset_restored_start_state",
+      "passed": true,
+      "severity": "error",
+      "detail": "after the reset the weights (trained head included) equal the accepted frozen checkpoint, Adam is fresh (0 iterations) and the trainable set is unchanged; nothing of the probe step remains"
+    },
+    {
+      "name": "training_completed",
+      "passed": true,
+      "severity": "error",
+      "detail": "attempts: [(16, 'completed')]"
+    },
+    {
+      "name": "gpu_used_during_training",
+      "passed": true,
+      "severity": "error",
+      "detail": "TensorFlow allocator peak on GPU:0 1376 MiB (observation), all model variables on GPU:0"
+    },
+    {
+      "name": "history_finite",
+      "passed": true,
+      "severity": "error",
+      "detail": "12 fine-tuning epochs, all loss/metric values finite"
+    },
+    {
+      "name": "weights_finite",
+      "passed": true,
+      "severity": "error",
+      "detail": "all weights finite after training"
+    },
+    {
+      "name": "stop_reason_consistent",
+      "passed": true,
+      "severity": "error",
+      "detail": "stop reason early_stopping: 12 epochs, best epoch 7, patience 5"
+    },
+    {
+      "name": "best_epoch_matches_callback",
+      "passed": true,
+      "severity": "error",
+      "detail": "EarlyStopping best epoch 7 == argmin(val_loss) 7"
+    },
+    {
+      "name": "checkpoint_exists",
+      "passed": true,
+      "severity": "error",
+      "detail": "models/mobilenetv2_extended/mobilenetv2_extended_best.keras (21736935 bytes)"
+    },
+    {
+      "name": "loaded_models_use_jit_compile_false",
+      "passed": true,
+      "severity": "error",
+      "detail": "jit_compile: trained model False, loaded False/False"
+    },
+    {
+      "name": "loaded_model_keeps_trainable_subset",
+      "passed": true,
+      "severity": "error",
+      "detail": "loaded checkpoint: trainable ['block_14_expand/kernel', 'block_14_depthwise/kernel', 'block_14_project/kernel', 'block_15_expand/kernel', 'block_15_depthwise/kernel', 'block_15_project/kernel', 'block_16_expand/kernel', 'block_16_depthwise/kernel', 'block_16_project/kernel', 'Conv_1/kernel', 'output/kernel', 'output/bias'] (1512001 parameters), all BatchNorm fixed"
+    },
+    {
+      "name": "trained_snapshot_complete",
+      "passed": true,
+      "severity": "error",
+      "detail": "the loaded checkpoint holds all ten released layers, 52 BatchNorm layers and the head in the weight-group snapshot"
+    },
+    {
+      "name": "fixed_weight_groups_unchanged",
+      "passed": true,
+      "severity": "error",
+      "detail": "early backbone (42 weight-bearing layers) and all BatchNorm variables (52 layers, gamma/beta/moving statistics) bit-identical to the start, in the restored model and in the loaded checkpoint"
+    },
+    {
+      "name": "released_layers_were_updated",
+      "passed": true,
+      "severity": "error",
+      "detail": "largest absolute change per released layer vs start: {'block_14_expand': '1.70e-03', 'block_14_depthwise': '1.21e-03', 'block_14_project': '1.74e-03', 'block_15_expand': '1.91e-03', 'block_15_depthwise': '1.53e-03', 'block_15_project': '1.70e-03', 'block_16_expand': '1.55e-03', 'block_16_depthwise': '1.30e-03', 'block_16_project': '1.59e-03', 'Conv_1': '2.07e-03'}"
+    },
+    {
+      "name": "all_ten_released_layers_changed",
+      "passed": true,
+      "severity": "warning",
+      "detail": "every one of the ten released convolutions received updates"
+    },
+    {
+      "name": "head_was_updated",
+      "passed": true,
+      "severity": "error",
+      "detail": "head weights changed vs start (largest absolute change 1.23e-03)"
+    },
+    {
+      "name": "whole_backbone_fingerprint_differs_as_expected",
+      "passed": true,
+      "severity": "info",
+      "detail": "the whole-backbone fingerprint differs from the start (expected: ten layers were released); this is not a frozen-backbone claim"
+    },
+    {
+      "name": "restored_best_model_equals_checkpoint",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| 0.00e+00 (tolerance 1e-05), max |weight difference| 0.00e+00"
+    },
+    {
+      "name": "second_checkpoint_load_reproduces_scores",
+      "passed": true,
+      "severity": "error",
+      "detail": "max |score difference| 0.00e+00 (tolerance 1e-05)"
+    },
+    {
+      "name": "augmentation_and_dropout_off_at_inference",
+      "passed": true,
+      "severity": "error",
+      "detail": "flip layer identity at inference: True, changes images when training: True; repeated predictions differ by 0.00e+00"
+    },
+    {
+      "name": "internal_backbone_input_contract",
+      "passed": true,
+      "severity": "error",
+      "detail": "backbone input (16, 160, 160, 3) float32, three identical channels, = 2x-1 in [-1.000, 1.000]"
+    },
+    {
+      "name": "predictions_unique_and_ordered",
+      "passed": true,
+      "severity": "error",
+      "detail": "1499 rows, unique per (subset, ID), scores in [0, 1], rows follow the ID order of the frames"
+    },
+    {
+      "name": "comparison_contract_shared",
+      "passed": true,
+      "severity": "error",
+      "detail": "all six pipelines: same 385 validation IDs/cases/labels in the same order, positive class malignant, threshold 0.5"
+    },
+    {
+      "name": "stored_limited_predictions_match_stored_metrics",
+      "passed": true,
+      "severity": "error",
+      "detail": "ROC-AUC and confusion matrix recomputed from the stored 3C validation scores equal the stored 3C metrics"
+    },
+    {
+      "name": "earlier_validation_values_unchanged",
+      "passed": true,
+      "severity": "error",
+      "detail": "stored validation ROC-AUC: Dummy 0.5, LogReg about 0.6692, small CNN 0.7155076923, frozen 0.8159692308, limited fine-tuning 0.8235076923"
+    },
+    {
+      "name": "no_test_data_used",
+      "passed": true,
+      "severity": "error",
+      "detail": "no test image, mask or test prediction was used"
+    }
+  ]
+}

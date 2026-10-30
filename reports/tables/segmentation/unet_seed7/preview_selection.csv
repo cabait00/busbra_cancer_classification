@@ -1,0 +1,29 @@
+block,subset,ID,reason,Case,class,Device,expert_fraction_original,dice_original,iou_original,pred_empty,pred_components
+representative,train,bus_0496-l,median expert-mask share of GE Logiq 5 @10-12MHz / benign,496,benign,GE Logiq 5 @10-12MHz,0.04368116740088106,0.9486043075966099,0.9022333974264162,False,1
+representative,train,bus_0428-r,median expert-mask share of GE Logiq 5 @10-12MHz / malignant,428,malignant,GE Logiq 5 @10-12MHz,0.10062273735219729,0.9490092836358598,0.9029663810151615,False,1
+representative,train,bus_0311-r,median expert-mask share of GE Logiq 7 @10-14MHz / benign,311,benign,GE Logiq 7 @10-14MHz,0.05596357226792009,0.8960960960960961,0.8117519042437432,False,1
+representative,train,bus_0250-r,median expert-mask share of GE Logiq 7 @10-14MHz / malignant,250,malignant,GE Logiq 7 @10-14MHz,0.11129124996465299,0.8275688682972381,0.7058571253522853,False,1
+representative,train,bus_1051-r,median expert-mask share of Toshiba Aplio 300 @12-14 MHz / benign,1051,benign,Toshiba Aplio 300 @12-14 MHz,0.029251747927952956,0.8285328532853286,0.7072608528620822,False,1
+representative,train,bus_1062-r,median expert-mask share of Toshiba Aplio 300 @12-14 MHz / malignant,1062,malignant,Toshiba Aplio 300 @12-14 MHz,0.07763508315085518,0.8113741013005897,0.6826151964115809,False,2
+representative,train,bus_0851-s,median expert-mask share of U-Systems @10-14MHz / benign,851,benign,U-Systems @10-14MHz,0.08083250185483665,0.934875273360762,0.8777143652561247,False,1
+representative,train,bus_0854-s,median expert-mask share of U-Systems @10-14MHz / malignant,854,malignant,U-Systems @10-14MHz,0.08239035736324567,0.9149683766690091,0.8432642487046632,False,1
+representative,validation,bus_0636-l,median expert-mask share of GE Logiq 5 @10-12MHz / benign,636,benign,GE Logiq 5 @10-12MHz,0.04806296062905833,0.9462620281273131,0.8980050576004496,False,1
+representative,validation,bus_0754-s,median expert-mask share of GE Logiq 5 @10-12MHz / malignant,754,malignant,GE Logiq 5 @10-12MHz,0.09427779929105477,0.9474890723652258,0.9002178005832626,False,1
+representative,validation,bus_0169-l,median expert-mask share of GE Logiq 7 @10-14MHz / benign,169,benign,GE Logiq 7 @10-14MHz,0.04507478081485302,0.9478057647364321,0.9007897334649556,False,1
+representative,validation,bus_0314-r,median expert-mask share of GE Logiq 7 @10-14MHz / malignant,314,malignant,GE Logiq 7 @10-14MHz,0.11340130744462874,0.9475036300681335,0.9002440836251725,False,1
+representative,validation,bus_1030-l,median expert-mask share of Toshiba Aplio 300 @12-14 MHz / benign,1030,benign,Toshiba Aplio 300 @12-14 MHz,0.017557614635305297,0.8689655172413793,0.7682926829268293,False,1
+representative,validation,bus_1014-r,median expert-mask share of Toshiba Aplio 300 @12-14 MHz / malignant,1014,malignant,Toshiba Aplio 300 @12-14 MHz,0.09776669042527916,0.011846336097478422,0.00595846101464079,False,7
+representative,validation,bus_0850-l,median expert-mask share of U-Systems @10-14MHz / benign,850,benign,U-Systems @10-14MHz,0.03320138205615175,0.9458403126744835,0.8972457627118644,False,2
+representative,validation,bus_0857-l,median expert-mask share of U-Systems @10-14MHz / malignant,857,malignant,U-Systems @10-14MHz,0.2558240715105011,0.668089101305795,0.5016019479687299,False,4
+error_analysis,validation,bus_0522-l,error analysis: validation Dice rank 1 from below,522,benign,GE Logiq 5 @10-12MHz,0.039181316323487696,0.0,0.0,True,0
+error_analysis,validation,bus_0522-r,error analysis: validation Dice rank 2 from below,522,benign,GE Logiq 5 @10-12MHz,0.044578111703481735,0.0,0.0,True,0
+error_analysis,validation,bus_0743-s,error analysis: validation Dice rank 3 from below,743,benign,GE Logiq 5 @10-12MHz,0.0211382592194878,0.0,0.0,False,4
+error_analysis,validation,bus_0971-l,error analysis: validation Dice rank 4 from below,971,benign,GE Logiq 7 @10-14MHz,0.008366502306976376,0.0,0.0,True,0
+error_analysis,validation,bus_0971-r,error analysis: validation Dice rank 5 from below,971,benign,GE Logiq 7 @10-14MHz,0.0069873253168670785,0.0,0.0,False,3
+error_analysis,validation,bus_1013-l,error analysis: validation Dice rank 6 from below,1013,malignant,Toshiba Aplio 300 @12-14 MHz,0.33437023264683446,0.0,0.0,True,0
+error_analysis,validation,bus_1014-l,error analysis: validation Dice rank 7 from below,1014,malignant,Toshiba Aplio 300 @12-14 MHz,0.11954145877880731,0.0,0.0,True,0
+error_analysis,validation,bus_1041-r,error analysis: validation Dice rank 8 from below,1041,benign,Toshiba Aplio 300 @12-14 MHz,0.009482469986129049,0.0,0.0,True,0
+error_analysis,validation,bus_1014-r,error analysis: validation Dice rank 9 from below,1014,malignant,Toshiba Aplio 300 @12-14 MHz,0.09776669042527916,0.011846336097478422,0.00595846101464079,False,7
+error_analysis,validation,bus_0287-l,error analysis: validation Dice rank 10 from below,287,malignant,GE Logiq 7 @10-14MHz,0.15454076609311265,0.16172206111978585,0.08797476034461837,False,1
+error_analysis,validation,bus_1053-s,error analysis: validation Dice rank 11 from below,1053,benign,Toshiba Aplio 300 @12-14 MHz,0.18725133568261906,0.2034695477318428,0.11325694339049931,False,4
+error_analysis,validation,bus_0232-r,error analysis: validation Dice rank 12 from below,232,benign,GE Logiq 7 @10-14MHz,0.013726876399198775,0.23512177256912653,0.13322266030296742,False,10
